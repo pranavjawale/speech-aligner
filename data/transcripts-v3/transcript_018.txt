@@ -1,0 +1,327 @@
+spk_1025:
+may i please my lord ?
+
+spk_1001:
+yes .
+
+spk_1025:
+i appear for state bank and we need a little more time to comply with your lordship's order . if your lordships is pleased to turn to page seventy six of my application . your lordship will find the operative order set out .
+
+spk_1001:
+that will be . yes that's right .
+
+spk_1025:
+para two twenty one .
+
+spk_1001:
+right .
+
+spk_1025:
+where my lords had said that in view of the discussion the following directions are issued . the issuing bank shall herewith stop issuance of electoral bonds . that's been done . state bank of india shall submit details of electoral bonds purchased since the interim order of the court of twelfth april twenty nineteen till date to the eci . the detail shall include the date of purchase of each electoral bond . that is no problem . the name of the purchaser of the bond and the denomination of the electoral bond purchased . the sbi should submit details of political parties which have received contribution through the electoral bonds since the interim order of the court of twelfth april till the date to the eci . that should be no problem my lord . sbi must disclose details of each electoral bond encashed by the political party which will include data of encashment and denomination of encashment of each bond . the only problem which we are now trying to collate the information and create is because we are having to actually reverse a whole process . the standard operating process we had put in made sure that there was no connection between the date name of the purchaser in our core banking system and the bond number because we as a bank were supposed were told that this is supposed to be secret . if handful of people also within the bank had access to this this is the kind of information which would have leaked .
+
+spk_1001:
+mister salve if you see your application if we start at para ten paras ten to fourteen of your application are the key to your application . what you see in para ten is that it is submitted that donor details were kept . i'm sorry . just give me a moment . you have it ?
+
+spk_1020:
+ia fifty seven sixty .
+
+spk_1001:
+it is submitted that donor detail .
+
+spk_1025:
+yes my lord .
+
+spk_1001:
+it is submitted that details were kept in a sealed cover at the designated branch and all such sealed covers were deposited in the main branch of the applicant bank which is located in mumbai .
+
+spk_1025:
+yes my lord .
+
+spk_1001:
+on the other end each political party was required to maintain a designated account in any of the twenty nine authorized branches . it was only in this account that electoral bonds received by that party could be deposited and redeemed . at the time of redemption the original bond the payin slip would be stored in a sealed cover and sent to the sbi mumbai main branch . so what you are saying is that donor details were all sent to the sbi main branch redemption details were all sent to the mumbai the same branch the sbi central main branch in mumbai .
+
+spk_1025:
+yes my lord .
+
+spk_1001:
+now twelve . it can thus be noted that both sets of information were being stored independently of each other . thus to rematch them would be a task requiring significant amount of effort in order to make available donor information . the date of issue of each bond will have to be checked and matched against the date of purchase by a particular donor . this exercise would only deal with the first silo of information . these bonds were redeemed by political parties in their designated bank accounts . accordingly this information would then have to be matched against the bond redemption information that makes up the second silo . it is submitted that the retrieval of information from each silo and the procedure of matching the information of one silo to the other would be a time consuming exercise . the details are stored separately . some of the details such as bonds number are stored digitally while the other sets of details such as name of purchaser kyc are stored physically . the purpose of not storing all details digitally was to ensure that it cannot be gathered easily to achieve the object of the scheme . and then finally para fourteen in that regard it is further submitted that this court has directed for making public the donor information as a date of its interim order twelfth april nineteen to the date of the judgment . in that time twenty two two seventeen electoral bonds were used for making donations to various political parties . redeemed bonds were deposited to mumbai main branch by the authorized branches at the end of each phase in sealed envelopes coupled with the fact that two different information silos existed . this would mean that a total of forty four four thirty four information set would have to be decoded compiled and compared . now if you see the directions which we have issued at page seventy six we have not told you to do the matching exercise . we have asked you for a plain disclosure . therefore the ground on which you seek an extension of time to make the disclosure does not accord with the directions in the judgment at all . the judgment doesn't tell you to do that exercise
+
+spk_1025:
+i'll tell my lord what we understand . if that is not true then of course there is a problem . if your lordships are pleased to turn to paragraph two twenty one .
+
+spk_1001:
+then you simply comply with the judgment .
+
+spk_1025:
+please turn to paragraph two twenty one . your lordships judgment
+
+spk_1001:
+page seventy six right ?
+
+spk_1025:
+seventy six . yes . sbi shall submit details of electoral bonds purchased since the interim order of the court . no problem no problem . the details shall include the date of purchase of each electoral bond the name of the purchaser of the bond and the denomination of the electoral bond purchased . now my lord when the purchases were happening we divided the information . the name is kept at one place and the purchase is recorded at another place .
+
+spk_1001:
+but ultimately everything was sent to the mumbai central main branch . all issuing branches for the political parties there are only twenty four . actually there are four . but in so far as the purchases are concerned everything has been remitted back to the mumbai central main branch .
+
+spk_1025:
+except . i'm sorry my lord . your lordship is right . it is not kept at one place because the reason if your lordship just sees an earlier paragraph . my lord was pleased to see para ten if your lordship just sees para five and seven . that's why the problem is has risen in this case . paragraph five said central government framed the electoral bond scheme which provided that the information furnished by the buyer shall be treated as confidential and the bank shall not be disclosed by any authority for any purpose . we knew this is sensitive information so a physical procedure was devised . you sort of did a kyc and you kept the name in that . and once that was cleared then only the bond number was cleared and then the bond number was used for further purchases . the money came to people who didn't know who the money was who the real name of the purchaser . they just knew this was a cleared account so . it came into a bond payment account and from the bond payment account it was given . and it was done precisely to prevent this kind of gossip coming out saying so and so has purchased so much . now my lord para seven if you see the sop because this is not something we've done . this is the original sop said no detail .
+
+spk_1001:
+mister salve ultimately even your faqs which were shown to us during the course of the hearing the faqs indicate that for every purchase you have to have a separate kyc .
+
+spk_1025:
+yes we have that . we have that .
+
+spk_1001:
+therefore it's very clear that every time somebody made a purchase a kyc was mandated . there was one set of documents namely the electoral bond application form kyc documents citizenship documents and payin slips .
+
+spk_1025:
+there's no issue . we have the details . please don't misunderstand me .
+
+spk_1001:
+therefore you have the details .
+
+spk_1025:
+no no i have the details . i am sorry . i am not saying it is not there .
+
+spk_1020:
+oneminute mister salve . now paragraph ten you specifically say that all the purchases . details have been kept in a sealed cover in the main branch of the applicant bank .
+
+spk_1025:
+correct my lord .
+
+spk_1020:
+you just have to simply open up the sealed cover and collate the names and give the details . as far as paragraph eleven is concerned then also you are saying that the donors details are being kept in a sealed cover . envelope in a sealed cover . open up the sealed cover and give the details . in fact .
+
+spk_1025:
+until my lord where the only bit of information .
+
+spk_1020:
+if i'm not mistaken the ec was asked to file an affidavit which in a sealed . affidavit or details in a sealed envelope which we have not opened . which we have not opened with regard to the donor details and other details during the course of hearing which they may have filed .
+
+spk_1025:
+my lord my problem is this with respect . in fact just responding to what my lord has said there are . i have full details of who purchased the bond but that's put in one silo of information . i have full details of where the money came from which is in a second silo . and i have a complete detail of which political party tendered how many bonds and who has been paid how much . that's an easy ask . that can be given straight away . the problem is one i have to now put the name of the purchaser which is in the first sealed packet and these are all physically kept . they were not put into the banking system . and each form will have to be taken out the name checked . that name now correlated to the payment detail and the payment detail correlated to the bond . and finally that's where the bond number gets generated and then we can connect as to which political party who has given that money .
+
+spk_1047:
+that has not been asked mister salve . we have to give direction to correlate it with the purchaser and the political party .
+
+spk_1025:
+my lord para seventy six just suggests that . would your lordships just see it for a moment .
+
+spk_1047:
+don't go by what is suggested . whatever you wanted to speak was spoken in black and white .
+
+spk_1025:
+no . no . in that my lord your lordships please see that sentence . we have no desire at all to try and expand our own job my lord . please see seventy six . this by itself is creating difficulties . my lord your lordships say the detail shall include date of purchase of bond no problem . but the moment i have to give the detail of the name with the bond number that is taking time because we have deliberately put these into silos . if your lordships want only the details of who purchase the bonds we can give that straight up .
+
+spk_1001:
+mister salve our judgement is dated fifteenth of february twenty twenty four . we are now on the eleventh of march .
+
+spk_1025:
+yes my lord .
+
+spk_1001:
+in the last twenty six days what extent of matching has been done by you ? what steps have you taken in the last twenty six days ? the application is absolutely silent on that .
+
+spk_1025:
+we can put a detailed affidavit on that my lord because i am not .
+
+spk_1001:
+it should have been disclosed in the affidavit .
+
+spk_1025:
+i agree my lord .
+
+spk_1001:
+it is state bank of india which is coming to us we expect that there should be a degree of candour on the part of the state bank of india that this is what the work which we have done . the work is at this stage . we need an extension of time to carry out the balance of the exercise which remains .
+
+spk_1025:
+we have sought to explain the problem and the work is going on . because each form . it will have to be form by form .
+
+spk_1047:
+work is going on to what extent you have reached ?
+
+spk_1025:
+my lord work is going on form by form . they will . if your lordships want i can give you the exact detail of how many we have covered and how many more we can cover . but they did a rough calculation my lord it will take about three months more . because i will tell my lord my other concern . i have another big concern my lord . i cannot make a mistake in this . i'll get sued by the donor . i'll get sued by people because i cannot by mistake say a got it when b had it .
+
+spk_1047:
+you are doing under the highest court of this country so where is the question of you being sued ?
+
+spk_1025:
+i am sorry my lord ?
+
+spk_1047:
+whatever you are doing you are doing under the directions of highest court of the country .
+
+spk_1025:
+no . no . no my lord . if i make a mistake if i say mister ten got it instead of mister y got it in a hurry to give the numbers . i could create havoc there because ultimately .
+
+spk_1020:
+as we take it mister salve you are accepting that there's no difficulty in giving names of the donors who purchase the bonds and the amount they purchased the bonds . you have got no difficulty having giving details of the political parties who have purchased the particular bonds . the only difficulty is matching the bond purchased bond with that . but in twenty six days you must have carried out at least some say ten zero bonds you have been able to collate . five thousand bonds you have been able to collate .
+
+spk_1025:
+quite frankly what i saw they were struggling with it . they were making charts which we saw were not matching and . i will tell my lord what has happened . i will tell my lord candidly what has happened .
+
+spk_1020:
+if i'm not mistaken it was pointed out to us that the bonds had some number which under some instrument they were able to . that is all has to be done .
+
+spk_1025:
+yes yes yes . that number is not to be found in the application for purchase or in the first set of documents . the problem is that number when number was generated that number has been scrambled and put elsewhere and that number has been kept secret . now my lord putting that will require tracing it into each transaction . at this stage of the interim order and i'm saying what happened at that time . the kind of information which your lordship asked was a macro information . that is no problem .
+
+spk_1001:
+in pursuance of the interim order in pursuance of the interim order election commission of india has filed details before us .
+
+spk_1025:
+in whatever they have .
+
+spk_1001:
+. in separate silos if we can use that expression . the registry has placed that in a secured in secured custody with us . please direct them to open it here right now because since we were deciding a point of constitutional validity we didn't consider it necessary either during the course of the hearing or thereafter . so we can ask them to open it and we will ask the election commission of india to divulge whatever there is and we'll ask sbi to then divulge what we have asked them to do . whatever has been placed before us . see mister sharma whatever has been placed by you before us in compliance with the judgment we will direct that to be open right now .
+
+spk_1025:
+and your lordship directed us to give it to the eci . so we'll give it to the eci . or your lordship wants us to file it directly in court . i think better through the eci .
+
+spk_1001:
+no . mister salve you comply with the order of the court .
+
+spk_1025:
+to give it to the eci .
+
+spk_1001:
+whatever eci has placed in the court we will direct that to be opened . we'll ask our court to make a copy of it a digitized copy for the safekeeping of the court . and then we will return it back to the the rest we'll return it back to eci for them to upload it on their website .
+
+spk_1025:
+what eci has already there's no problem . we will give the eci in the time . if your lordships in three months we will go and give it to the eci . and as and when they get it they can upload it . we want to make sure we get every bond number right every donor right . this otherwise is going to create havoc for today for donors who come and say this is not my bond . i did not purchase this . you put the wrong number on my bond . i did not give this so and so .
+
+spk_1020:
+there's no question of that . once he is given the kyc he's given the details . you also have the application . the application will be having the amount for which .
+
+spk_1025:
+i am sorry my lords . my concern is he purchased bond number ten . i by mistake i put his number at purchasing bond number y . now ten may have gone to political party a y may have gone to political party b .
+
+spk_1020:
+why will that happen mister salve ? sbi is the number one bank in the country . we expect them to be able to handle this .
+
+spk_1025:
+no not expect to be handled . we were told make sure that this doesn't leak . so the way we stored the information the bond number did not get into the core banking system . if we had been told keep information on this basis we would have devised our systems accordingly . if we had kept it like that any senior bank officer could have found out bond numbers and the whole thing would have been out in public domain who has how much . all the secrecy would have gone .
+
+spk_1001:
+assistant general manager files an affidavit in support of the application to the supreme court for modification an order of a constitution bench . it is a very serious matter when you ask for modification of an order .
+
+spk_1025:
+i accept that . i accept that .
+
+spk_1001:
+assistant general manager files an affidavit and tells us that look i'm finding it difficult . the information is maintained in two silos .
+
+spk_1025:
+he has filed the affidavit because he's the man in the spot . he's the person who has to do this job . he's the level at which the accounts are kept . he said you must have the person who knows what he's talking about . so give us a little time . we'll do it as per time .
+
+spk_1110:
+while your lordship is doing that let me just show one or two things from .
+
+spk_1020:
+if i am not mistaken earlier also you had given one envelope at the time when the interim order was passed .
+
+spk_1110:
+i'm sorry my lord . so that nothing is lost in translation . then we'll follow them .
+
+spk_1025:
+i'm sorry i just wanted one clarification as we understand . my lord may i say one thing my lord ? if your lordship turns to your lordship's operative order there's one way in which you may be able to resolve this . in b your lordship say electoral bonds purchased the detail will include the detail of purchase of electoral bond the name of purchaser and the denomination . this is one part my lord . this we have . i mean we can we can get this in twothree weeks . c . my lord i was saying something .
+
+spk_1001:
+yes mister salve .
+
+spk_1025:
+if your lordship turn there may be a way out around this . if your lordships turns to your lordship's order at para two twenty one page seventy six .
+
+spk_1001:
+yes ?
+
+spk_1025:
+there are two parts b and c . if you don't have to create a bridge between the two then within three weeks we can give everything .
+
+spk_1001:
+so we'll declare an order . we'll declare an order . let us do it in the court itself instead of giving .
+
+spk_1025:
+i wanted to just my lord make a respectful suggestion .
+
+spk_1001:
+yes ?
+
+spk_1025:
+if your lordships see para two twenty one .
+
+spk_1001:
+yes ?
+
+spk_1025:
+my lord if b and c are not to be matched then my lord we can give the information in three weeks . let me explain how . if we on one hand is the person who purchased the electoral bond and the number of bonds he purchased that my lord in two three weeks we can get all the figures . in the second the bonds encashed by the political parties which includes the date of encashment and denomination that details we have my lord . that also we can give in three weeks we'll put it all together .
+
+spk_1047:
+three weeks for what mister salve ?
+
+spk_1025:
+my lord these are all in the . because the accounts are separate the payment has come separately and the name was kept separately we will marry the two and give it .
+
+spk_1020:
+the political parties have already given the details of the encashments made by them .
+
+spk_1025:
+correct my lord . so that in any case is there . as far as b is concerned we can give it .
+
+spk_1020:
+details also are already available with you .
+
+spk_1025:
+i'm sorry my lords ?
+
+spk_1020:
+with regard to the purchasers the donors and the details of amount they have purchased these details are already available .
+
+spk_1025:
+yes . so that we can give we'll just put that figures together and . the trouble is my lord we understood b and c meant that we had to give a complete correlation of who bought how much how much was received how much was given to whom and which bank rather which party encashed it from which bank . that bridge was creating that difficulty . if we don't have to give that matching .
+
+spk_1001:
+what we'll do is we'll dictate a short we'll dictate an order .
+
+spk_1030:
+before your lordship dictates .
+
+spk_1001:
+after we dictate it if there's something which remains you can tell us . by a judgment dated fifteenth february twenty twenty four this court declared the electoral bond scheme and the provisions of the finance act twenty seventeen which amended the provisions of the representation of the people act nineteen fifty one and the income tax act nineteen sixty one unconstitutional on the ground that the nondisclosure of information regarding the funding of political parties is violative of the right to information of citizens under article nineteen one a of the constitution . the amendments which were introduced by the finance act twenty seventeen to the provisions of the companies act twenty thirteen permitting unlimited funding of political parties by corporate entities were held to be arbitrary and violative of article fourteen of the constitution . in order to give full effect to the judgment which was rendered by the constitution bench this court directed the state bank of india sbi which was the authorized bank to deal with electoral bonds under the electoral bond scheme to submit details of the electoral bonds purchased by the contributors and redeemed by political parties between twelfth april twenty nineteen the date on which an interim order was asked by this court directing the election commission of india eci to collect details of the contributions till fifteenth february twenty twenty four the date of the judgment . this court directed sbi to submit the following details by sixth march twenty twenty four to the eci . a details of each electoral bond purchased including the date of purchase the name of the purchaser and the denomination of the electoral bond and b details of each electoral bond redeemed by political parties including the date of encashment and the denomination of the electoral bond . the eci was directed to collate the information which is to be submitted by the sbi and publish it on its website by thirteen march twenty twenty four . the directions of this court are extracted below para two nineteen at page seventy six .
+
+spk_1004:
+my lords it is two twenty one with page seventy six of the application .
+
+spk_1001:
+may be scc online it is two twenty one . the paragraph begins with the words in view of our discussion above following direction that are issued and the last word which you will copy down is the purchaser's account . sbi filed a miscellaneous application before this court two days before the expiry of the deadline seeking an extension of time until thirty june twenty twenty four for complying with the directions . the petitioners before this court association for democratic reforms and the communist party of india marxist instituted a petition invoking the contempt jurisdiction of this court against sbi for an alleged wilful disobedience of the order of this court . in support of the application by sbi we have heard mister harish n salve learned senior counsel . mister salve submitted that the information which was received by the sbi was maintained in two separate silos and was maintained with utmost secrecy so as to fulfil the core purpose of the electoral bond scheme . learned counsel submitted that if the disclosure is to be made of the information required to be submitted by sbi to eci in the separate silos which are referred to in b and c of the operative directions there would be no difficulty in sbi doing so which it has been indicated would be completed within three weeks . however it has been submitted that the difficulty of sbi arose since it construed the directions of this court in requiring it to carry out a matching exercise to match the donor and bond details with the corresponding details pertaining to encashment by political parties . while evaluating the submissions which have been made on behalf of sbi a reference to some of the key aspects of the scheme would be in order at this stage . clause seven four of the electoral bond scheme stipulates that the information furnished by the buyer of an electoral bond shall be treated as confidential by the authorized banks and shall be disclosed only when called upon to do so by a competent court or upon the registration of an offense by a law enforcement agency . thus in terms of the provisions of the electoral bond scheme itself sbi is mandated to disclose information when demanded by the court . however what has to be analysed is whether sbi is justified in seeking an extension of time . sbi seeks an extension of time on the ground that the process of decoding the electoral bonds and matching the donor to the donations is a complex and time consuming exercise . to substantiate this argument sbi has averred that a information is not available in a digital format clause seven point one . two of the standard operating procedure regarding the sale and redemption of electoral bonds stipulates that no details of bond purchaser including kyc and other details will be entered in the core banking system . thus the details of the purchases of bond or bonds are not available centrally b the donor details and recipient details are available in two separate silos the details of the purchasers of the electoral bonds were kept in a sealed cover at the designated branch . these sealed covers were deposited in the main branch of sbi in mumbai at the end of each phase of the issuance of the electoral bonds . the information on the redemption of electoral bonds that is the original bond and the payin slip were stored in a sealed cover and sent to the sbi mumbai branch c matching of information in the two silos is a time consuming process the matching of the information on the purchase and redemption of electoral bonds would be time consuming since the donor information and redemption information is maintained in two distinct silos independent of each other d there is a large number of data sets to decipher a total of twenty two two seventeen bonds were purchased between twelfth april twenty nineteen and fifteenth february twenty twenty four . this would cumulatively add up to forty four four thirty four data sets since there are two silos of information . in other words the compilation of this information would be a time consuming process . the crux of the submission of the sbi is that the matching of information to ascertain who contributed to which political party is a time consuming process since the information is maintained in two separate silos . now the operative directions which have been issued by this court as reproduced earlier the operative directions of this court directed the sbi to disclose the transactions as set out in direction b and direction c extracted above . sbi submits in its application itself that the donor details and redemption details are available albeit in separate silos . in other words the directions which have been issued by this court require sbi to disclose information which is already available to it . at this stage it would be material to refer to the faqs on electoral bonds published by the sbi which states that the know your customer documents must be submitted by the purchaser each time by the bond is purchased irrespective of whether the purchaser has a kyc verified sbi account . that is one set of documents the electoral bond application form kyc documents and payin slip can only be used to purchase one electoral bond . contributors who have an sbi account as well as those who do not have to submit the electoral bond application know your customer documentation and proof of payment through neft cheque or demand draft . thus the details of the electoral bond which have been purchased and which have been directed to be disclosed by this court are readily available . similarly the faqs on electoral bonds published by the sbi with respect to the redemption of bonds states that each political party can only open one current account for electoral bond redemption . the current account could be opened by the political party only in four authorized branches in chennai kolkata mumbai and new delhi .
+
+spk_1004:
+there are twenty nine factually nothing turns on that . twenty nine designated branches .
+
+spk_1001:
+twenty nine designated branches .
+
+spk_1020:
+they are in the four cities or other places also ?
+
+spk_1004:
+no . all over the country . all over the country . not in these four places only .
+
+spk_1001:
+thus information about a political party's encashment of electoral bonds would be stored only in these branches which would be clearly accessible . payment slips and other details would have to be would have to be submitted to the main branch . there is no dispute about the fact as they cannot be that this process was duly followed . together with the application which has been filed by sbi for the extension of time adr has filed a contempt petition in which it submits that the information which was directly to be disclosed by this court can easily be disclosed by sbi because of the unique number which is printed on the electoral bond . irrespective of whether the unique identification number which is not discernible to the naked eye will enable the disclosure of details the submissions of sbi in the application sufficiently indicate that the information which has been directed to be disclosed by the court is readily available . in view of the about discussion the miscellaneous application filed by sbi seeking an extension of time for the disclosure of details of the purchase and redemption of electoral bonds until thirty june twenty twenty four is dismissed . sbi is directed to disclose the details by the close of business hours twelve march twenty twenty four . as regards the eci we direct that eci shall compile the information and publish the details in its official website no later than by fifteen march by five o'clock p . m . on fifteen march twenty twenty four . during the pendency of the proceedings before the constitution bench eci had in compliance with the interim orders passed by this court filed its statements which have been maintained in the custody of the court . copies of the statements which were filed by eci before this court would be maintained in the office of the eci . eci shall publish the details of the information which was supplied to this court in pursuance of the interim orders on its website . the miscellaneous application the sbi shall file an affidavit of its chairman and managing director upon compliance with the directions which have been issued above . while we are not inclined to exercise the contempt jurisdiction at this stage bearing in mind the application which was submitted for extension of time we place sbi on notice that this court may be inclined to proceed against it for wilful disobedience to the judgement if sbi does not comply with the directions of this court as set out in its judgement dated fifteen february twenty twenty four by the timelines indicated in this order . the miscellaneous application for extension of time shall accordingly stand dismissed . contempt petitions shall stand disposed of at this stage in the above terms .
+
+spk_1025:
+my lord i just want to say one thing my lord . i don't want tomorrow to be again at the end of mister prashant bhushan's contempt . your lordships have said disclose b and disclose c the directions . we will disclose both of that . that is easy . correlating the purchase with the beneficiary is not something which we are required to do and then it's easy . that will be . so .
+
+spk_1047:
+salve when my lord the chief justice dictated the order it is very clear . there is no scope for any confusion in the . what is dictated in the court .
+
+spk_1025:
+lordships .
+
+spk_0107:
+your lordships one other diary number which is the contempt of matter related diary number one one two nine six . lordship please . thank you . end of day s proceedings
+

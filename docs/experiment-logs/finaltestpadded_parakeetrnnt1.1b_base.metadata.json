@@ -1,0 +1,334 @@
+{
+  "experiment_name": "finaltestpadded_parakeetrnnt1.1b_base",
+  "finished_at": "2026-07-03 07:20:01 UTC",
+  "data": {
+    "manifest": "data/asr/splits-legal2023_38hrs-padded/test.jsonl",
+    "description": "WER-stratified disablePass1Extra test split (26 speakers, @avg_score>=0.4, 2258 segs), silence-padded +0.5s both sides",
+    "utterances": 2258,
+    "manifest_md5": "74e739d177ed6a0bf4c650c08cc0b1b5",
+    "padded": true,
+    "pad_seconds": 0.5,
+    "conf_filter_threshold": null,
+    "observed_avg_score_min": 0.4014,
+    "observed_avg_score_max": 0.9515
+  },
+  "model": {
+    "name": "nvidia/parakeet-rnnt-1.1b",
+    "path": "nvidia/parakeet-rnnt-1.1b",
+    "is_finetuned": false,
+    "description": "base pretrained (NGC/HF)",
+    "revision": "eb4243f55e927ce6b33c7d5da3286053545bf25d"
+  },
+  "compute": {
+    "python": "3.12.3",
+    "cpu_count": 48,
+    "platform": "Linux-6.8.0-45-generic-x86_64-with-glibc2.39",
+    "ram_gb": 251.6,
+    "torch": "2.8.0+cu128",
+    "cuda": "12.8",
+    "cudnn": 91002,
+    "gpu": "NVIDIA RTX A4500",
+    "gpu_mem_gb": 19.7,
+    "gpu_driver": "550.127.05",
+    "nemo": "2.7.3"
+  },
+  "timing": {
+    "load_s": 22.1,
+    "decode_s": 127.8,
+    "total_s": 149.9
+  },
+  "code": {
+    "eval_script": "/workspace/code2/src/asrpipe/asr/eval.py",
+    "git": {
+      "commit": "0f1881906ab9a33c89b62400fed14ae0e0b2b7ef",
+      "dirty": true
+    }
+  },
+  "eval": {
+    "decoding": "greedy_batch",
+    "batch_size": 32,
+    "workers": 8,
+    "limit": 0,
+    "streaming": false,
+    "vad_applied": false,
+    "normalizer": "asrpipe.common.wer.normalize (lowercase, strip to [a-z0-9 ], collapse ws; word-level Levenshtein)"
+  },
+  "reproduce_command": ".venv-nemo/bin/python -m asrpipe.asr.eval --manifest data/asr/splits-legal2023_38hrs-padded/test.jsonl --model nvidia/parakeet-rnnt-1.1b --exp-name finaltestpadded_parakeetrnnt1.1b_base --batch-size 32 --padded --data-description 'WER-stratified disablePass1Extra test split (26 speakers, @avg_score>=0.4, 2258 segs), silence-padded +0.5s both sides'",
+  "summary": {
+    "model": "nvidia/parakeet-rnnt-1.1b",
+    "manifest": "data/asr/splits-legal2023_38hrs-padded/test.jsonl",
+    "utterances": 2258,
+    "scored": 2258,
+    "empty_ref": 0,
+    "empty_hyp": 20,
+    "audio_min": 178.35,
+    "decode_s": 127.8,
+    "rtfx": 83.7,
+    "corpus_wer": 0.20025040243248077,
+    "mean_utt_wer": 0.27991644848851954,
+    "per_speaker": {
+      "audio_file_001|spk_1045": {
+        "segs": 172,
+        "ref_words": 1314,
+        "wer": 0.11643835616438356
+      },
+      "audio_file_001|spk_1081": {
+        "segs": 7,
+        "ref_words": 36,
+        "wer": 0.7222222222222222
+      },
+      "audio_file_001|spk_1027": {
+        "segs": 151,
+        "ref_words": 2467,
+        "wer": 0.1284961491690312
+      },
+      "audio_file_001|spk_1034": {
+        "segs": 184,
+        "ref_words": 1910,
+        "wer": 0.19947643979057592
+      },
+      "audio_file_002|spk_1041": {
+        "segs": 10,
+        "ref_words": 100,
+        "wer": 0.06
+      },
+      "audio_file_004|spk_1037": {
+        "segs": 130,
+        "ref_words": 1741,
+        "wer": 0.21079839172889145
+      },
+      "audio_file_004|spk_1039": {
+        "segs": 2,
+        "ref_words": 46,
+        "wer": 0.21739130434782608
+      },
+      "audio_file_005|spk_1043": {
+        "segs": 63,
+        "ref_words": 1514,
+        "wer": 0.11360634081902246
+      },
+      "audio_file_005|spk_1082": {
+        "segs": 11,
+        "ref_words": 115,
+        "wer": 0.4260869565217391
+      },
+      "audio_file_007|spk_1036": {
+        "segs": 110,
+        "ref_words": 1857,
+        "wer": 0.09154550350026926
+      },
+      "audio_file_007|spk_1032": {
+        "segs": 189,
+        "ref_words": 1771,
+        "wer": 0.2924901185770751
+      },
+      "audio_file_007|spk_1027": {
+        "segs": 6,
+        "ref_words": 128,
+        "wer": 0.0703125
+      },
+      "audio_file_007|spk_0067": {
+        "segs": 4,
+        "ref_words": 27,
+        "wer": 0.7037037037037037
+      },
+      "audio_file_008|spk_1027": {
+        "segs": 14,
+        "ref_words": 168,
+        "wer": 0.30952380952380953
+      },
+      "audio_file_008|spk_0067": {
+        "segs": 2,
+        "ref_words": 25,
+        "wer": 0.72
+      },
+      "audio_file_008|spk_1081": {
+        "segs": 5,
+        "ref_words": 49,
+        "wer": 0.22448979591836735
+      },
+      "audio_file_009|spk_0076": {
+        "segs": 14,
+        "ref_words": 144,
+        "wer": 0.4861111111111111
+      },
+      "audio_file_009|spk_1094": {
+        "segs": 7,
+        "ref_words": 74,
+        "wer": 0.5540540540540541
+      },
+      "audio_file_010|spk_1062": {
+        "segs": 10,
+        "ref_words": 79,
+        "wer": 0.759493670886076
+      },
+      "audio_file_010|spk_1101": {
+        "segs": 9,
+        "ref_words": 97,
+        "wer": 0.4639175257731959
+      },
+      "audio_file_011|spk_1062": {
+        "segs": 33,
+        "ref_words": 281,
+        "wer": 0.3202846975088968
+      },
+      "audio_file_012|spk_1039": {
+        "segs": 100,
+        "ref_words": 1563,
+        "wer": 0.16058861164427382
+      },
+      "audio_file_012|spk_0067": {
+        "segs": 1,
+        "ref_words": 7,
+        "wer": 0.5714285714285714
+      },
+      "audio_file_016|spk_1069": {
+        "segs": 25,
+        "ref_words": 198,
+        "wer": 0.42424242424242425
+      },
+      "audio_file_016|spk_0067": {
+        "segs": 14,
+        "ref_words": 230,
+        "wer": 0.25217391304347825
+      },
+      "audio_file_017|spk_1025": {
+        "segs": 49,
+        "ref_words": 570,
+        "wer": 0.30526315789473685
+      },
+      "audio_file_017|spk_1092": {
+        "segs": 7,
+        "ref_words": 75,
+        "wer": 0.3333333333333333
+      },
+      "audio_file_017|spk_1075": {
+        "segs": 9,
+        "ref_words": 78,
+        "wer": 0.5641025641025641
+      },
+      "audio_file_017|spk_1035": {
+        "segs": 43,
+        "ref_words": 335,
+        "wer": 0.21194029850746268
+      },
+      "audio_file_017|spk_1041": {
+        "segs": 26,
+        "ref_words": 246,
+        "wer": 0.2073170731707317
+      },
+      "audio_file_017|spk_1033": {
+        "segs": 1,
+        "ref_words": 7,
+        "wer": 1.0
+      },
+      "audio_file_018|spk_1025": {
+        "segs": 113,
+        "ref_words": 1854,
+        "wer": 0.3209277238403452
+      },
+      "audio_file_019|spk_1041": {
+        "segs": 40,
+        "ref_words": 473,
+        "wer": 0.15644820295983086
+      },
+      "audio_file_019|spk_1035": {
+        "segs": 69,
+        "ref_words": 526,
+        "wer": 0.1806083650190114
+      },
+      "audio_file_019|spk_1028": {
+        "segs": 202,
+        "ref_words": 2476,
+        "wer": 0.17609046849757673
+      },
+      "audio_file_019|spk_1025": {
+        "segs": 2,
+        "ref_words": 30,
+        "wer": 0.13333333333333333
+      },
+      "audio_file_019|spk_0067": {
+        "segs": 3,
+        "ref_words": 37,
+        "wer": 0.8648648648648649
+      },
+      "audio_file_020|spk_1041": {
+        "segs": 10,
+        "ref_words": 90,
+        "wer": 0.25555555555555554
+      },
+      "audio_file_020|spk_1035": {
+        "segs": 21,
+        "ref_words": 170,
+        "wer": 0.18823529411764706
+      },
+      "audio_file_020|spk_1038": {
+        "segs": 90,
+        "ref_words": 1451,
+        "wer": 0.16264645072363887
+      },
+      "audio_file_020|spk_1033": {
+        "segs": 111,
+        "ref_words": 1718,
+        "wer": 0.12223515715948778
+      },
+      "audio_file_020|spk_1025": {
+        "segs": 19,
+        "ref_words": 260,
+        "wer": 0.3038461538461538
+      },
+      "audio_file_020|spk_1075": {
+        "segs": 4,
+        "ref_words": 55,
+        "wer": 0.2909090909090909
+      },
+      "audio_file_020|spk_1028": {
+        "segs": 3,
+        "ref_words": 24,
+        "wer": 0.875
+      },
+      "audio_file_022|spk_1093": {
+        "segs": 7,
+        "ref_words": 68,
+        "wer": 0.4264705882352941
+      },
+      "audio_file_022|spk_1035": {
+        "segs": 53,
+        "ref_words": 461,
+        "wer": 0.14099783080260303
+      },
+      "audio_file_022|spk_1041": {
+        "segs": 20,
+        "ref_words": 158,
+        "wer": 0.4050632911392405
+      },
+      "audio_file_023|spk_1041": {
+        "segs": 7,
+        "ref_words": 154,
+        "wer": 0.14935064935064934
+      },
+      "audio_file_023|spk_1039": {
+        "segs": 1,
+        "ref_words": 12,
+        "wer": 0.0
+      },
+      "audio_file_024|spk_1035": {
+        "segs": 27,
+        "ref_words": 263,
+        "wer": 0.28517110266159695
+      },
+      "audio_file_024|spk_1041": {
+        "segs": 35,
+        "ref_words": 308,
+        "wer": 0.30194805194805197
+      },
+      "audio_file_024|spk_1090": {
+        "segs": 13,
+        "ref_words": 115,
+        "wer": 0.3739130434782609
+      }
+    }
+  },
+  "raw_results_csv": "/workspace/code2/results/finaltestpadded_parakeetrnnt1.1b_base.csv",
+  "log_file": null
+}

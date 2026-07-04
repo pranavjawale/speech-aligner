@@ -1,0 +1,4 @@
+comparison-name	table-csv	finished-at
+legal2023_38hrs_test_padded_4models	/workspace/code2/docs/experiment-logs/comparisons/legal2023_38hrs_test_padded_4models.csv	2026-07-03 07:23:34 UTC
+finaltestpadded_ctc0.6b_ft_vs_base	/workspace/code2/docs/experiment-logs/comparisons/finaltestpadded_ctc0.6b_ft_vs_base.csv	2026-07-03 14:56:31 UTC
+finaltestpadded_ctc0.6b_base_ft_ftLM	/workspace/code2/docs/experiment-logs/comparisons/finaltestpadded_ctc0.6b_base_ft_ftLM.csv	2026-07-03 15:43:13 UTC

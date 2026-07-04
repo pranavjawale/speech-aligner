@@ -1,0 +1,132 @@
+================================================================================
+EXPERIMENT RESULTS METADATA
+EXPERIMENT NAME : strat5-vs-6c-padded-test-set-rnnt-1.1b-noLM
+Padded speaker-segment TEST set WER:  strategy-5  vs  chunk-strategy-6c
+Same model + same decoding config on both arms.  NON-CIRCULAR judge.
+Created: 2026-06-30 (IST).
+================================================================================
+
+PURPOSE
+-------
+NON-CIRCULAR companion to strat5-vs-6c-padded-test-set-ctc-0.6b-noLM. Same two
+PADDED test splits, same decoding config, but eval with an INDEPENDENT model
+(parakeet-rnnt-1.1b: RNN-T, no LM, NOT used in any alignment arm). This is the
+HONEST label-quality comparison: a lower WER for an arm means its located reference
+agrees more with a model that never saw the 6-gram / never built the labels.
+
+Why this matters: the ctc-0.6b experiment is CIRCULAR (ctc-0.6b helped build the 6c
+labels -> home-field advantage). rnnt-1.1b removes that: it played no role in 6c.
+CAVEAT: rnnt-1.1b is still Parakeet-family (shared FastConformer lineage with the
+ctc-0.6b used in 6b/6c) — independent of the LM + window choice, but not a totally
+different acoustic lineage. (Whisper is disqualified — it is used in every arm.)
+
+--------------------------------------------------------------------------------
+1. MODEL PATHS
+--------------------------------------------------------------------------------
+Eval model (both arms, identical): nvidia/parakeet-rnnt-1.1b
+  HF id        : nvidia/parakeet-rnnt-1.1b   (EncDecRNNTBPE; FastConformer RNN-T;
+                 English; lowercase / no-punct output)
+  local .nemo  : /workspace/.cache/huggingface/hub/models--nvidia--parakeet-rnnt-1.1b/
+                 snapshots/6563f0f796ae139b63136b12af388fc8642d2efa/parakeet-rnnt-1.1b.nemo
+  loaded via   : nemo.collections.asr.models.ASRModel.from_pretrained("nvidia/parakeet-rnnt-1.1b")
+  NeMo env     : code/data-for-asr-baseline/.venv (NeMo 2.7.3; torch 2.8 cu128)
+  device       : CUDA (NVIDIA RTX A4500, 20 GB)
+NOTE: independent judge (NOT the Phase-15 fine-tune candidate); NO external LM.
+
+--------------------------------------------------------------------------------
+2. DECODING SETUP / ARGUMENTS
+--------------------------------------------------------------------------------
+decoding strategy : greedy_batch  (RNN-T greedy; model.change_decoding_strategy)
+external LM       : NONE (no KenLM, no beam search)
+batch_size        : 32
+num_workers       : 8
+audio             : 16 kHz mono PCM_S16LE; PADDED segments (+0.5 s silence each end)
+scoring           : normalize ref+hyp identically (lowercase; drop [^a-z0-9 ];
+                    collapse whitespace), word-level edit distance via rapidfuzz.
+                    CORPUS WER = sum edits / sum ref words; mean utt WER; per-speaker.
+
+--------------------------------------------------------------------------------
+3. DECODING SCRIPT
+--------------------------------------------------------------------------------
+code/data-for-asr-baseline/run_asr_baseline_eval.py
+Invocations (run with code/data-for-asr-baseline/.venv/bin/python):
+  # strategy-5 padded test (archived; paths rewritten to the archive WAV dir)
+  run_asr_baseline_eval.py \
+     --manifest _archive-strategy5/splits-padded/test_archivepaths.jsonl \
+     --model nvidia/parakeet-rnnt-1.1b \
+     --out results/rnnt11b_padded_test_STRAT5.jsonl --batch-size 32
+  # 6c padded test (canonical)
+  run_asr_baseline_eval.py \
+     --manifest splits-padded/test.jsonl \
+     --model nvidia/parakeet-rnnt-1.1b \
+     --out results/rnnt11b_padded_test_6C.jsonl --batch-size 32
+
+--------------------------------------------------------------------------------
+4. TEST SET LOCATIONS
+--------------------------------------------------------------------------------
+Both: PADDED speaker-segment TEST split; SAME 20 test speakers (6c reused strat-5's
+speaker_assignment.json); +0.5 s silence each end; avg_score >= 0.4 filter.
+
+strategy-5 (ARCHIVED by R7 swap):
+  manifest (eval-used) : code/data-for-asr-baseline/_archive-strategy5/splits-padded/test_archivepaths.jsonl
+  padded WAVs          : /workspace/wav-files/_archive-strategy5/speaker-segments-padded/{stem}/
+  rows                 : 3368 segments / 20 speakers ; labels = WhisperX-only (strategy-5)
+
+6c (CANONICAL):
+  manifest             : code/data-for-asr-baseline/splits-padded/test.jsonl
+  padded WAVs          : /workspace/wav-files/speaker-segments-padded/{stem}/
+  rows                 : 3391 segments / 20 speakers ; labels = LM-assisted (chunk-strategy-6c)
+
+--------------------------------------------------------------------------------
+5. RESULT STORAGE
+--------------------------------------------------------------------------------
+code/data-for-asr-baseline/results/rnnt11b_padded_test_STRAT5.jsonl   (+ .summary.json)
+code/data-for-asr-baseline/results/rnnt11b_padded_test_6C.jsonl       (+ .summary.json)
+Run log: $CLAUDE_JOB_DIR/tmp/compare_padded_wer_rnnt.out
+Companion (circular) experiment: experiment-logs/strat5-vs-6c-padded-test-set-ctc-0.6b-noLM_metadata.txt
+
+--------------------------------------------------------------------------------
+6. WER REPORT  (overall + per test speaker)   [parakeet-rnnt-1.1b, padded test]
+--------------------------------------------------------------------------------
+OVERALL (NON-CIRCULAR judge):
+  metric          strategy-5     6c       delta
+  CORPUS WER       34.42%      34.37%    -0.05 pp   (sum edits / sum ref words)
+  mean utt WER     33.90%      32.79%    -1.11 pp
+
+PER TEST SPEAKER (WER%, aggregated across files; segs = 6c segment count):
+  speaker     strat5    6c     delta_pp   segs(6c)   note
+  spk_1019    78.94    78.67    -0.27        190     bad-audio
+  spk_1022    58.27    58.82    +0.55        231
+  spk_1023    12.91    11.74    -1.16        237
+  spk_1024    18.12    17.67    -0.45        322
+  spk_1025    50.10    47.98    -2.12        200
+  spk_1026    88.41    88.12    -0.30         98     bad-audio
+  spk_1027    15.77    14.29    -1.48        166
+  spk_1028    22.35    20.08    -2.27        206
+  spk_1029    10.82     9.92    -0.90        271
+  spk_1030    10.28     9.77    -0.51        212
+  spk_1031    93.53    94.32    +0.78         66     bad-audio
+  spk_1032    87.75    86.48    -1.27         93     bad-audio
+  spk_1034    18.82    19.58    +0.76        182
+  spk_1035    23.83    25.16    +1.33        193
+  spk_1036     7.27     7.16    -0.11        111
+  spk_1040     9.13     9.56    +0.44         97
+  spk_1041    23.19    22.71    -0.48        131
+  spk_1042    20.30    25.03    +4.73        122     <- only notable regression
+  spk_1045     9.45     9.39    -0.06        164
+  spk_1048    10.36    10.37    +0.01         99
+  (13 of 20 speakers improve, 6 worse, 1 ~flat.)
+
+READING THE RESULT (this is the HONEST, non-circular verdict):
+  - Overall corpus WER ~TIED (-0.05pp); 6c modestly better on mean-utt (-1.11pp ->
+    6c helps shorter utterances). Almost identical deltas to the CIRCULAR ctc-0.6b
+    run (-0.13pp / -1.14pp) -> circularity barely affected this padded-test compare.
+  - Per-speaker pattern matches ctc: 13/20 improve (mostly small), one notable
+    regression (spk_1042 +4.7pp), bad-audio speakers (1019/1026/1031/1032) flat.
+  - VERDICT: on the Phase-15-relevant padded segment TEST set, 6c labels are
+    ESSENTIALLY TIED with strategy-5 on corpus WER, with a small consistent mean-utt
+    edge. Consistent with the whole side-track: 6c gain is REAL but MODEST.
+
+Companion (circular) experiment for comparison:
+  strat5-vs-6c-padded-test-set-ctc-0.6b-noLM: corpus 36.86% -> 36.73% (-0.13pp).
+================================================================================

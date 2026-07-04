@@ -1,0 +1,54 @@
+================================================================================
+NUMBER-RECOGNITION ACCURACY — baseline vs fine-tune (legal2023_38hrs PADDED test)
+================================================================================
+Generated: 2026-07-04 (IST).
+Experiments compared (same test set, byte-identical refs):
+  baseline : finaltestpadded_parakeetctc0.6b_base  (nvidia/parakeet-ctc-0.6b, off-the-shelf)
+  finetune : finaltestpadded_parakeetctc0.6b_ft    (our fine-tune, greedy, NO language model)
+
+--------------------------------------------------------------------------------
+DEFINITIONS / METHOD  (canonical; reuses asrpipe.reports.wer_segment_report)
+--------------------------------------------------------------------------------
+- "number word" = a cardinal/ordinal token (one, two, ... hundred, thousand, million,
+  lakh, crore, dozen, first, second, ... nineteenth, twentieth, ... hundredth, ... AND
+  their plurals) OR any token containing a digit. (is_number_word(), verbatim.)
+- Text = the eval CSV's already-normalized ref_norm / hyp_norm (lowercase, [a-z0-9 ] only).
+- Alignment = jiwer.process_words (word-level Levenshtein S/D/I).
+- A REFERENCE number word is "recognized wrongly" if it is NOT in an 'equal' chunk, i.e.
+  it was SUBSTITUTED (heard as a different word) or DELETED (dropped). Denominator =
+  total number words in the reference (metric 3).
+- A NUMBER INSERTION = a hypothesis number word inside an 'insert' chunk (a number the
+  model emitted that has no reference counterpart). NOTE: a substitution non-number->number
+  is a substitution, not an insertion, so it is NOT counted here (standard S/D/I convention).
+- Validation: ref_number_words (1676) and wrong_number_words (298 base / 253 ft) reproduce
+  the committed results/*.wer_segment_report.csv exactly.
+
+--------------------------------------------------------------------------------
+RESULTS
+--------------------------------------------------------------------------------
+1. Total segments in test set ....................... 2258
+2. Segments containing >=1 number ................... 717   (31.8% of segments)
+3. Total number words in reference (all segments) ... 1676
+
+                                     wrong = sub + del      as % of 1676
+4. Numbers recognized wrongly  BASELINE ..  298             17.78%
+5. Numbers recognized wrongly  FINETUNE ..  253             15.10%
+   -> fine-tune fixes 45 of the 298 baseline number errors  (-2.68 pts / -15.1% relative)
+
+6. Number INSERTIONS  BASELINE ...................... 114
+7. Number INSERTIONS  FINETUNE ...................... 50
+   -> fine-tune more than halves spurious number insertions (-64 / -56.1% relative)
+
+--------------------------------------------------------------------------------
+READ
+--------------------------------------------------------------------------------
+On the 1676 spoken numbers in the test references, the base model mis-recognizes 17.78%
+(substituted or deleted); the fine-tuned model (no LM) drops that to 15.10%. Separately,
+the base model hallucinates 114 numbers that were never spoken; the fine-tune cuts that to
+50. So fine-tuning improves BOTH number recall (fewer wrong/dropped numbers) AND number
+precision (far fewer inserted numbers).
+
+Reproduce: .venv-nemo/bin/python -m asrpipe.reports.number_recognition \
+             --exps finaltestpadded_parakeetctc0.6b_base finaltestpadded_parakeetctc0.6b_ft
+(reads results/finaltestpadded_parakeetctc0.6b_{base,ft}.csv)
+================================================================================

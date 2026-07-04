@@ -1,0 +1,21 @@
+experiment : file016-postresync_parakeetrnnt1.1b_resyncexpt
+model      : nvidia/parakeet-rnnt-1.1b  (base)
+             base pretrained (NGC/HF)
+             revision=eb4243f55e927ce6b33c7d5da3286053545bf25d
+data       : /tmp/claude-0/-workspace/855025c7-378b-489b-b30f-ff48094d8bbb/scratchpad/file016_postresync.jsonl
+             file_016 post-resync speaker segments (2551, all speakers; unpadded, unfiltered) vs all-speakers baselineexpt1
+             utterances=2551  duration=148.38 min  md5=31a778239d885f3ff1cc97c505912f55
+             padded=False (pad_s=0.0)  conf_filter_threshold=None  observed_avg_score=[0.1573,0.9633]
+mode       : streaming=False  vad_applied=False
+hyperparams: decoding=greedy_batch  batch_size=32  workers=8  normalizer=asrpipe.common.wer.normalize (lowercase, strip to [a-z0-9 ], collapse ws; word-level Levenshtein)
+scoring    : utterances=2551  scored=2551  empty_ref=0  empty_hyp=16
+compute    : NVIDIA RTX A4500 (19.7GB)  cuda=12.8  torch=2.8.0+cu128  nemo=2.7.3  driver=550.127.05
+code       : git 3f2f06bbec7444829e36937a3a2675a66af0c040 (dirty=True)
+             script=/workspace/code2/src/asrpipe/asr/eval.py
+timing     : load=21.7s  decode=135.0s  total=156.7s  rtfx=65.9
+
+CORPUS WER : 18.89%
+mean utt   : 22.98%
+
+reproduce  :
+  .venv-nemo/bin/python -m asrpipe.asr.eval --manifest /tmp/claude-0/-workspace/855025c7-378b-489b-b30f-ff48094d8bbb/scratchpad/file016_postresync.jsonl --model nvidia/parakeet-rnnt-1.1b --exp-name file016-postresync_parakeetrnnt1.1b_resyncexpt --batch-size 32 --data-description 'file_016 post-resync speaker segments (2551, all speakers; unpadded, unfiltered) vs all-speakers baselineexpt1'

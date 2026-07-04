@@ -1,0 +1,226 @@
+================================================================================
+RE-SYNC FIX  —  localization drift in repetitive reference text
+================================================================================
+Status : IMPLEMENTED + ROLLED OUT 2026-07-02 — src/asrpipe/align/resync.py (opt-in --apply).
+         Corpus --apply now COMPLETE across all 9 drift files (original 8
+         004/005/007/012/014/018/020/024 + file_016 from the coverage check; 015
+         quarantined as confirmed bad audio). Decoded before/after verifies the fix (§9).
+         Padded-test CORPUS WER: ctc-0.6b 22.56% / rnnt-1.1b 19.56%. Label export DONE +
+         pipeline integration DONE (auto S4.5 in run_pipeline.sh/run_rp6.sh), 2026-07-02.
+         REMAINING: none engineering (optional file_018 non-drift spot-check) — see §9.
+Owner  : alignment pipeline (S4/S5).
+Scope  : add a new S4.5 "re-sync" corrective stage between pass-1 (align_p1) and
+         pass-2 (align_p2) that re-localizes chunks whose alignment has drifted.
+Track  : this file is the running record of the problem + the code change. Append a
+         dated entry to the CHANGE LOG (§8) with every step.
+
+Related : docs/algorithm-notes/01-anchor-matching.md (the matcher this fixes),
+          docs/algorithm-notes/00-why-this-architecture.md,
+          scripts/chunk_wer_pattern.py (the detector used to find the drift),
+          experiment all-speakers_parakeetrnnt1.1b_baselineexpt1 (per-file WER).
+
+--------------------------------------------------------------------------------
+1. PROBLEM (one line)
+--------------------------------------------------------------------------------
+On some files, a long run of chunks is localized to the WRONG span of the reference
+transcript. The audio is fine and the ASR is clean, but the sliding-window matcher
+places each chunk ~tens-to-hundreds of words away from where its words actually are
+in the reference, so every chunk in the run gets a near-total word mismatch.
+
+The failure is a LOCALIZATION drift, NOT bad audio and NOT a missing transcript.
+
+--------------------------------------------------------------------------------
+2. WHY IT HAPPENS (root cause)
+--------------------------------------------------------------------------------
+Pass-1 (align_p1 + matcher.py) localizes each chunk in the reference by sliding an
+ASR hypothesis over a search window and scoring edit distance, with a bonus for
+matching UNIQUE n-gram "anchors" (n-grams that occur exactly once in the window).
+See docs/algorithm-notes/01-anchor-matching.md.
+
+Two things combine to break this:
+
+  (a) REPETITIVE REFERENCE TEXT. In a long passage that keeps repeating the same
+      phrasing (e.g. a legal argument saying "arbitration agreement / clause /
+      contract" over and over), there are almost NO unique n-grams. The anchor
+      mechanism has nothing distinctive to lock onto, so several candidate windows
+      score almost identically and the matcher picks a nearby-but-wrong one.
+
+  (b) CASCADING expected_pos. The matcher seeds each chunk's search window from the
+      previous chunk's committed position (expected_pos / committed_pos). Once one
+      chunk slips, the next chunk starts from the wrong place, and the repetitive
+      text gives it nothing to re-sync on — so the error propagates forward and the
+      whole region stays misaligned until the text becomes distinctive again.
+
+Net: a clean head, a long drifted middle, and (often) a clean tail once the
+reference stops repeating and unique anchors reappear.
+
+--------------------------------------------------------------------------------
+3. HOW WE CAUGHT IT  (investigation trail, on audio_file_004)
+--------------------------------------------------------------------------------
+audio_file_004 has a 0.4-filtered file-level WER of 75.7% (vs ~13-23% for clean
+files), so we drilled in.
+
+  Step 1 — chunk-wise proxy-WER.
+    We used ref_match.norm_edit_dist (stored per chunk by pass-1: the normalized
+    edit distance between the winning ASR hypothesis and the matched reference
+    window; 0 = perfect, ~0.7 = garbage). No GPU needed. Tool: scripts/chunk_wer_pattern.py.
+
+  Step 2 — the pattern (chunk_wer_pattern.py on file_004, 486 chunks):
+      region  chunks     time (min)        mean proxy-WER
+      low       1..35      0.1 .. 17.1        0.169   (good)
+      high     36..454    17.1 .. 303.6       0.682   (BAD)
+      low     455..486   303.6 .. 317.4       0.134   (good)
+    -> SUDDEN INCREASE at t = 1024.5 s (17.1 min), chunk 36. Good head, bad middle
+       (~4.7 h), good tail (~14 min). So the 75.7% is NOT uniform.
+
+  Step 3 — direct ASR-vs-reference comparison for chunk 36 (proxy-WER 0.688,
+           matched to reference words 2011-2062):
+      ASR  : "...come to an ARBITRATION AGREEMENT may be in the form of a CLAUSE in
+              the contract ... the contract is a MOTHER AGREEMENT so to speak and a
+              clause is EMBEDDED IN IT"
+      REF  : "not so even if it's not contractual ... a QUASI CONTRACT under the
+              CHAPTER NINE of the contract act ... a simple VANILLA CLAUSE where
+              there's an"
+    The ASR is FLUENT, COHERENT legal English -> the audio is intelligible and the
+    ASR works. But the matched reference span is a DIFFERENT passage. So the problem
+    is placement, not audio.
+
+  Step 4 — the chunk's real words ARE in the reference, just offset:
+      "separate agreement" -> ref 2126        matched window: 2011-2062
+      "mother agreement"   -> ref 2139 (unique in the whole 28,358-word transcript)
+      "embedded in it"     -> ref 2148
+    The true content sits ~2126-2148; the window was placed ~64-130 words too early.
+    Meanwhile "arbitration agreement" occurs 8+ times (ref 1249,1412,1661,1747,1774,
+    1838,1848,1881...) and "arbitration" 20+ times in that span -> confirmed the
+    repetitive-text root cause: no unique anchor, so the window drifts.
+
+  Step 5 — prototype re-localization (n-gram anchor VOTING) to confirm recoverability:
+    Every shared hyp<->ref n-gram (N=5) votes for chunk_start = ref_pos - hyp_pos;
+    rarer n-grams get higher weight (1/occurrences). Result on the 399 bad chunks:
+      -> 399/399 (100%) improved; proxy-WER falls from ~0.90-0.97 to ~0.00-0.15.
+    The content is recoverable: this is a solvable localization problem.
+
+--------------------------------------------------------------------------------
+4. THE CHANGING-OFFSET BEHAVIOUR  (why a global shift won't work)
+--------------------------------------------------------------------------------
+The offset (voted_true_start - placed_start) is LARGE and VARIABLE across the bad
+region — it grows, then recovers:
+
+      chunk    36     38     75    125    200    250    275    400    450
+      t (min) 17.1   17.9   35.5   74.5  114.4  138.4  218.9  271.7  301.3
+      offset  +89   +181   +368   +779  +1084  +1354  +1613  +1113   +278
+
+    region stats: median +1036, mean +992, stdev 651 words.
+    (A raw linear fit reads ~flat only because the curve ramps UP then DOWN; it is
+     NOT constant.)
+
+Implications for the fix:
+  - A single global shift is WRONG — the offset changes chunk to chunk.
+    => re-sync must RE-LOCALIZE PER CHUNK (anchor voting), not shift.
+  - Voting can occasionally misfire (one chunk voted offset -8867, a spurious peak
+    on a common phrase).
+    => a MONOTONICITY GUARD is required: a re-localized position must lie between the
+       confident neighbours bounding the drift run (last-good end .. next-good start),
+       which rejects wild votes and preserves chunk order.
+  - The region is bounded by CONFIDENT chunks on both sides (chunk 35 good, chunk 455
+    good). Those "islands of confidence" give the bracket to constrain the search.
+
+--------------------------------------------------------------------------------
+5. THE FIX  (Option A — additive S4.5 re-sync stage)
+--------------------------------------------------------------------------------
+Placement:  S4 pass-1 -> [S4.5 RE-SYNC] -> S5 pass-2 -> S6 tail-trim -> S7 head-trim
+Module   :  src/asrpipe/align/resync.py   (new)
+Hook     :  opt-in flag (e.g. --resync), OFF by default so the verified RP6 path and
+            byte-identical reproduction for good files are preserved. Only chunks in a
+            detected drift run are ever modified.
+
+Algorithm (per file):
+  1. DETECT drift runs. Compute smoothed norm_edit_dist per chunk (rolling mean,
+     w=3). Hysteresis: enter "high" at >= 0.55, return to "low" at <= 0.45. A drift
+     run = a high run bracketed by confident (low) chunks. Trigger definition of
+     "WER suddenly increasing": smoothed nd > max(0.45 absolute, running-median of
+     recent confident chunks + delta), sustained over a run (single-chunk spikes on
+     genuinely hard audio are NOT re-localized).
+  2. RE-LOCALIZE each drifted chunk by n-gram anchor voting (N=5, weight
+     1/occurrences), CONSTRAINED to [last_good_end .. next_good_start] (monotonicity
+     guard). Accept the new position only if it lowers norm_edit_dist by a margin.
+  3. RE-ALIGN: silence-masked wav2vec2 forced alignment on the corrected
+     matched_text; rewrite the chunk JSON (matched_text, word_start_idx,
+     word_end_idx, words, norm_edit_dist) and tag the chunk resynced=true.
+  4. Chunks that cannot be recovered (no confident vote within the bracket) are left
+     as-is and flagged resync_failed=true for review.
+
+Downstream stages (pass-2 gap-fill, tail/head trim) then run normally on the
+corrected localization.
+
+--------------------------------------------------------------------------------
+6. WHY THIS PLACEMENT (between pass-1 and pass-2, not in pass-2 / trims)
+--------------------------------------------------------------------------------
+Localization is DECIDED in pass-1. Pass-2 (gap-fill) and tail/head-trim all TRUST
+the pass-1 span — they refine EDGES and TIMINGS; none can RELOCATE a chunk:
+  - pass-2 gap-fill would pull the wrong extra reference words (extending an already
+    wrong span);
+  - tail/head-trim only remove low-confidence edges — they cannot fix a wholesale
+    misalignment.
+Therefore the localization must be corrected BEFORE pass-2 runs. S4.5 is the earliest
+point where the full per-file nd profile is available to detect a drift run.
+
+(Future option B, deferred: fold the same anchor-voting call into pass-1 itself as a
+ third localization tier triggered when best-of-two nd is high, to stop the cascade at
+ its source. Rejected for now because it changes the verified pass-1 for all files and
+ breaks RP6 byte-identity. Revisit after S4.5 is proven.)
+
+--------------------------------------------------------------------------------
+7. VALIDATION PLAN
+--------------------------------------------------------------------------------
+  - Re-run scripts/chunk_wer_pattern.py on file_004 AFTER re-sync: the 17.1-303.6 min
+    region should drop from mean proxy-WER ~0.68 toward the ~0.15 baseline.
+  - Spot-check chunk 36: matched span should move from ref 2011-2062 to ~2126-2148
+    and its words should match the ASR ("mother agreement", "embedded in it").
+  - Confirm good files are UNCHANGED with --resync on (no drift runs detected ->
+    zero chunks modified -> byte-identical to the pre-resync outputs).
+  - Re-run the segment/eval track on file_004 to measure the real WER gain (decoded,
+    not proxy) and update the experiment log.
+  - Check whether files 012/014 (also high file-WER) fail the same repetitive-text
+    way (recoverable) vs the bad-audio way (not recoverable) before deciding RP7
+    quarantine vs keep.
+
+--------------------------------------------------------------------------------
+8. MULTI-FILE DRIFT TRIAGE  (report-mode discriminator, 2026-07-02)
+--------------------------------------------------------------------------------
+Running resync.py in REPORT mode (CPU, non-destructive) across every high-WER file
+turns it into a DRIFT-vs-BAD-AUDIO discriminator:
+  - high resync% + big nd drop -> localization DRIFT (recoverable by re-sync);
+  - ~0% resync% + FLAT nd      -> BAD AUDIO (ASR hypotheses match nothing in the
+                                  reference, so anchor voting can't place them).
+
+Results (`python -m asrpipe.align.resync <f> <f+1>`; nd = ref_match.norm_edit_dist
+over the detected drift chunks; file-WER = rnnt-1.1b, avg_score>=0.4, per file):
+
+  file   fileWER  drift_ch  resynced  recover%   nd:before->after   verdict
+  005     51.8%      229       217       95%      0.684 -> 0.212    DRIFT (recoverable)
+  014     60.4%      292       267       91%      0.669 -> 0.224    DRIFT (recoverable)
+  004     75.7%      419       381       91%      0.687 -> 0.250    DRIFT (validated)
+  020     90.7%      405       362       89%      0.691 -> 0.320    DRIFT (see note)
+  007     32.4%   170/517      142       84%      0.680 -> 0.261    DRIFT (localized section)
+  012     74.7%      388       312       80%      0.695 -> 0.270    DRIFT (recoverable)
+  024     36.7%   233/543      150       64%      0.678 -> 0.363    MIXED (partial)
+  018     42.8%       56        32       57%      0.683 -> 0.451    MIXED (partial)
+  015     95.1%   568/568        1        0%      0.698 -> 0.697    BAD AUDIO (quarantine)
+
+Key findings:
+  - file_015 is the ONLY true bad-audio file: all 568 chunks flag high-nd but resync
+    recovers 1 and nd is unchanged (0.698->0.697). The ASR is genuinely unintelligible
+    -> quarantine outright; re-sync cannot help.
+  - file_020 is REVISED from "bad audio" to largely-recoverable drift (362/405, 89%).
+    Its high rnnt WER is consistent with WRONG LABELS from drift (the model decodes the
+    audio fine; it was scored against a mislocalized reference), not bad audio. Residual
+    nd (0.320, vs 004's 0.250) suggests drift + some genuinely hard portions -> verify
+    with a chunk-level ASR-vs-ref spot-check + --apply re-eval.
+  - MIXED files (024/018, and 007 by fraction) drift only over PART of the file, so a
+    lower recover% here means "smaller drifted region", not "less fixable".
+
+CAVEAT: this is LOCALIZATION (proxy) recoverability. The decoded-WER gain still needs
+--apply + re-eval (the file_004 re-measure). Per-file detail:
+data/review/<file>_resync_report.txt.
+

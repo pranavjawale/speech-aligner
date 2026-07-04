@@ -1,0 +1,32 @@
+comparison : finaltestpadded_ctc0.6b_ft_vs_base
+baseline   : finaltestpadded_parakeetctc0.6b_base
+experiments: finaltestpadded_parakeetctc0.6b_ft, finaltestpadded_parakeetctc0.6b_base
+WER comparable : False
+time comparable: True
+caveats:
+  - same_test_data differs: {'finaltestpadded_parakeetctc0.6b_ft': '939a4d05903f49f99fe6f6388368f729', 'finaltestpadded_parakeetctc0.6b_base': '74e739d177ed6a0bf4c650c08cc0b1b5'}
+
+rank  corpus_wer   mean_utt   Δvsbase  experiment
+   1      18.27%     24.28%     -5.12  finaltestpadded_parakeetctc0.6b_ft
+   2      23.39%     32.41%     +0.00  finaltestpadded_parakeetctc0.6b_base
+
+md5 note   : the "WER comparable: False" / same_test_data caveat above is a FALSE ALARM.
+             The two runs' manifests differ ONLY because the segment dir was renamed
+             (data/speaker-segments-werstrat-padded -> ...-legal2023_38hrs-padded). Verified
+             byte-identical content: 2258/2258 segment basenames match, 0 ref & 0 duration
+             diffs. The 23.39% -> 18.27% comparison is valid.
+
+WER variants (per docs/wer-spec.txt; corpus WER = sum(S+D+I)/sum(ref words), 2258 padded-test segs):
+  #  variant                                          base      ft     Δ(ft-base)   rel
+  1  usual WER                                       23.39%   18.27%    -5.12     -21.9%
+  2  ignore plural-only (s) substitutions            23.00%   17.79%    -5.21     -22.7%
+  3  ignore 1-word reference sentences               23.18%   18.12%    -5.06     -21.8%
+  4  ignore 1-word refs + plural (s) substitutions   22.80%   17.64%    -5.16     -22.6%
+  5  numbers-only refs, then ignore 1-word + plural  22.46%   16.93%    -5.53     -24.6%
+  (variant 5 = the 715 number-containing refs; the fine-tune helps number-heavy sentences most.)
+  detail: results/finaltestpadded_parakeetctc0.6b_{base,ft}.wer_segment_report.csv
+          results/finaltestpadded_parakeetctc0.6b_{base,ft}.wer_variants_report.txt
+  regen : .venv-nemo/bin/python -m asrpipe.reports.wer_segment_report --exp-name <exp>
+
+reproduce  :
+  python -m asrpipe.reports.compare_experiments --name finaltestpadded_ctc0.6b_ft_vs_base --exps finaltestpadded_parakeetctc0.6b_ft finaltestpadded_parakeetctc0.6b_base --baseline finaltestpadded_parakeetctc0.6b_base

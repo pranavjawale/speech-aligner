@@ -1,0 +1,14 @@
+comparison : legal2023_38hrs_test_padded_4models
+baseline   : finaltestpadded_parakeetctc0.6b_base
+experiments: finaltestpadded_parakeetctc0.6b_base, finaltestpadded_parakeetctc1.1b_base, finaltestpadded_parakeetrnnt0.6b_base, finaltestpadded_parakeetrnnt1.1b_base
+WER comparable : True
+time comparable: True
+
+rank  corpus_wer   mean_utt   Δvsbase  experiment
+   1      20.03%     27.99%     -3.36  finaltestpadded_parakeetrnnt1.1b_base
+   2      21.03%     28.45%     -2.35  finaltestpadded_parakeetrnnt0.6b_base
+   3      23.39%     32.41%     +0.00  finaltestpadded_parakeetctc0.6b_base
+   4      23.54%     32.59%     +0.15  finaltestpadded_parakeetctc1.1b_base
+
+reproduce  :
+  python -m asrpipe.reports.compare_experiments --name legal2023_38hrs_test_padded_4models --exps finaltestpadded_parakeetctc0.6b_base finaltestpadded_parakeetctc1.1b_base finaltestpadded_parakeetrnnt0.6b_base finaltestpadded_parakeetrnnt1.1b_base --baseline finaltestpadded_parakeetctc0.6b_base

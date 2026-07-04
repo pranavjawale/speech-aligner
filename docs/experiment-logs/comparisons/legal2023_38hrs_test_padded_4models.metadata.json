@@ -1,0 +1,190 @@
+{
+  "comparison_name": "legal2023_38hrs_test_padded_4models",
+  "finished_at": "2026-07-03 07:23:34 UTC",
+  "baseline": "finaltestpadded_parakeetctc0.6b_base",
+  "experiments": [
+    {
+      "name": "finaltestpadded_parakeetctc0.6b_base",
+      "metadata_path": "/workspace/code2/docs/experiment-logs/finaltestpadded_parakeetctc0.6b_base.metadata.json",
+      "metadata_md5": "41ba656361ce72391a7f83dfe292b939"
+    },
+    {
+      "name": "finaltestpadded_parakeetctc1.1b_base",
+      "metadata_path": "/workspace/code2/docs/experiment-logs/finaltestpadded_parakeetctc1.1b_base.metadata.json",
+      "metadata_md5": "1128a2b779f2e6990e32ad9d79b2ab2d"
+    },
+    {
+      "name": "finaltestpadded_parakeetrnnt0.6b_base",
+      "metadata_path": "/workspace/code2/docs/experiment-logs/finaltestpadded_parakeetrnnt0.6b_base.metadata.json",
+      "metadata_md5": "5c2b8e4aa5ea109f6f10056e9f854923"
+    },
+    {
+      "name": "finaltestpadded_parakeetrnnt1.1b_base",
+      "metadata_path": "/workspace/code2/docs/experiment-logs/finaltestpadded_parakeetrnnt1.1b_base.metadata.json",
+      "metadata_md5": "47863ece12292057d6577a77f044d987"
+    }
+  ],
+  "comparability": {
+    "wer_comparable": true,
+    "time_comparable": true,
+    "checks": {
+      "same_test_data": {
+        "same": true,
+        "values": {
+          "finaltestpadded_parakeetctc0.6b_base": "74e739d177ed6a0bf4c650c08cc0b1b5",
+          "finaltestpadded_parakeetctc1.1b_base": "74e739d177ed6a0bf4c650c08cc0b1b5",
+          "finaltestpadded_parakeetrnnt0.6b_base": "74e739d177ed6a0bf4c650c08cc0b1b5",
+          "finaltestpadded_parakeetrnnt1.1b_base": "74e739d177ed6a0bf4c650c08cc0b1b5"
+        }
+      },
+      "same_wer_method": {
+        "same": true,
+        "values": {
+          "finaltestpadded_parakeetctc0.6b_base": "asrpipe.common.wer.normalize (lowercase, strip to [a-z0-9 ], collapse ws; word-level Levenshtein)",
+          "finaltestpadded_parakeetctc1.1b_base": "asrpipe.common.wer.normalize (lowercase, strip to [a-z0-9 ], collapse ws; word-level Levenshtein)",
+          "finaltestpadded_parakeetrnnt0.6b_base": "asrpipe.common.wer.normalize (lowercase, strip to [a-z0-9 ], collapse ws; word-level Levenshtein)",
+          "finaltestpadded_parakeetrnnt1.1b_base": "asrpipe.common.wer.normalize (lowercase, strip to [a-z0-9 ], collapse ws; word-level Levenshtein)"
+        }
+      },
+      "same_filtering": {
+        "same": true,
+        "values": {
+          "finaltestpadded_parakeetctc0.6b_base": null,
+          "finaltestpadded_parakeetctc1.1b_base": null,
+          "finaltestpadded_parakeetrnnt0.6b_base": null,
+          "finaltestpadded_parakeetrnnt1.1b_base": null
+        }
+      },
+      "same_padding": {
+        "same": true,
+        "values": {
+          "finaltestpadded_parakeetctc0.6b_base": true,
+          "finaltestpadded_parakeetctc1.1b_base": true,
+          "finaltestpadded_parakeetrnnt0.6b_base": true,
+          "finaltestpadded_parakeetrnnt1.1b_base": true
+        }
+      },
+      "same_gpu": {
+        "same": true,
+        "values": {
+          "finaltestpadded_parakeetctc0.6b_base": "NVIDIA RTX A4500",
+          "finaltestpadded_parakeetctc1.1b_base": "NVIDIA RTX A4500",
+          "finaltestpadded_parakeetrnnt0.6b_base": "NVIDIA RTX A4500",
+          "finaltestpadded_parakeetrnnt1.1b_base": "NVIDIA RTX A4500"
+        }
+      }
+    },
+    "reasons": []
+  },
+  "git": {
+    "commit": "0f1881906ab9a33c89b62400fed14ae0e0b2b7ef",
+    "dirty": true
+  },
+  "outputs": {
+    "table_csv": "/workspace/code2/docs/experiment-logs/comparisons/legal2023_38hrs_test_padded_4models.csv",
+    "per_speaker_csv": "/workspace/code2/docs/experiment-logs/comparisons/legal2023_38hrs_test_padded_4models.per_speaker.csv"
+  },
+  "reproduce_command": "python -m asrpipe.reports.compare_experiments --name legal2023_38hrs_test_padded_4models --exps finaltestpadded_parakeetctc0.6b_base finaltestpadded_parakeetctc1.1b_base finaltestpadded_parakeetrnnt0.6b_base finaltestpadded_parakeetrnnt1.1b_base --baseline finaltestpadded_parakeetctc0.6b_base",
+  "rows": [
+    {
+      "experiment": "finaltestpadded_parakeetctc0.6b_base",
+      "model": "nvidia/parakeet-ctc-0.6b",
+      "is_finetuned": false,
+      "model_revision": "ad09ba1cc62743fbc9814de5d2016fca9096485a",
+      "test_data": "data/asr/splits-legal2023_38hrs-padded/test.jsonl",
+      "test_data_md5": "74e739d177ed6a0bf4c650c08cc0b1b5",
+      "utterances": 2258,
+      "scored": 2258,
+      "empty_ref": 0,
+      "empty_hyp": 2,
+      "padded": true,
+      "conf_filter_threshold": null,
+      "normalizer": "asrpipe.common.wer.normalize (lowercase, strip to [a-z0-9 ], collapse ws; word-level Levenshtein)",
+      "decoding": "greedy_batch",
+      "batch_size": 32,
+      "gpu": "NVIDIA RTX A4500",
+      "decode_s": 84.4,
+      "total_s": 97.1,
+      "rtfx": 126.7,
+      "corpus_wer": 0.23387587193704168,
+      "mean_utt_wer": 0.3241092755250948,
+      "delta_corpus_vs_baseline": 0.0,
+      "rank_by_corpus_wer": 3
+    },
+    {
+      "experiment": "finaltestpadded_parakeetctc1.1b_base",
+      "model": "nvidia/parakeet-ctc-1.1b",
+      "is_finetuned": false,
+      "model_revision": "a707e818195cb97c8f7da2fc36b221a29f69a5db",
+      "test_data": "data/asr/splits-legal2023_38hrs-padded/test.jsonl",
+      "test_data_md5": "74e739d177ed6a0bf4c650c08cc0b1b5",
+      "utterances": 2258,
+      "scored": 2258,
+      "empty_ref": 0,
+      "empty_hyp": 1,
+      "padded": true,
+      "conf_filter_threshold": null,
+      "normalizer": "asrpipe.common.wer.normalize (lowercase, strip to [a-z0-9 ], collapse ws; word-level Levenshtein)",
+      "decoding": "greedy_batch",
+      "batch_size": 32,
+      "gpu": "NVIDIA RTX A4500",
+      "decode_s": 122.7,
+      "total_s": 143.0,
+      "rtfx": 87.2,
+      "corpus_wer": 0.235414058307995,
+      "mean_utt_wer": 0.32590256873661094,
+      "delta_corpus_vs_baseline": 0.001538,
+      "rank_by_corpus_wer": 4
+    },
+    {
+      "experiment": "finaltestpadded_parakeetrnnt0.6b_base",
+      "model": "nvidia/parakeet-rnnt-0.6b",
+      "is_finetuned": false,
+      "model_revision": "f88ebc5727f5ec5e9f214445b5726c8932dc8f2b",
+      "test_data": "data/asr/splits-legal2023_38hrs-padded/test.jsonl",
+      "test_data_md5": "74e739d177ed6a0bf4c650c08cc0b1b5",
+      "utterances": 2258,
+      "scored": 2258,
+      "empty_ref": 0,
+      "empty_hyp": 29,
+      "padded": true,
+      "conf_filter_threshold": null,
+      "normalizer": "asrpipe.common.wer.normalize (lowercase, strip to [a-z0-9 ], collapse ws; word-level Levenshtein)",
+      "decoding": "greedy_batch",
+      "batch_size": 32,
+      "gpu": "NVIDIA RTX A4500",
+      "decode_s": 89.9,
+      "total_s": 102.9,
+      "rtfx": 119.1,
+      "corpus_wer": 0.21033804328384903,
+      "mean_utt_wer": 0.28449913886082434,
+      "delta_corpus_vs_baseline": -0.023538,
+      "rank_by_corpus_wer": 2
+    },
+    {
+      "experiment": "finaltestpadded_parakeetrnnt1.1b_base",
+      "model": "nvidia/parakeet-rnnt-1.1b",
+      "is_finetuned": false,
+      "model_revision": "eb4243f55e927ce6b33c7d5da3286053545bf25d",
+      "test_data": "data/asr/splits-legal2023_38hrs-padded/test.jsonl",
+      "test_data_md5": "74e739d177ed6a0bf4c650c08cc0b1b5",
+      "utterances": 2258,
+      "scored": 2258,
+      "empty_ref": 0,
+      "empty_hyp": 20,
+      "padded": true,
+      "conf_filter_threshold": null,
+      "normalizer": "asrpipe.common.wer.normalize (lowercase, strip to [a-z0-9 ], collapse ws; word-level Levenshtein)",
+      "decoding": "greedy_batch",
+      "batch_size": 32,
+      "gpu": "NVIDIA RTX A4500",
+      "decode_s": 127.8,
+      "total_s": 149.9,
+      "rtfx": 83.7,
+      "corpus_wer": 0.20025040243248077,
+      "mean_utt_wer": 0.27991644848851954,
+      "delta_corpus_vs_baseline": -0.033625,
+      "rank_by_corpus_wer": 1
+    }
+  ]
+}

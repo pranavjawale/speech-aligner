@@ -1,0 +1,122 @@
+{
+  "comparison_name": "finaltestpadded_ctc0.6b_ft_vs_base",
+  "finished_at": "2026-07-03 14:56:31 UTC",
+  "baseline": "finaltestpadded_parakeetctc0.6b_base",
+  "experiments": [
+    {
+      "name": "finaltestpadded_parakeetctc0.6b_ft",
+      "metadata_path": "/workspace/code2/docs/experiment-logs/finaltestpadded_parakeetctc0.6b_ft.metadata.json",
+      "metadata_md5": "ff5aa8d5e4a57d4149bfeed2ce5e24d6"
+    },
+    {
+      "name": "finaltestpadded_parakeetctc0.6b_base",
+      "metadata_path": "/workspace/code2/docs/experiment-logs/finaltestpadded_parakeetctc0.6b_base.metadata.json",
+      "metadata_md5": "41ba656361ce72391a7f83dfe292b939"
+    }
+  ],
+  "comparability": {
+    "wer_comparable": false,
+    "time_comparable": true,
+    "checks": {
+      "same_test_data": {
+        "same": false,
+        "values": {
+          "finaltestpadded_parakeetctc0.6b_ft": "939a4d05903f49f99fe6f6388368f729",
+          "finaltestpadded_parakeetctc0.6b_base": "74e739d177ed6a0bf4c650c08cc0b1b5"
+        }
+      },
+      "same_wer_method": {
+        "same": true,
+        "values": {
+          "finaltestpadded_parakeetctc0.6b_ft": "asrpipe.common.wer.normalize (lowercase, strip to [a-z0-9 ], collapse ws; word-level Levenshtein)",
+          "finaltestpadded_parakeetctc0.6b_base": "asrpipe.common.wer.normalize (lowercase, strip to [a-z0-9 ], collapse ws; word-level Levenshtein)"
+        }
+      },
+      "same_filtering": {
+        "same": true,
+        "values": {
+          "finaltestpadded_parakeetctc0.6b_ft": null,
+          "finaltestpadded_parakeetctc0.6b_base": null
+        }
+      },
+      "same_padding": {
+        "same": true,
+        "values": {
+          "finaltestpadded_parakeetctc0.6b_ft": true,
+          "finaltestpadded_parakeetctc0.6b_base": true
+        }
+      },
+      "same_gpu": {
+        "same": true,
+        "values": {
+          "finaltestpadded_parakeetctc0.6b_ft": "NVIDIA RTX A4500",
+          "finaltestpadded_parakeetctc0.6b_base": "NVIDIA RTX A4500"
+        }
+      }
+    },
+    "reasons": [
+      "same_test_data differs: {'finaltestpadded_parakeetctc0.6b_ft': '939a4d05903f49f99fe6f6388368f729', 'finaltestpadded_parakeetctc0.6b_base': '74e739d177ed6a0bf4c650c08cc0b1b5'}"
+    ]
+  },
+  "git": {
+    "commit": "8b4de168372b5ed53a805b6f68a1190b0c9dcbe9",
+    "dirty": true
+  },
+  "outputs": {
+    "table_csv": "/workspace/code2/docs/experiment-logs/comparisons/finaltestpadded_ctc0.6b_ft_vs_base.csv",
+    "per_speaker_csv": null
+  },
+  "reproduce_command": "python -m asrpipe.reports.compare_experiments --name finaltestpadded_ctc0.6b_ft_vs_base --exps finaltestpadded_parakeetctc0.6b_ft finaltestpadded_parakeetctc0.6b_base --baseline finaltestpadded_parakeetctc0.6b_base",
+  "rows": [
+    {
+      "experiment": "finaltestpadded_parakeetctc0.6b_ft",
+      "model": "exp/finetune/parakeet-ctc-0.6b_legal2023_38hrs_ft/checkpoints/best_val_wer0.1359_ep14.nemo",
+      "is_finetuned": true,
+      "model_revision": null,
+      "test_data": "data/asr/splits-legal2023_38hrs-padded/test.jsonl",
+      "test_data_md5": "939a4d05903f49f99fe6f6388368f729",
+      "utterances": 2258,
+      "scored": 2258,
+      "empty_ref": 0,
+      "empty_hyp": 28,
+      "padded": true,
+      "conf_filter_threshold": null,
+      "normalizer": "asrpipe.common.wer.normalize (lowercase, strip to [a-z0-9 ], collapse ws; word-level Levenshtein)",
+      "decoding": "greedy_batch",
+      "batch_size": 32,
+      "gpu": "NVIDIA RTX A4500",
+      "decode_s": 101.2,
+      "total_s": 114.8,
+      "rtfx": 105.7,
+      "corpus_wer": 0.18268646038275801,
+      "mean_utt_wer": 0.24284220563165265,
+      "delta_corpus_vs_baseline": -0.051189,
+      "rank_by_corpus_wer": 1
+    },
+    {
+      "experiment": "finaltestpadded_parakeetctc0.6b_base",
+      "model": "nvidia/parakeet-ctc-0.6b",
+      "is_finetuned": false,
+      "model_revision": "ad09ba1cc62743fbc9814de5d2016fca9096485a",
+      "test_data": "data/asr/splits-legal2023_38hrs-padded/test.jsonl",
+      "test_data_md5": "74e739d177ed6a0bf4c650c08cc0b1b5",
+      "utterances": 2258,
+      "scored": 2258,
+      "empty_ref": 0,
+      "empty_hyp": 2,
+      "padded": true,
+      "conf_filter_threshold": null,
+      "normalizer": "asrpipe.common.wer.normalize (lowercase, strip to [a-z0-9 ], collapse ws; word-level Levenshtein)",
+      "decoding": "greedy_batch",
+      "batch_size": 32,
+      "gpu": "NVIDIA RTX A4500",
+      "decode_s": 84.4,
+      "total_s": 97.1,
+      "rtfx": 126.7,
+      "corpus_wer": 0.23387587193704168,
+      "mean_utt_wer": 0.3241092755250948,
+      "delta_corpus_vs_baseline": 0.0,
+      "rank_by_corpus_wer": 2
+    }
+  ]
+}

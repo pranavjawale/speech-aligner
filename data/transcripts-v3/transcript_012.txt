@@ -1,0 +1,1377 @@
+spk_1017:
+just to summarize my lord there are three broad reasons why your lordship should be pleased to leave the issue of determination of stamp objections to the tribunal . the first is the doctrine of separability which is housed in section seven two and seven five of the arbitration act as well as of course most prominently in section sixteen . and the question whether even if the main contract is null and void whether an arbitration agreement survives to consider that very question is directly covered by sixteen one b expressly . sixteen one a is separate . the arbitration clause is separate and sixteen one b directly covers the issue . now very briefly therefore whether the first argument is whether or not it is invalid it goes to even existence or whether it is only an irregularity and a curable defect i'll come to that later . but assuming it is the worst . it's an invalidity . even then my submission is by virtue of the doctrine of separability and competence competence which the act fully now recognizes these are issues that must be left to the arbitral tribunal and very . and i'm going to save the court's time . i'm not going to take my lords through each of the judgments but i've summarized . my revised submissions are now found in volume one b page two . and from page seven onwards of volume one b i've just extracted some of the major decisions internationally as well as ours on separability and to which of course i'm going to add one when i show it before my lords . page one of volume one b . we added last night . we've uploaded last . now my earlier submissions were in volume one . but since we made a change there's one mistake which was corrected .
+
+spk_1020:
+over here its updated submissions .
+
+spk_1017:
+updated submissions . i'm obliged .
+
+spk_1020:
+there are thirty eight pages in all ?
+
+spk_1017:
+thirty eight pages . but that's because i've extracted judgments there . so it's easier for me to read from their rather than troubling my lord to go to the actual judgment . i'll be going to the actual judgments in only two cases which are quite critical
+
+spk_1054:
+is it harbour assurance company ?
+
+spk_1017:
+yes . it starts with that .
+
+spk_1054:
+that's the queen's bench decision .
+
+spk_1017:
+that's right . it starts with that
+
+spk_1001:
+yes .
+
+spk_1017:
+if my lords just sees para nine onwards harbour assurance arbitration agreement is a self contained agreement . in it was held that it's a self contained agreement which is separable from the main contract therefore as autonomous existence in our own neochrome expressly under section sixteen your lordships have held that section sixteen accepts the concept that the main contract and the arbitration agreement form two independent contract . and then in para eighty three again the supreme court calls the arbitration agreement as second contract . redfern and hunter also speak of two separate agreements primary or main contract and a secondary contract . then if we go straight to para fourteen gary born . the arbitration agreement may exist and be substantively valid notwithstanding the nonexistence invalidity or illegality of the underlying contract and the arbitrary tribunal may and must consider challenges to the existence validity or legality of the underlying contract because such challenges do not impeach the arbitration agreement . then fiona trust . arbitration agreement must be treated as a distinct agreement and can be void or voidable only on grounds which delay directly to the arbitration agreement . these are very well settled principles . so i'm not troubling i'll just quickly go through this . my lords next page . again the validity of the arbitration agreement is not undermined as a distinct agreement . the us supreme court has also taken the same line in buckeye check cashing which your lordships have followed that despite the invalidity of the underlying agreement as a whole arbitration agreement will continue to be enforceable apart from remainder of the contract . para seventeen page eleven in ayyaswamy your lordships have held that the adjudicatory power of a tribunal remains unaffected by any objection to the main contract . and in vidya drolia which i have not mentioned here but which i noticed during the hearing which i'll be showing . again paras one seventy three one seventy four expressly say arbitration agreement is a separate contract in itself . the singapore position which i have set out from paras nineteen to twenty two . twenty three really says the idea is to insulate the arbitration agreement even though it may be integrated into a main contract from objections as to invalidity of the main contract . so the law of separability is very very well entrenched in our law . and my lords will notice that both in ayyaswamy and in vidya drolia separability is spoken of as a concept which actually permeates the arbitration act . it goes beyond just matters where there is a challenge under section sixteen to a decision of an arbitral tribunal . so although the legal fiction if i may call it that in sixteen is for the purpose of giving the arbitral tribunal jurisdiction to decide its own jurisdiction it is not restricted to that . it's a wider principle recognized under our law and under section seven two and seven five independently of sixteen . now the only reason i say that is that with this squarely any such issues whether we call them existential issues whether we call them only irregularities or curable defects must in the first instance go to the tribunal . and your lordships are always there at the stage of the award or the order whether under thirty seven or thirty four to have a look at how the tribunal has exercised this jurisdiction . i have also set out at page fourteen of my submission section five of the indian stamp act . this is really a matter ultimately that the tribunal will go on to but just for completeness . section five of the indian stamp act recognizes a position that a single instrument may pertain to several distinct matters and in which case according to the stamp act .
+
+spk_1001:
+this is a second point you are making .
+
+spk_1017:
+it's really part of this separability point . if it pertains to distinct matters the aggregate of the stamp duties on each of those distinct matters must be worked out . now if an arbitration agreement is separable then perhaps a tribunal may be persuaded to hold that there must be separate stamp duty and all . in other words separately on the arbitration agreement which is what your lordships have held in n n global under the residuary clause as well as substantively on the value of the main agreement . this of course is a matter for the tribunal . i'm not suggesting my lords should decide this . my lords have made it clear your lordships are not deciding chargeability . but i'm only placing it before my lords because this is how the issue will come to be decided and at para twenty nine of my submissions i have referred to your lordship's judgment in chief controlling revenue authority which affirms a passage from halsbury in relation to section five of the indian stamp act that the instrument containing or relating to several distinct matters is to be separately charged as if it were a separate instrument . so even under the stamp act there is some concept of separability . now it may be that a tribunal takes the view that no stamp is payable only on the whole . or it may be that it takes the view that is payable separately under eight that's a matter of chargeability . but that decision in my respectful submission must be by the tribunal .
+
+spk_1022:
+it's the forum which is an issue whether it will happen will not happen
+
+spk_1017:
+precisely . precisely .
+
+spk_1022:
+the whole purpose is to shift the forum to the arbitrator so that arbitration proceedings don't get delayed at the threshold . i could go there and then you argue it out . if something is a consequence it is there . whether caught in the eleven six is the only issue really which we are touching
+
+spk_1017:
+that's it . now for that purpose i want to show my lords two judgments which my lords have seen but i just want to emphasize certain different aspects of them . the first is my lord's decision in the ayyaswamy case which my lords will find in volume five a at page one three three six . there are three important principles laid down here which i want to just press into service . thirteen thirty six of volume five a . this is twenty sixteen ten scc three eighty six . my lords would kindly turn to page one three five nine para thirty three . para thirty three says section sixteen empowers the arbitral tribunal to rule upon its own jurisdiction including ruling on any objection with respect to the existence or validity of an arbitration agreement . very important because existence even assuming stamp goes to existence it's housed with the arbitral tribunal under sixteen . sixteen one b stipulates that a decision by the arbitral tribunal that a contract is null and void shall not entail it .
+
+spk_1001:
+yes .
+
+spk_1017:
+sixteen one b stipulates that a decision by the arbitral tribunal that a contract is null and void shall not entail ipso jure the invalidity of the arbitration clause . hence the invalidity of the contract between the parties does not render the arbitration agreement invalid as a consequence of law . this recognizes as inhering in the arbitrator the jurisdiction to consider whether the main contract other than the arbitration clause is null and void . the arbitration agreement survives for determining whether the contract in which the arbitration clause is embodied is null and void which would include voidability on ground of fraud . the severability of the arbitration agreement is a doctrinal development of crucial significance for it leaves the adjudicatory power of the arbitrary tribunal unaffected over any objection that the main contract between the parties is affected by fraud or undue influence . my learned friends for the respondents in their submissions have argued long and hard that the doctrine of separability should not be applied to a stamp issue . if that is so even then by virtue of section sixteen that issue must go to the arbitral tribunal . the next paragraph is para forty six at page one three six six . i'll just read a small portion of it . at page one three six six para forty six . my lords have cited fiona trust . and then at the bottom placitum g arbitration must provide a onestop forum for resolution of disputes . the court of appeal held that if arbitrators can decide whether a contract is void for initial illegality if there is no reason why they should not decide whether a contract is procured by bribery just as much as they can decide whether a contract has been initiated by misrepresentation or nondisclosure . so the second principle this is also accepted in the vidya drolia judgment of a onestop forum for adjudication . deciding a stamp objection in court before making a reference will violate this principle as well . and your lordships have given the reason underlying para forty six in para forty eight which is thirteen sixty seven . the basic principle which must guide judicial decision making is that arbitration is essentially a voluntary assumption of an obligation by contracting parties to resolve their disputes to a private tribunal . the intent of the parties is expressed in the terms of their agreement where commercial entities and persons of business enter into such dealings they do so with the knowledge of the efficacy of the arbitral process . the commercial understanding is reflected in the terms of the agreement between the parties . the duty of the court is to impart to that commercial understanding a sense of business efficacy . so the second onestop business efficacy parties intended that one forum would decide all their disputes and it would not be split amongst different courts . and the third principle a more general principle in para fifty three thirteen sixty nine . the arbitration act should in my view be interpreted so as to bring in line the principles underlying its interpretation in a manner that is consistent with prevailing approaches in the common law world . jurisprudence in india must evolve towards strengthening the institutional efficacy of arbitration . deference to a forum chosen by the parties as a complete remedy for resolving all their claims is but part of that evolution . minimizing the intervention of courts is again a recognition of the same principle . and the principle of course as we have seen is housed in section five of the arbitration act which has a very far reaching non obstante . non obstante any other law . so that is parliament's legislative intent reflected in section five . therefore these are three principles . now these three principles and two more have also been categorically affirmed in the vidya drolia decision of your lordships which is to be found in volume five a page seventy six . the five principles that i rely on with vidya drolia for first is separability . second is full competence competence . that is both positive and negative . third is the prima facie test . fourth is that even under eleven six a only the contractual validity of the arbitration agreement is to be seen . in other words coupled with the prima facie test if the court is prima facie satisfied that there is an arbitration agreement within the meaning of the arbitration act then that is all . nothing more is to be seen under eleven six a . and the fifth is these principles of a broad proarbitration interpretation to respect party autonomy and onestop adjudication presumption of that . these are the five principles that have been laid down in vidya drolia . and may i quickly run through the paragraphs ? both the learned judges have decided this . the judgment is found at page seventy six twenty twenty one two scc one . first para one twenty six if my lords would kindly go to .
+
+spk_1001:
+which volume is it ? twenty six is it ?
+
+spk_1017:
+at page one eighty two . five a one eighty two is para one twenty six . first is separability . i'll just show both the judgments are ad idem on this .
+
+spk_1001:
+paragraph ?
+
+spk_1017:
+para one twenty six . page one eighty two of volume five . my lords have it ?
+
+spk_1001:
+yes .
+
+spk_1017:
+para one twenty six covers both separability and competence competence . we would now examine principles of separability and competence competence . clauses a and b to subsection one of section sixteen enacts the principle of separation of the arbitration agreement from the underlying or container contract . clause a by legal fiction gives an independent status to an arbitration clause as if it is a standalone agreement even when it is only a clause and an integral part of the underlying or container contract . clause b formulates a legal rule that a decision by the arbitral tribunal holding that the main contract is null and void shall not ipso jure entail invalidity of the arbitration clause . successful challenge to the existence or invalidity or rescission of the main contract does not necessarily embrace an identical finding as to the arbitration agreement provided the court is satisfied that the arbitration clause had been agreed upon . the arbitration agreement can be avoided only on the ground which relates directly to the arbitration agreement . notwithstanding the challenge to the underlying or container contract the arbitration clause in the underlying or container contract survives for determining the dispute . the principle prevents bootstrapping as it is primarily for the arbitral tribunal and not for the court to decide issues of existence validity and rescission of the underlying contract . principle of separation authorizes an arbitrary tribunal to rule and decide on the existence validity or rescission of the underlying contract without an earlier adjudication of the questions by the referable . by the referral court . para one seventy three and one seventy four are the equivalent findings on separability . in the second judgment page two hundred of volume five a . arbitration is a creature of consensus . it is completely dependent on party autonomy and the intention expressed in the agreement . a contract having multiple clauses including arbitration agreements can be divided into two parts . the clauses relating to the commercial relationship i . e . obligations and duties of each party can be referred to as the main contract . the arbitration agreement so to say is a separate contract in itself . and then as lordship finds that separability of the arbitration agreement from the main contract historically existed even in roman law and later of course in german and swiss jurisprudence . now competence competence . again para one twenty six i have shown . para one twenty nine if my lords will also kindly see is also very instructive . at page one eighty three principles of competence competence have positive and negative connotations . as a positive implication the arbitral tribunals are declared competent and authorized by law to rule as to their jurisdiction and decide nonarbitrability questions . in case of express negative effect the statute should govern and should be followed . implied negative effect curtails and constraints interference by the court at the referral stage by necessary implication in order to allow the arbitral tribunal to rule as to their jurisdiction and decide nonarbitrability questions . as per the negative effect courts at the referral stage are not to decide on merits except when permitted by the legislation either expressly or by necessary implication such questions of nonarbitrability . such prioritization of the arbitral tribunal over the courts can be partial and limited when the legislation provides for some or restricted scrutiny at the first look referral stage . now this is a judgment . i believe it's the first which divides up even negative competence competence into express and implied and that is correct because very often a section will not actually say a court should not interfere . but an interpretation of that section given section five of the arbitration act leads to an implied negative competence competence or a stepping back as it were of your lordships at the first stage . because the whole scheme of the act the architecture of the arbitration act is geared not towards front loading intrusion by a court at the beginning but towards the scrutiny after an award is passed . so it's not the arbitration that is heavily supervised it's the award that is looked at when it is challenged or of course an order under thirty seven if there's an appeal . and the same thought permeates through paras one seventy eight and two eight . i won't read them . now the equivalent paragraphs . i won't read them . a paragraph one seventy eight and two eight in justice ramana's judgment . one seventy eight and two eight . the third principle and this i want to place because this is the prima facie test . we have heard a lot about section eight is only a prima facie . what is the prima facie approach ? how does a court apply it ? para one forty seven point eleven page one ninety four tells us how to do that . the second sentence the court as the judicial forum of the first instance can exercise prima facie test jurisdiction to screen and knock down ex facie miraculous frivolous and dishonest litigation . limited jurisdiction of the courts ensures expeditious alacrities and efficient disposable . disposal when required at the referral stage . so something which is ex facie meritless or frivolous . ex facie there is no arbitration agreement . that is something alone that a court will see under eleven six a . the rest if there's even a dispute or a doubt will be sent to the tribunal . when in doubt refer is what this judgment itself says . and a similar principle . i'll just mention the paragraph number . at para one fifty four point four at page one ninety six .
+
+spk_1001:
+therefore we have said even in the case of limitation . if you get a case under eleven where if somebody started after ten years twenty years when something doesn't turn very on a very detailed interpretation
+
+spk_1017:
+on a demurrer .
+
+spk_1001:
+on a demurrer . justice narasimha and justice pardiwala were sitting with me while i was sitting with me when we found a case like that . and then the whole object of sending parties to arbitration again defeats the purpose of arbitration .
+
+spk_1017:
+without much inquiry without determining some heated controversy between the two parties if a court can ex facie see it of course . that is a safeguard under eleven six a no one is disputing that . but stamp will never be such a question particularly because as we have seen it's a curable defect .
+
+spk_1022:
+that's the whole thing . this stamp act anything to do with stamp if it is a possibility of being curable let us say even recognize the possibility of being curable then how do you throw it out of a threshold ?
+
+spk_1017:
+i bow down . my lord is absolutely correct
+
+spk_1022:
+in any scenario possibly stamp act requirement in any formulation of it any variation of it i am very doubtful if at all it can be looked into ?
+
+spk_1017:
+my lord is right . i want to place a judgment before of your lordships on that immediately after i complete this showing that it doesn't irregularity in stamp or even nonstamping doesn't render a document invalid . your lordships have held that . i'll place that . very quickly i'll just give the paras on this . i won't trouble my lords . the equivalent paragraph is para two thirty two justice ramana's decision where he expressly refers to section eight . that is at page two thirty four . and he says in paragraph two thirty three at page two thirty five that the defendant has to establish prima facie case of nonexistence . it's the other way around the defendant will show that ex facie there is no arbitration agreement . the fourth proposition again in the interest of time i'll just give the paras . paras two thirty six to two thirty eight at pages two thirty five two thirty six relying on your lordship s mayawati decision . ultimately says it's only contractual validity of the arbitration agreement that has to be seen under eleven . in other words section seven is it complied with on the face of an ex facie ? if there's again even on that if there's a dispute to be gone into it will go to the tribunal . but an ex facie your lordships find there's just no agreement . of course . and para two forty four point five and para one forty six they all go on the basis of this kind of validity . and my lord i adopt mister datar's submission . i'm not going to repeat them under the contract act . what is not a valid contract or what is a void contract is only one which is voided under section twenty three or under section ten . nothing more than that . stamp act doesn't come into that at all . not even into the contract act .
+
+spk_1047:
+you have elaborated on that
+
+spk_1017:
+so i'm not touching that . i adopt that my lord . and the fifth will not set up paras in this judgment . i'll just give the paragraph numbers . paras one fifty one to one fifty two page one ninety five and para two twenty at page two thirty is again the principles of a broad proarbitration interpretation and a one stop forum for adjudication .
+
+spk_1001:
+what is the latter paragraph ?
+
+spk_1017:
+para one fifty one one fifty two .
+
+spk_1001:
+one ninety five .
+
+spk_1017:
+. at page one ninety five and para two twenty at page two thirty . they speak of a one stop adjudication presumption . you start from the presumption that everything goes to the tribunal . now applying this to eleven six a it's not that because the word existence is used everything coming under that umbrella of existence has to be gone into . the legislature set confined to the existence and given the principles under section five and these very salutary principles of law a court would restrict by way of an implied negative competence competence . even under eleven six a to an ex facie examination . this is more so because of the next point which has been argued . i'll just point out what i think is relevant and which has not been shown to your lordships under the stamp act . one nonstamping or under stamping does not result in an invalidity or voidness . and two it is a curable defect . now if my lords kindly turned to my written submissions volume one b at page fifteen . i won't .
+
+spk_1020:
+it's also waivable it can waive it because .
+
+spk_1017:
+and one can wave it . my lord is right . in fact there are three four sections which i want to just point out . again i won't read them . they've been read barring one . they've been read to my lord .
+
+spk_1020:
+waiver is also by conduct far more liberal . it doesn't have .
+
+spk_1017:
+my lord is absolutely correct and if that is so than under eleven six a how will a court go into that ? i'm obliged i'm obliged may i my lord adopted my submission . i think that's very well put . in fact mister banerjee also argued an eleven court is not even a two one ecourt . whether it can take evidence is also a question but therefore it's impossible to go into these disputed questions under eleven six a . despite the use of the word existence that has to be read purposefully as meaning only ex facie if there's nonexistence . there's a probability of existence it must go to the tribunal . now curable defect and invalidity . the first point section thirty five is very clear it visits a nonstamped or nonduly stamped instrument with only two consequences . one is it is inadmissible in evidence . and the second is it shall not be acted upon . and my learned friends have emphasized the second not be acted upon . and they have tried to elevate those words to unenforceability leading to voidness and invalidity . i'll presently show why that can never be so . the curable . where the defect can be cured is section thirty six . we have seen where one instrument is already admitted in evidence no stamp objection can be taken to its admissibility later . section thirty seven and sections forty two which i don't believe have been shown forty two i don't think has been shown to my lords . but forty two only allows the collector on payments of duty and penalty to stamp the document and after stamping then it can be admitted in evidence and the shadow as it were of section thirty five is lifted . in nn global two and mister datar has pointed this out there's a slight contradiction because in para one eight it is said this invalidity is not in the sense of being still born . and but in para one three it says it's bereft of life . we leave that aside because in fact your lordships have held very clearly that no invalidity results . i'll come to that just a little later . i could make two points before i come to that . my lords have seen hindustan steel the judgment in hindustan steel . i may not have said this all out in my written submissions pages paras . thirty two to forty seven . so i'm not going to read at all . i'm running through this because much of this has been argued . i've set out extracts from the judgments as well . paras thirty two to forty seven starting at page fifteen . but i want to just make one point . hindustan steel we have seen and it is directly on point about curability . but there's another aspect your lordship may take into account . there's a judgment of your lordships in a totally different context under fema in the vijay karia case which my lords will find in volume five a page one five four five . i'm not even asking my notes to go to that . the principle in vijay karia's case is this i've referred to it at para thirty seven of my written submission and the judgment is found at volume five a page one five four five . citation is twenty twenty eleven scc page one .
+
+spk_1020:
+page number ?
+
+spk_1017:
+the page number is fifteen forty five volume five a and at sixteen thirty two is para eighty eight where your lordships have laid down a principle as to what happens when something is capable of regularization or post facto permission in the context of fema . this is a whole series of foreign awards coming it's general problem .
+
+spk_1022:
+i think a very small niche point which is that looking to the nature of stamp act are we required to look into stamp act at all under eleven six so it should be left to its own ? why should we go here and there on this ?
+
+spk_1017:
+only to assist that conclusion that if it's a regularizable curable defect then your lordships even in the context of other statutes such as fema which also have a public policy connotation have said the transaction is not voided . that's what para eighty eight says . the transaction is not voided because it's regularized . that's the only principle i want to call out from vijay karia . i'm not taking my lords . i've set out i'll just give my lords the reference in my submissions to the singapore position on stamp expressly my lord . my lords sees paragraph eighty of my submissions . para eighty five onwards my lords page thirty three . they have similar provisions . it's not that they don't . if my lords see para eighty six . fifty one one of the singapore stamp duties act corresponds to our section thirty three the impounding section and section fifty two in the next paragraph corresponds to section thirty five . same language not admissible in evidence not must not be acted upon . identical language . and in para eighty eight i've referred to one decision of the singapore courts where it is categorically held that this is only a rule of evidence and does not affect the validity of an unstamped document . that is in this mohammad ameen bin mohammad tayyab case . the case i'll just state for the transcript is found at volume five b page four six seven eight . even in nn global justice ravikumar at para one eighty two accepts that stamp duty defects are curable . one other internal piece of evidence to show why the words shall not be acted upon can never be equated with voidness or invalidity . if those words were equated with voidness or invalidity then there's no question of curing a void act my lords put it to me . so the fact that you have provisions like thirty six thirty seven forty two itself means shall not be acted upon in thirty five can never be extended to an infirmity or invalidity of voidness . that's not what parliament intended . now if my lords kindly go on it'll be very quick with this my lords page nineteen of these submissions of mine i've set out reference to a judgment of your lordships on this . para forty four of my submissions . in thiruvengada pillai case justice raveendran's decision twenty eight for scc five thirty and i'll just read paragraph thirteen which i've extracted . it's in volume five a at page seven two but i'll just read para thirteen from here . the stamp act is a fiscal enactment intended to secure revenue for the state in the absence of any rule requiring consecutively numbered stamp papers purchased on the same day being used for an instrument which is not intended to be registered a document cannot be termed as invalid merely because it is written on two stamp papers purchased by the same person on different dates . then the next sentence even assuming that use of such stamp papers is an irregularity the court can only deem the document to be not properly stamped but cannot only on that ground hold the document to be invalid . even if an agreement is not executed on regular stamp paper it is admissible in evidence on payment of duty and penalty under section thirty five or thirty seven . if an agreement executed and the last sentence . but admissibility of a document into evidence and proof of genuineness of such document are different issues . your lordships have held this under the stamp act and para forty five has set out the instructive judgment of the kolkata high court which mr banerjee also referred to in gulzarilal . in and the next paragraph . para forty six and number of other courts bombay andhra pradesh kolkata have held this . it doesn't need to voidness or invalidity . so this is too well settled a proposition . i have just two points and i'll be done . one is we have viewed this matter from the perspective of section eleven six court appointment of arbitrators . but there is in existence a huge body of appointment of arbitrators by individuals . there's no dispute to start with . there's also increasingly growing appointment by arbitral institutions . in fact the policy of the law is to encourage the interposition of arbitral institutions . there's a proposed amendment which is not yet notified .
+
+spk_1022:
+all those cases will go before the arbitrator .
+
+spk_1017:
+correct . so i have also said .
+
+spk_1022:
+just tell me in eleven six why take a different view ? then what would happen in that .
+
+spk_1017:
+that's right . i'm obliged . the point i'm making here is your lordship's view on eleven six a must try to harmonize even appointments by institution .
+
+spk_1022:
+how arbitration in other areas other methodologies takes place ?
+
+spk_1017:
+so for example all arbitration institutions have these rules . siac for whom i appear has rules twenty eight point one and twenty eight point two which essentially an objection as to jurisdiction as to the existence of an agreement can be initially raised before the full court . the court has the jurisdiction at that stage to knock out a claim if it is prima facie satisfied again the prima facie test . otherwise it sends it to the tribunal for a fuller decision . and i may only ask my lords to mark five or six paragraphs of justice roy's decision in nn global that is paras three sixty eight to three seventy six where he surveys the rules of several arbitral leading arbitral institutions all of them have a prima facie test in the first instance . paragraph three sixty eight at page four sixty two of volume five a up to para three seventy six at page four sixty six . and he also refers to the justice shri krishna report which recommended encouragement of institutional arbitration because if my lords don't hold the prima facie test in eleven six a then individuals and institutions will be left in a quandary . what do they do ? because the observations in nn global albeit in the context of section eleven will apply to them as well . if it is held at an unstamped agreement is void what do they do ? now one further problem . neither individuals nor arbitral institutions are empowered to receive evidence . so they would not be covered by the bar under section thirty five of the stamp act because that only applies to persons who are authorized to receive evidence either by consent or by law or indeed they would not have the power of impounding under section thirty three so they can't be impound . there's no bar under thirty five but there's your lordship's decision in nn global saying void and non existent . so they are in a complete quandary what to do . therefore it is important to not decide this matter holistically because otherwise a very important segment gets left apparent . there i must say my learned friends i got a cursory look at their submissions . mister shyam divan i'll just make . note it for the transcript . in para four point seven of his submissions accepts that arbitral institutions have no power to impound but they might be able to appoint a tribunal . because section thirty five is not applicable to them . and mister nakul dewan at paragraph twenty three also says arbitrary institutions have no power to receive evidence . equally mister shyam divan at para four point seven agrees that an arbitral tribunal has the right to impound a document under section thirty three because it is authorized to receive evidence by consent of the parties not by law but by consent of the parties . and therefore it can impound under thirty three which is my submission as well . one more reason why it should go to a tribunal . and mister nakul dewan even in paras twenty four and twenty five finally comes round to the same view that even under eleven your lordships should be pleased to refer it to the tribunal . mister shyam divan raises the point that it may not be convenient for an arbitral tribunal to do this . it doesn't have the infrastructure to impound send the document to the stamp authorities but that's an issue of convenience . it's not an issue of law or jurisdiction . i'll leave it to my learned friends to satisfy why it should not be sent to the tribunal ? now one point . and then i'll draw my conclusions very briefly i'll just give the pages because it doesn't arise before my lord but it puts the matter in perspective . paras . forty eight to fifty eight of my written submissions . pages twenty one to twenty four deal with this whole issue of who is entitled to impose stamp . does it come on the list one and therefore under the indian stamp act ?
+
+spk_1001:
+you need not go into that direction . may not be required they are not required to . we saw those entries therefore we don't have to go into it .
+
+spk_1017:
+i really wanted to say one thing i'll be done with this . under the state stamp act the residuary articles have stamp duty of rs . fifty and rs . one hundred . now the process of arbitration ultimately cannot be held up for fifty and one hundred rupees which can easily be cured . all the residuary articles are low figures . nn global . i'm not going to analyse again . my learned friends have analysed it . i don't . now my lord just my conclusions . first is that your lordships should be pleased to adopt a purposive interpretation to uphold the intent to arbitrate in deference to party autonomy . and i've given some cases where your lordships have done that under the arbitration act in nandan biometrics et cetera i've mentioned them in my written submissions . the second is section five of the arbitration act must be given full effect it's a very wide nonobstante . and the arbitration act is a complete code your lordships in the amazon case and again i'll just give the paragraph number para forty three and the judgment is found in volume five b at page six twenty three have held that the new arbitration act with the amendments is a complete breakthrough from the old position . therefore every provision of that act must be interpreted given the overarching principle of section five and the principle of an implied negative covenant competence competence . the third as held in vidya drolia that o long as an arbitration agreement satisfies the requirements of the arbitration act ex facie by adopting the prima facie test there's no question of a court holding up the arbitral process by entering into an examination of whether duty is paid whether it's under stamped under which article it falls et cetera et cetera . the fourth since a tribunal is authorized to receive evidence section thirty three of the stamp act will apply to it squarely . it can impound the document and start the process of stamp collection . there's no reason why a court which is . courts are already clogged with so many matters why they should be clogged up into this ? fifth such an interpretation of eleven six a will also harmonize the process between appointments by courts by individuals and by arbitral institutions . an arbitral institution certainly will take just a prima facie look before the tribunal is appointed . an individual may not do that . the one who wants to refer to arbitration will refer . the other one will go to section eleven . so it's unlikely . but sometimes individuals do because very often these objections are raised halfway through an arbitration . so it's not unheard of . then my lord six the trend is towards encouraging institutional arbitration . the amazon case has said so and your lordships are familiar with the sri krishna report which has said so . therefore to leave institutions in a quandary and to effectively block the process of institutional appointment by saying go into stamp objections will not subserve this broader public policy objective . and lastly there is also a trend towards investing arbitral tribunals a parliamentary trend towards investing arbitral tribunals which powers our court . this is the legislative prescription of parliament . i'll give a few examples . the amendment adding seventeen two which prevents a section nine court which effectively prevents a section nine court from giving interim relief because under seventeen two the orders our arbitral tribunal are given the force of law of orders of the court . corresponding provision is nine three . section eleven six a itself . section eight was amended in twenty fifteen to include prima facie to bring it into line with forty five where under shin etsu your lordship had held only a prima facie look qua foreign arbitrations . and even twelve under section twelve even impartiality in independence the first objections must go to the tribunal itself . so the whole trend is to empower the tribunals more and more in deference to the principle of competence competence . and this in my respectful submission will subserve the scheme and object of the act minimum interference of courts party autonomy and one stop adjudication . ultimately in a lighter vein this might encourage the stream of trade and commerce and ultimately more stamp duty might result as a result of this . rather than holding it all up for stamp objections to be decided by court . i am deeply grateful for the time i've been given .
+
+spk_1001:
+who are you appearing for now ?
+
+spk_1083:
+my lords i had been grateful when i was appearing in the constitution bench for inviting submissions . so five to seven minutes my lord .
+
+spk_1001:
+can we suggest just one thing . we have to wrap up the proceedings today . it may not be in the interest of anybody that we keep it .
+
+spk_1083:
+understood .
+
+spk_1001:
+so what we will do is we will look at the submissions of all the interveners . we'd have much like to hear you all you put in a lot of industry . please rest assured we will read all the submissions of the interveners . if we have something at the end in response to what mister divan has argued . and since we have heard mister datar mister gaurav banerji and mister darius khambata on this side . in rejoinder if we have some queries we will put them to the intervenor . that may be better .
+
+spk_1083:
+two minutes for one aspect .
+
+spk_1001:
+we can't give two minutes to everybody . thank you . yes mister divan . do this give us your submissions . yes mister divan ?
+
+spk_1022:
+we've narrowed down the controversy therefore there's really nothing to be added .
+
+spk_0057:
+nothing to repeat . only then as it just have pointed out relevant pages of my written submissions .
+
+spk_1022:
+that we will read it . don't worry .
+
+spk_1001:
+thank you . yes . we will read the submissions . yes mister divan .
+
+spk_1008:
+my lords i appear for respondents . one two and four . i appear with mr nikhil nayyar we will divide our submissions . this is for respondents . one two and four . i will request the court master .
+
+spk_1001:
+you know one thing since we have now renamed the title of this proceeding . the object was also to assuage your concern on behalf of your client that we should look into the curative aspect or that you have preliminary objection on curative issue . we will be sending it back to the nine judge bench .
+
+spk_1008:
+after hearing us on curative your lordship may consider whether that's the correct course at all because in my respectful submission that may not be the correct course .
+
+spk_1001:
+we really want your assistance on the question of law .
+
+spk_1008:
+i'll do that as much as i can .
+
+spk_1001:
+but justice .
+
+spk_1008:
+but we will do that in two stages .
+
+spk_1001:
+but justice is planned on facts whether curatives should be exercised leave it to the five judge bench and we are not going to comment .
+
+spk_1008:
+you may certainly .
+
+spk_1001:
+please look dismiss this curative because you have no case on merit .
+
+spk_1008:
+ok so i have understood what your lordship is indicating . now let me contest that position and suggest that there is a better way forward . so let me first so i am going to be making my submissions very rapidly because of the constraint of time . i will state my points i will request the court master if you consider it convenient to hand over i have given a list of the constitution of india the stamp act the arbitration act physically because it may take less time that way . let me just i have two broad sets of submissions . i have two broad sets of submissions . i am first setting out my points with regard to my first set of submissions . the first submission is that our court which is the supreme court of india as we understand it is a means and ends institution . we are very particular about means and ends when it comes to courts below when it comes to government authorities when it comes to citizens and most important when it comes to ourselves because the reputation and credibility of our institution rests on the foundation that we reject expediency . we do not we have sometimes very honourable objectives . but we do that as the apex court in our country following reaching those ends by permissible means and that is going to be my first point with regards to means and ends the importance of means and ends the importance of the nature of jurisdiction which your lordships is exercising . that's my first point . i now come to my second point let me indicate what we are not exercising first . so first and foremost as your lordship correctly put to me that look we have relabelled this and i am very grateful for that because i think it really helps because the parties know individuals who read the judgement know . so i think it's very beneficial to have an appropriate caption for the case rather than this . but the caption and altering the caption does it alter the nature of the jurisdiction which you are exercising ? so i ask myself a simple question what are the jurisdictions which this court indeed does exercise ? are we in the realm of appellate jurisdiction ? the answer is no it is not appellate constitutional it is not appellate statutory . is it review jurisdiction ? the answer is again no because review as i will indicate to your lordships has been rejected . are we in a jurisdiction which is original like one thirty one or one thirty two ? the answer is no . are we in a jurisdiction of discussionary appeal ? the answer is no . are we on a jurisdiction on an opinion which the president of india seeks by way of a reference ? the answer is no . are we in a transfer jurisdiction ? the answer is no . so then what is our jurisdiction ? what is this panel constituted exercising ? there must be jurisdiction . this is the primary function of every court . you must be satisfied i won't be saying that you ought to be i can't say must be you ought to be satisfied that the jurisdiction which you are exercising in a panel of three .
+
+spk_1047:
+divan .
+
+spk_1008:
+i'm sorry .
+
+spk_1047:
+we are a five judges constitution bench has found the view taken by earlier five judges bench .
+
+spk_1008:
+yes yes
+
+spk_1047:
+to be prima facie not correct .
+
+spk_1008:
+yes yes .
+
+spk_1047:
+is the reference to seven judges not called for ?
+
+spk_1008:
+yes so let me answer that straight away . if in an appropriate jurisdiction i answer that straight away if in an appropriate jurisdiction your lordships exercising a jurisdiction your lordships finds that a five judge bench is not appropriate prima facie or otherwise by all means you have the power to do so . so i concede and i accept that but not in the curative jurisdiction . now i'll come let me answer that question straightaway first .
+
+spk_1022:
+that doesn't survive .
+
+spk_1008:
+i'm so sorry . there are fundamental issues . i'm sorry .
+
+spk_1001:
+that doesn't really survive subject to what you say .
+
+spk_1022:
+because even when you were arguing earlier we said this is not a case for curatives .
+
+spk_1008:
+sorry ?
+
+spk_1022:
+this is not a case for curative .
+
+spk_1008:
+that's my submission i mean it's ultimately for the court to prove .
+
+spk_1022:
+this is not a case for curative . you may be right you may not be . we can't say that .
+
+spk_1008:
+correct correct .
+
+spk_1022:
+but you said look don't make curative interpretations appreciate these submissions .
+
+spk_1008:
+i'm sorry .
+
+spk_1022:
+don't appreciate these submissions or debate these submissions in a curative petition .
+
+spk_1008:
+yes .
+
+spk_1022:
+that was your submission .
+
+spk_1008:
+that's what means and ends is about . you must be exercising a legitimate jurisdiction . legitimate meaning not that it is legitimate to exercise like that it is curative . the point i'm making your lordships are sitting exercising as a seven judge bench . i have no problem with a seven judge bench at all or nine judge or whatever but the issue still is the core nature of your jurisdiction today is curative and nothing else . which takes us to .
+
+spk_1001:
+when a position of law when a position of law we are a constitutional court . when a position of law is liable to cause grave public injury public uncertainty and grave unsettling in the world of business and investment surely the point of time at which the controversy should be resolved should not be left to the vagaries of future litigations . it's the duty of the court to seize upon the opportunity and .
+
+spk_1008:
+yes answer is yes .
+
+spk_1001:
+and at the end of it all we may still dismiss your that curative petition against you .
+
+spk_1008:
+so the answer is yes .
+
+spk_1001:
+because we are equally conscious of the need to do justice to the facts of that case . so the curative petition can be still dismissed after the decision of this court is rendered settling the law correct .
+
+spk_1008:
+let me just answer that . first and foremost if this court finds in an appropriate jurisdiction and in an appropriate cause that there is some decision which requires reconsideration which is absolutely your function and i would take it higher even perhaps your duty to correct the position in law it ought to be as we understand it in an appropriate proceeding . so now let me answer the questions which your lordships have put to me . there are two ladders here the first ladder is a curative ladder . as we understand it the ladder narrows in the sense in our understanding review jurisdiction is narrower than the main appeal and curative in our understanding is narrower still than review jurisdiction . if that be so then this is a very narrow issue . so i come to my second point . curative as we understand it as understood by this court and i'll place those decisions is with regard to doing justice for a particular individual cause . when we go to hurra your lordships will see it's a case in that case to do complete justice . that individual case . the curative jurisdiction there may be several situations where you have incorrect law or something which is staring in the face . we don't accept that that we come to of course . but it's very important to have to follow the means and ends test . and i'll tell you your lordships why ? nn global ought to it may come up on an appropriate separate ladder . curative is a three rung ladder . as we understand it the first rung is the disposal of the case itself the second rung is there must be a disposal as far as the review is concerned and the third rung is thereafter a curative petition with all the safeguards that the court has laid out . that's the three rung process of reaching this court in curative jurisdiction . now is the submission . you cannot bypass these three rungs because and let us remember the curative jurisdiction . although now in our supreme court rules your lordships have continuously exercised . it's a self created jurisdiction . it's a jurisdiction because the demands of justice sometimes stare and an apex institution like your lordships in the face . and oh my how have we allowed this to pass ? and in a situation such as that for that individual case yes you have created this very very narrow jurisdiction to yourselves required an appropriate certification restricted it to grounds and said that and only in those cases even though you don't find any provision in a statute or the constitution we will because it's our paramount duty . and you trace it to one forty two as we understand it . so one forty two generally may be wider . one forty two as a source of power for creating curative and for exercising curative as we understand it is limited to a cause to a particular individual cause . that cause may in certain situations affect a large number of people . i accept that . but here what has happened is now my lords . i'm just answering the question sorry .
+
+spk_1022:
+cause there can be a legal cause and there can be a factual cause .
+
+spk_1008:
+so .
+
+spk_1022:
+just .
+
+spk_1008:
+yes . let me answer that .
+
+spk_1022:
+. factual cause has been segregated as a chief justice put to you .
+
+spk_1008:
+yes .
+
+spk_1022:
+to keep the curative aspect in a sense out of it .
+
+spk_1008:
+yes .
+
+spk_1022:
+but we do believe seven of us do believe that there is unsettled legal position towards the fact which has its own ramifications and as the chief justice put it . it becomes the court's duty in its endeavour .
+
+spk_1008:
+so i quickly end that i quickly answer that . my answer is yes . it is the duty of the court . but if you are right on means and ends then it's the duty of the court when and where . so i'll come to that straightaway . it is the duty of the court when nn global in an appropriate proceeding is doubted the five judgment . it goes by way of review . and then it is before curative . that is a separate ladder . and it's important to maintain these ladders . it is not permissible . according to us it's not permissible . it is not desirable . and according to our understanding of the law laid down in the judgment so far your lordships have restricted curative continuous . i mean restricted in a sense when the justice of the case demands .
+
+spk_1022:
+
+
+spk_1008:
+i'm sorry
+
+spk_1022:
+there's no difference of perception on this issue . the issue is that some way your submission bound to be affected or coloured by the fact why my curative petition .
+
+spk_1008:
+sorry .
+
+spk_1022:
+why my curative petition ? why are you doing this in my curative petition ? that's the bottom line of what you are saying .
+
+spk_1008:
+no that's wrong . there are two elements here . the first element . your lordship is right . that it is in my . i'm briefed in this case so i have to say that please don't upset my apple cart . my agreement by the way i mean this is quite amusing . my arbitration agreement is of your lordship will not dare suggest the year . it's of nineteen ninety seven . my arbitration agreement is under of nineteen ninety seven and i was telling .
+
+spk_1022:
+curative i mean .
+
+spk_1008:
+twenty six years down the line we are thinking of appointing an arbitrator . i mean what a joke . not for a fact that it's a serious question of law which your lordships are considering .
+
+spk_1022:
+
+
+spk_1008:
+sorry .
+
+spk_1022:
+i told my chief justice on a lighter side in chennai i've had to refer an arbitration in the year twenty fifteen an application filed in nineteen ninety nine . there was a life dispute . it was accepted as a life dispute and i had to refer . the unfortunate part was that the only unfortunate part of the application was not taken up . so therefore we are not getting into the facts of it . therefore somehow i feel you're more troubled by the fact that why are your clients being troubled in a curative jurisdiction . therefore at the threshold itself looking to your submission on the earlier day .
+
+spk_1008:
+yes yes .
+
+spk_1022:
+. we thought we had taken care of this issue by not looking into the curative issue at all .
+
+spk_1008:
+yes .
+
+spk_1022:
+and that's something mister datar the curative will be .
+
+spk_1008:
+the question i've asked in . of course the chief justice can constitute a panel of seven . what's the jurisdiction this court is exercising today ?
+
+spk_1022:
+it is determining the legality of the view taken by an opinion .
+
+spk_1008:
+that it opinion or a reference which the reference which the president of india ought which is this jurisdiction it is only curative anyway let me just . sorry yes .
+
+spk_1020:
+mister divan the basic objection seems to be that while examining curative petition the legal ratio raised decided in judgment should not be relooked at by a larger bench .
+
+spk_1008:
+i'm sorry my lord the last .
+
+spk_1020:
+while examining a curative petition or while deciding a curative petition the legal ratio laid down by five judges bench or any smaller bench should not be looked into . that's a larger perspective . but in a given case where we find that the business ramification or other issues have arisen which have raised some doubts and issues . why not examine it ? we are not saying that curative petition is going to be examined on facts itself separately . if there is some doubt or debate on the legal principles laid down legal ratios laid down which have wide ramifications impact why can't we go into that ? why should we ?
+
+spk_1008:
+i'll tell your lordships .
+
+spk_1020:
+if really speaking where the means are right . because if there is some issue which has arisen which has led to a lot of disturbance then it's the right means to also check it . it's not something that we are usurping a jurisdiction which doesn't list with us . we are all adjudicators . we have to adjudicate . we keep on reexamining ourselves correcting ourselves . that's how it is .
+
+spk_1008:
+so let me just be very brief on this point . and let me give you the page numbers and the date . may i just indicate it ? please don't misunderstand me . i'm not saying that the seven judge bench can't overrule a five judge bench . that's not my case . my submission is of course you can . but if we are a means and ends institution then it ought to be in an approach in an appropriate packaged case and proceeding . and this may not be an appropriate proceeding for two reasons . now let me just for several reasons let me just indicate those . and since your lordships i'll state the points . if your lordship wants me to go to it i will go to it . but we have the pages here . so the first point is that the ground given . please just note this . the first point is that the ground given in so far as the curative petition as contained in the certificate is that there is a reference which has made been made to a larger bench in nn global . so this is the primary ground . this in my respectful submission cannot be a ground for the purposes of issuing a certificate . your lordships have deprecated certificates of this type . and i believe it ought to be deprecated here merely because there's a reference which has been made to a three judge bench . so that's absolutely no ground . now if there is no ground which is made which is sustainable insofar as a curative petition is concerned the question of igniting the curative jurisdiction does not arise . so this is one primary set of submissions that i have . if your lordships likes i can give you the . sorry .
+
+spk_1022:
+when five judges maybe sitting in curative jurisdiction . he is not denuded of the power to constitute a larger bench to examine the petition of the law .
+
+spk_1008:
+i agree that . i agree with you .
+
+spk_1022:
+that's all we are doing .
+
+spk_1008:
+may i just say this ?
+
+spk_1022:
+even there mister . we did not let them argue in further . is something which needs to be looked into or delegated to arbitrator . there also we've have not permitted them to expand the contour . some of them have argued .
+
+spk_1008:
+anyway your lordships have followed my point now . so i'll just give you the points . so the first point is
+
+spk_1022:
+we are giving it to you to fight another day on the curative petition . we are not dealing with that aspect . we are today not . please take .
+
+spk_1008:
+frankly i'm just making a suggestion . if you don't find if you find or rather if you do find in my favour that the essential elements for a curative jurisdiction are not made out then my respectful submission would be the appropriate cause is to decline to exercise this jurisdiction because you are exercising no jurisdiction other than curative today when you pass the order suggesting that you are clarifying it . sorry that's my understanding of the law . but if your lordships finds that there is some other jurisdiction which is also being exercised over here . i don't find any . sorry .
+
+spk_1022:
+we have said repeatedly that so far as the curator matter is concerned it will be heard by a five judges bench whether they agree disagree dismiss the petition in the facts of the case is a separate matter but on a general principle of law seven judges this court felt led by the chief justice who exercised his discretion we have segregated it yesterday . you've said we are only .
+
+spk_1008:
+let me just proceed now . i followed the point . so let me just state my points and then your lordships will consider them appropriately . so my first submission is that by relabelling it as in re et cetera it doesn't alter the nature of the jurisdiction or exercise . that's my understanding of the law . the nature of the jurisdiction remains that's one . point number two if you are choosing to exercise curative jurisdiction which of course you may there are well settled parameters . and i'm just indicating those parameters . i'm just mentioning them because they are in our submission . i'll list them . sorry .
+
+spk_1022:
+mister divan problem is mister divan that we are not looking into it . so you're arguing something which we are not looking .
+
+spk_1008:
+but if it's curative ? and then your lordship says that .
+
+spk_1022:
+it's a catch twenty two situation .
+
+spk_1008:
+it's a catch twenty two .
+
+spk_1022:
+you can't do it in a curative because of the restricted parameters .
+
+spk_1008:
+okay . let's keep that aside let's keep that argument aside .
+
+spk_1022:
+we are only looking to one proposition of law dehors the curative whether in case of a eleven six jurisdiction stamping is something to be looked about .
+
+spk_1008:
+okay so now let's drop this . now next three sentences . i'll try and not use the word curative . suppose even a theoretical situation a very very wrong judgment comes out by this court and it is brought to the attention of the chief justice of india or senior judges et cetera . that look this looks extremely wrong and very perilous . the question i ask myself is that can the court thereafter constitute a bench of a larger panel put a label in re and then decide the issue to overrule that . i don't believe that is acceptable . that's my understanding of the law . i believe that can certainly be done in an appropriate case . an appropriate case comes up . that's what means and ends is about . but that's our understanding .
+
+spk_1001:
+the impact of wrong precedent is so severe and as history has shown by the time you actually get a case an appropriate case what you have to ensure is that you do not confine your arguments only to one or two . therefore we have invited a broad diversity of views on this side on this side . you have that's the .
+
+spk_1008:
+let me so move on . i said i won't use that expression . my understanding of the law is merely because there is a wrong judgment our understanding of the institution and it's working . our understanding of this institution and working is that we improve we self correct . but there are methods and ways of doing it . and i am suggesting to your lordships that this may not be the appropriate way of doing it . your lordships answer is we're keeping your objection alive for another day . fair enough . but then what's the nature of the jurisdiction in arriving at this conclusion of whether ten is right or whether wrong . it is the jurisdiction which i said i won't speak about . so that's the very jurisdiction . so now if that's the jurisdiction then please follow the parameters . now i move on . you may just note that in my case there is a three thirty seven days delay in file . so i've said the certificate isn't there in terms of rupa hurra . i have respectfully submitted that the agreement itself of which the arbitration clause of nineteen ninety seven so please keep that in mind . there is a three thirty seven days delay and there is a five five days delay after the dismissal of the review . a five five day . and your lordships have said that as far as the curative petition is concerned it cannot be filed as and when a party considers it . so this really ought to be closed . sorry . i'm sorry .
+
+spk_1022:
+i am only saying you will argue this somewhere else . that's what i'm saying . so do we understood your point ? why take it up here ?
+
+spk_1008:
+that's really up to the courts to hold as to whether there is a means and ends there is something in the means and end submission .
+
+spk_1022:
+we've understood your means of this thing .
+
+spk_1008:
+yes .
+
+spk_1022:
+you feel on there is a procedure which must be followed . we felt that it is a very large ramification . we should not wait for a particular case to arise and to be referred to three judges then to be referred to five judges . that is why chief justice placed it we have heard not the parties alone we have heard everybody . so this is not something which is a list being decided inter se the parties and that's it . and therefore the threshold we kept it . so to the extent you feel don't do it in this manner . we've understood it .
+
+spk_1008:
+yes ought not i said i'm not saying don't do it . i am saying ought not to do it . why to say don't do it .
+
+spk_1022:
+the lighter side we .
+
+spk_1047:
+means the same thing .
+
+spk_1008:
+perhaps ought not to do it . that's how i'll put it .
+
+spk_1022:
+we have done it now because in this manner we feel we have to close
+
+spk_1008:
+your lordships have now followed the point . so i now move on to my next point . now your lordships have the arbitration act with you or should we go to the sections which are mentioned here ? okay let me just indicate to your lordships . i'll take you to the act as it appears from the record i've now kept that whole issue aside . sorry .
+
+spk_1022:
+i understand you correctly that as a proposition of law you want to canvas that the issue of a stamping of an agreement should be looked at in eleven six itself .
+
+spk_1008:
+yes .
+
+spk_1022:
+is that the proposition we are advancing ?
+
+spk_1008:
+yes .
+
+spk_1022:
+you are in different jurisdiction .
+
+spk_1008:
+okay so let me now let me simplify . let me give you my understanding of the law . if we take up the arbitration act or whatever electronic copy your lordships are referring to there are three situations which are right . so i'll give you my conclusion on all three the first situation which arises is the law as it stands today . if we pick up the arbitration act i'm only on eleven four at the moment you could have a supreme court high court appointment depending on international or domestic that is situation one . situation two as eleven four stands today it could be through an institution which is designated or appointed for the purposes . that's the second situation . so eleven four as it is applicable post twenty fifteen act today . the third aspect the third dimension is what mister khambata mentioned briefly which is that look we now have a twenty nineteen statute which has not been brought into force which sends the matter justice khanna had also mentioned it which sends the matter into the realm of an institution . correct ? so first let me clear my position . if it is to go eleven four is to go directly to an institution in my understanding of the law there is no impediment in terms of stamp duty . so the moment the twenty nine and that's in fact one of the reasons why i'm going to request the court please do not exercise such jurisdiction as you are choosing to exercise because there is already a statute . the statute refers party straight off to the twenty nineteen under the twenty nineteen amendment to an institution it does not require any interference or any intervention by a court or any application of mind on the part of the court . that body will not be a body which is entitled either by the consent of the parties or under law to receive evidence . and therefore the stamp duty question will completely pale into insignificance . so that's one situation so it will not apply . so this problem won't arise . all that is needed is the twenty nineteen act is brought into force the relevant provisions and the problem disappears that's one . this has multiple dimensions to it including whether your lordships should even at all exercise jurisdiction . you'll keep that at the back of your mind . now we come to the second situation . the second situation is your lordships may just go to section eleven for a moment . just have a look at section eleven as it stands today you will find it at page one two one zero of volume four a . your lordships have it ? so my lords i'm now reading eleven appointment of arbitrators . we are on page one two one zero appointment of arbitrators a person of any nationality may be an arbitrator unless otherwise agreed to by the parties . now . subsection four if the appointment procedure in subsection three applies and the party fails to appoint an arbitrator within thirty days from receipt of the request to do so from the other party or the two appointed arbitrators failed to agree on a third arbitrator within thirty days from the date of appointment the appointment shall be made upon request of a party by the supreme court or as the case may be the high court or any person or institution designated by such court . so again i'm just indicating to the court our position . if under the law now twenty nineteen act i've said that is not brought into force . even under the law as it stands today there are two situations one which is the one which commonly prevails which is that the high courts and the supreme court continue to appoint . but there is also an expression or any person or institution designated by such court . now when this went before the high power committee or what mister khambata referred to as the sri krishna committee they looked at the provision as amended by the twenty fifteen act and they following on the earlier law commission report were both of the view that even this provision as it stands today does require the court to send it to . so there will be some application of mind of the court so therefore they have introduced they've recommended the suggestion . they've recommended in terms of what is to happen moving forward . and the recommendation is once the twenty nineteen act comes into place there won't be any reference to that as well . so i thought i should place this before you .
+
+spk_1020:
+mister divan even if one looks at the provision as it applies to the in fact none of the high courts of the supreme court has done it . but if we'd passed the high court or the supreme court had passed resolution and designated authority or an institution all eleven applications would go to that institution . under the law existing as of now once the high court or the supreme court authorizes the institution then that institution will appoint an arbitrator under eleven four . all of it .
+
+spk_1008:
+may i just respond to ?
+
+spk_1020:
+that's a different matter .
+
+spk_1008:
+no . but may i just my lord . that is a possible that's a possible view for your lordships to take . so then the situation is that you have a situation where moving forward post twenty nineteen act there'll be no question of such a problem at all . and secondly if the prima facie view which was expressed by your lordship just now a moment ago is that if there is a designation by a high court then that's another way in which the entire problem may go . but i thought i should just mention to you that the sri krishna committee when it made its recommendations read this very provision differently leaning on the earlier law commission report which also took the view that even as that post twenty fifteen amendment act there is still an aspect which is left for the court . but that's really controlling . your lordships left to decide that aspect .
+
+spk_1022:
+law stands today .
+
+spk_1008:
+so look at it only as it stands .
+
+spk_1022:
+what may happen tomorrow one doesn't know .
+
+spk_1008:
+yes but i just thought .
+
+spk_1022:
+it happens to be . seem to have been having another loop . what form it comes today . conjecture .
+
+spk_1008:
+correct . so my lord sorry . so focusing on the law as it stands today we have two situations not the third situation as i mentioned either high court . supreme court or high court and or institution designated by the supreme court or high court . my personal view is that if it becomes once there is a designation and if there is the rules et cetera is provided you go directly to that particular institution and that institution doesn't have the power to receive evidence . but it's not by consent of the parties that institution has been given authority to use evidence etc so in a situation such as that again the problem will disappear .
+
+spk_1001:
+mister khambata pointed out that was your para four point seven of your .
+
+spk_1008:
+so quite right . so we accept that position . problem is actually being contemplated . there is a solution within which is contemplated .
+
+spk_1001:
+high court or the supreme court as a case may be are exercising their power under eleven .
+
+spk_1008:
+and yes . so that's the one which we are just now looking at .
+
+spk_1001:
+correct .
+
+spk_1008:
+so now have a look at section seven please .
+
+spk_1001:
+
+
+spk_1008:
+so there are two three elements of the arbitration act . then i'll go to the stamp act . just as i i might just mention i'm just digressing from here . in my case and your lordships i had mentioned it on the last occasion that the parties i'm representing one person in ninety the other person is eighty nine and it's rather difficult to explain to them why we're here . but i should mention there is a decree .
+
+spk_1001:
+still on a lighter vein there may be still a case for the awards of costs to your clients payable by the petitioners .
+
+spk_1008:
+i just want to mention there is a decree in my case . so i had filed a suit in twenty ten . in my case i had filed a suit in twenty ten . the suit got decreed after a written statement was filed . so they never objected under section eight . my suit got decreed . and therefore i don't know whether justice gavai and justice surya kant recall because it's a long time ago that they passed that order . so apart from the stamp duty case and stamp duty issue in my case . they examined the case on merits . and they say now on merits also we don't think there is any question of arbitration . so the question i asked myself where is the question of overturning that decision in that curative jurisdiction at all when the court has decided on two footings law as well as this . anyway now let me come back here .
+
+spk_1022:
+the court for arriving at a conclusion whether under section eleven six stamping is something to be done ? we will actually not go beyond it . they have argued you have argued will not go beyond that .
+
+spk_1008:
+alright . so now i just want to emphasize a few elements as far as section eleven . section seven is concerned . just two three parts . and then i take you to sixteen . and i'll read five as well at this stage . so just see seven because there's something which we wish to emphasize . in this part arbitration agreement means an agreement by the parties to submit to arbitration all or certain disputes which have arisen or which may arise between them in respect of a defined legal relationship whether contractual or not . two an arbitration agreement may be in the form of an arbitration clause in any contract or in the form of a separate agreement . and three the arbitration agreement shall be in writing . now i will take you to the definition of instrument which i think your lordships have realized that we are relying on the indian stamp act not because it may apply to individual cases but it's the same thing which is borrowed across the state . paragraph materia . we've emailed a set of comparative provisions . it's all in paragraph materia . so the point here i'm making is it has to be in writing . i don't think there is any dispute with regard to that . it's required by law to be in writing that's number one and in our understanding of the law if it is required to be in writing when i take you take your lordships to the provisions of the stamp act you will find then it answers the description of an instrument . so that's all at this stage . since we are on this page which i believe is page one two zero seven of volume four a please just have a look at section five as well .
+
+spk_1047:
+mister divan why don't you look at subsection four also ?
+
+spk_1008:
+yes of course i'll read it .
+
+spk_1020:
+just one minute . if we turn to clause c subsection four to section seven your exchange of statements of claim and defence in which existence of an agreement is alleged by one party and not denied by the other . let's suppose there's a parent arbitration underlying contract under stamped or whatever it is but a statement of claim is exchanged and defence is also exchanged . both the parties agreed to an arbitration agreement .
+
+spk_1008:
+right .
+
+spk_1020:
+you need not therefore rely upon the parent clause .
+
+spk_1008:
+that won't be section eleven six .
+
+spk_1020:
+the fact that the parent agreement is under stamped or non stamped is immaterial . in that case for going into the question of existence of an arbitration .
+
+spk_1008:
+you are right you are right . there's a deeming fiction here . now i'll read the whole of four . i'm grateful . this four is very important . so please have a look at it . i'm on section seven subsection four . an arbitration agreement is in writing if it is contained in a a document signed by the parties . b so this i believe would answer the description of an instrument straight away .
+
+spk_1020:
+correct correct . you are right .
+
+spk_1008:
+b an exchange of letters telex telegrams or other means of telecommunication including communication through electronic means which provide a record of the agreement or c an exchange of statement of claim and defence in which the existence of the agreement is alleged by one party and not denied by the other . so my lords just coming straight away to clause three .
+
+spk_1047:
+exchange of email may also constitute an arbitration agreement .
+
+spk_1008:
+it may . it may . it may . okay . so now i'm just getting a little ahead of the script but just let me tell you where the suggestion which we are going to make . there is . because i think your lordship is also looking at it from a practical point of view . i mean what happens in a situation . so let me just depart from this section and just provide supply what we consider is an appropriate cause . before a . our understanding of the scheme under the stamp act is on execution or before execution stamp duty is payable . that's first point . however apart from that situation supposing the contract is being worked there are no disputes there are no disputes at all between the parties . the contract is being worked . a party can all . and the parties did not whatever pay the stamp duty at the time of execution or before execution as required by law they can always go under section thirty one is our understanding and have it adjudicated by the collector . so that's the second clear method by which you can solve that problem before disputes et cetera arise . the third issue is before you issue a notice because presumably of arbitration . the sorts of cases my learned friends are all singapore arbitration centre hyderabad international arbitrators those kind of cases ordinarily you'd go to a lawyer . you would ordinarily require a notice to be sent . you are preparing a section eleven . ordinarily there will be some individual cases who prefer to do it all by themselves . that is the stage at which you could conveniently if you find that the agreement whether the composite agreement or the arbitration separate agreement hasn't been stamped get it adjudicated . the moment it is before adjudication the moment it is before adjudication no court or either the high court or the supreme court under exercising powers under section eleven is going to stop or block because your point will be i am a compliant citizen . maybe at the stage of section eleven before issuing the notice and before approaching the court i have approached the appropriate revenue authority . this is what i think is the amount i have gone there please appoint an arbitrator and the court would not in a situation such as that say oh ! i can't look at the document it's can't be seen it is pending adjudication . the court can also and i'm going to show your lordship because after nn global five judges both the bombay high court as well as the and earlier the delhi high court have rendered a judgment which is given a scheme following nn global which is time bound . but i am just now not without any intervention of the court . what is the correct procedure to be followed which is fair equitable and doesn't do injustice either to the parties or the statute because what the submission over here was that section five is wide enough . i'm going to take you to section five . it's wide enough to override everything . i don't even think that's constitutionally permissible but i'll come to that separately . so the answer to the question is what happens at a practical level . this is what happens . first stage before you execute or at the time of execution . second point surely before you move a court or before you issue a notice of arbitration at that stage you can go and approach . and the third point which your lordships can clarify very simply is that in a situation such as this where a party has indeed approached the collector there is no question of holding up section eleven at all because the party is complying with the mandate of the stamp act and therefore please proceed ahead and go ahead and appoint the arbitrator if you are satisfied there be . that's a much better balanced revenue compliant statute compliant and consistent with our court's line of reasoning over a decade which would meet the ends of justice . so to answer your lordship's question as far as four b you're right an exchange of letters telex telegrams and other means of telecommunication including communication which provide a record of the agreement . so you could have two types of agreement . you could have either just the arbitration agreement through this exchange or you would have what i would call the larger agreement of which the arbitration agreement is but a clause . in both situations . before you initiate the process and approach a court if you find that this requires stamping you take advice . you submit it to adjudication and that's the end of it . you cleared the whole hurdle . there's nothing further which is required to be done at all . we'll come to that . sorry . i'm sorry .
+
+spk_1022:
+mister divan somebody feels the agreement is properly stamped . let us say another person says the agreement is deficiently stamped .
+
+spk_1008:
+yeah .
+
+spk_1022:
+the moment this is done you are wanting them to move to the collector's stamp to get this adjudicated first whether it's deficiently stamped or not .
+
+spk_1008:
+yeah .
+
+spk_1022:
+the move eleven six a the concerned arbitrator will decide whether it is deficiently stamped it is properly stamped .
+
+spk_1008:
+i'll come to that if it's permissible in law . of course that's one the .
+
+spk_1022:
+why shouldn't ? whole issue is in eleven six . what can be done by the arbitrator it in the court eleven six ? this is the only issue which is there .
+
+spk_1008:
+i agree with you but there is your lordships have seen there is a long line of judgments and there is good . i will of course try and develop . and i'll answer i'm alive to that issue which is troubling . in terms of your lordship wants our assistance on what is the appropriate statutory design today not what is desirable ? there may be some situations which are desirable . why not go here ? and why not go there but does it lend itself to a possible interpretation of the type which your lordship is suggesting ? that's really the question or do we go by the rigor of what we believe is the correct position ? so your lordships have now seen seven . now my lords since your lordship is just on that very page . just have a look at section five now . please just see this and i will just state the point quickly . extent of judicial intervention notwithstanding anything contained in any other law for the time being in force in matters governed by this part no judicial authority shall intervene except where so provided in this part . now my lord i would respectfully submit that the purpose and object of this section has consistently understood that you don't allow suits to be filed to block arbitrations applications which are not contemplated under the arbitration act . some other type of action which would delay or prevent or stop the process of arbitration from moving forward . that is the purpose of section five . the purpose of section five as we understand it is not to override a statute such as and a mandate of a statute if we are correct under say the stamp act . let me read it again . notwithstanding anything contained in any other law for the time being enforced and matters govern no judicial authority intervene . what is the meaning of judicial authority intervene ? you are invited through some sort of an interlocutory application through some sort of a suite through some sort of other action to block an arbitration proceeding . that is the intention of this particular statute . now i just raise a second issue . your lordships correctly flagged the question regarding and mister khambata was also correct with regard to the . your lordships will just give me a moment . with regard to the legislative competence of those various entries . so your lordship recalls that there is sixty three ninety one . item ninety one of seventh schedule first list sixty three of second schedule . seventh schedule i'm sorry . list two . an arbitration comes in the concurrent list . now the question which i'm posing because i believe i believe that the interpretation which is being suggested by them that please use section five to trump so to speak all these stamp acts is constitutionally infirmed . and i'll just state my point why . stamp duty as we have just indicated falls within the respective legislative realms for the purposes of taxation or finance or raising revenue . we don't believe that in exercise of powers to frame an arbitration law parliament can trench upon an act or a power which is left with the state legislatures to impose or an exaction in the form of stamp duty . so section five it would be very dangerous . i mean there's a submission . it would be incorrect . let me not say .
+
+spk_1001:
+entry for arbitration . that is .
+
+spk_1008:
+arbitration is i think thirteen three . roman . sorry seventh schedule list three .
+
+spk_1001:
+and arbitration .
+
+spk_1008:
+your lordships have that ? civil procedure including the manner included in the code of procedure the commencement of the constitution limitation and arbitration . so this .
+
+spk_1001:
+the purpose of the arbitration act is not to prevent the collection of revenue . the question is what is the state at which it has to be exercised .
+
+spk_1008:
+i agree with that .
+
+spk_1022:
+ultimately it's the forum which will determine nobody is saying state's revenue is to be jeopardized .
+
+spk_1008:
+no that of course that we'll have to get into the stamp act .
+
+spk_1022:
+it balancing it to say okay let the whole matter proceed to the chosen judge which is the arbitrator . instead of normally a court would adjudicate it . now here .
+
+spk_1008:
+whether that can be done not whether it's desirable whether under the statute as it .
+
+spk_1022:
+whether if it is sent to the forum the forum which is a chosen forum .
+
+spk_1008:
+yes .
+
+spk_1022:
+that forum will determine whether it is deficiently stamped unstamped . does it require stamping et cetera why under eleven six detain it ? contrary to the whole concept that you choose a judge in arbitration and therefore the chosen judge will decide which way to go . that's all .
+
+spk_1008:
+i don't think there's any problem on that at all . the question at least the way i would look at it is as to whether . let's see the two issues over here .
+
+spk_1022:
+why ? i put it to you all there was .
+
+spk_1008:
+first of all i agree with what your lordship is saying namely i am not disputing that the arbitrator can't do it . i'm not for a moment . the question is .
+
+spk_1022:
+get to the part . they have argued many issues . we have been trying to say that look what we are examining is a very limited controversy given there's eleven six there is a power . that there are some cases where need to be shut out under eleven seven as chief justice put it . but stamping is an issue being curable and it's a defect but a curable revenue related . yes . let the arbitrator determine .
+
+spk_1008:
+so correct . i will just respond to that statement . sorry .
+
+spk_1020:
+sorry interrupting because you also accepting it . the separation between the severability of the arbitration agreement . let's assume the contract is found to be void . let's assume the contract . section sixty five .
+
+spk_1008:
+a general contract .
+
+spk_1020:
+for some reason . section sixty five of the contract act applies . then also you have to compensate . if the arbitration agreement is valid the arbitrator will then apply section sixty five .
+
+spk_1008:
+right .
+
+spk_1020:
+of the contract act .
+
+spk_1008:
+yes yes of course . but provided that .
+
+spk_1020:
+let's assume so . suppose for nonstamping .
+
+spk_1008:
+i accept that your lordship is right . i agree . it can be done .
+
+spk_1020:
+that answers the question why should we stall the arbitration ?
+
+spk_1008:
+should i just should i just . first of all i accept the position . i don't think anybody is contesting it that as far as the arbitral tribunal is concerned the arbitral tribunal has jurisdiction . the issue is when we are going through a section eleven route and the expression which is used by counsel on the other side is that arbitration agreement according to us has to be seen before you appoint under section eleven has to be seen . now that examination of the arbitration agreement what is the mandate under the stamp act ? does it get in any manner diluted by when a court looks at it ? does it in any manner get diluted by the provisions of the arbitration act . and is it a situation where only one forum is to look at it ? or is it a situation where potentially at least you can have or is required . the requirement of law is that the court if it comes up before the court for the first instance the court ought to look at it . that's the issue i understand .
+
+spk_1022:
+being a curable problem a revenue generating issue that it has to be looked into . certainly nobody says can't be looked into . why should under eleven six which is a very very minimal intervention deal with this issue . why should it not go to an arbitrator ? because .
+
+spk_1008:
+so i follow . the question is what is the law as it stands today ? i think your lordships put your . please just look at sixteen . please look at section sixteen which in terms of the pdf rather the volumes you'll find them at fourteen a . volume four a . i'm sorry . four a . twelve fourteen twelve fourteen . now just look at competence of arbitral tribunal to rule on its jurisdiction . the arbitral tribunal may rule on its own jurisdiction including ruling on any objections with respect to the existence or validity of the arbitration agreement and for that purpose an arbitration clause which forms part of the contract shall be treated as an agreement independent of the other terms of the contract . so this is being used . so as far as severability is concerned there's no doubt that the arbitration . however there is a limited fiction . i'm borrowing your lordship's words . the fiction is for the purposes of section sixteen determination . it's not as if that for all intents and purposes this becomes a standout clause a separate agreement . and if that agreement is stamped it is to be regarded separately . no it is only for that . please see the expression existence of validity of arbitration agreement and for that purpose the arbitration clause which forms part of the contract shall be treated as an agreement independent of the other terms of the contract . so i would respectfully submit this is a very limited fiction which is coming in . the language is very very clear .
+
+spk_1001:
+eleven six uses the word examine .
+
+spk_1008:
+eleven six . yes . let us see eleven six .
+
+spk_1001:
+sixteen uses ruling . there is a very distinct connotation in law between an examination and a ruling . a ruling implies a binding determination . examination means a scrutiny . so the power of the court . the first look has been very beautifully put in para one twenty six is the first look is for examination . it's first level scrutiny . it's not rendering a binding determination because when the legislature has used two distinct words examination in eleven six and ruling in sixteen ruling means actually a binding or a conclusive finding .
+
+spk_1008:
+so my lords just have a look at section eleven six a . now we are going back i made my point it's for a very limited purpose that section sixteen preaches . so your lordship is going back to section eleven which is on page one two one zero . please have a look at six a . the supreme court or as the case may be high court while considering any application under subsection four or subsection five or subsection six shall notwithstanding any judgment decree or order of any court confine to the examination of the existence of an arbitration agreement .
+
+spk_1022:
+very limited scope .
+
+spk_1008:
+very limited .
+
+spk_1001:
+we will come back .
+
+spk_1083:
+my lord one thing which will cut short judicial time section thirty three two b . stamp act itself provides for delegation of those duties to an officer an arbitrator would include that my lords . that provision may cut short a lot of conflict between the two acts .
+
+spk_0107:
+section thirty five will have to be .
+
+spk_1001:
+roughly how long would you take ? because there's another matter . that's why . not otherwise to stop you in the ranks or anything . so that we'll adjust that other matter . reference to a three judge bench .
+
+spk_1008:
+i'll try and wrap in another half an hour . i'll take half . but mister nayyar will take half .
+
+spk_1042:
+i'll take half an hour . fifteen twenty minutes . half an hour . whatever i can get .
+
+spk_1022:
+i thought you have restricted yourself . you are for an intervener .
+
+spk_1039:
+no . that's correct . but like mister khambata . hyderabad centre . because my proposition is actually going to be based on separability . which my lords in fact i have a different position to take from what mister khambata has taken because in my respectful submission you cannot expand separability beyond section . but at the end of the day i still come back .
+
+spk_1001:
+there's a three judge bench between me justice pardiwala and justice manoj misra . it's a difference of two judges on that medical termination of pregnancy . we'll take that up at sharp two o'clock and we'll come back in a combination of seven the moment that gets over .
+
+spk_1085:
+before my learned senior begins just one point only . a lot of submissions were made on the fact that this is not a live matter . we haven't addressed your lordships at all on facts because we are before seven and therefore .
+
+spk_1001:
+yes yes absolutely .
+
+spk_1085:
+i don't want your lordships to carry any impression . it's not live . we haven't uttered any submissions on facts .
+
+spk_1001:
+absolutely . yes . mister divan ?
+
+spk_1008:
+no no it's very much not a live matter . and i'm going to request your lordships .
+
+spk_1022:
+sir it is live or it is dead .
+
+spk_1008:
+sorry ?
+
+spk_1022:
+we decided somewhere else whether it is live or it is dead we decide it somewhere else .
+
+spk_1008:
+sir we just had the opportunity during lunch to reflect upon this because we believe this means and ends issue is something which will reflect on later . i'm not saying that i'm going to develop it right now . what is this court doing ? what this court is seeking ?
+
+spk_1047:
+mister divan you have already argued on that .
+
+spk_1008:
+no no on another aspect .
+
+spk_1047:
+you had started on merits .
+
+spk_1008:
+yes yes but i'm now deviating and i'm going back to a very important aspect which i want to emphasize because your lordships are saying that you will reflect on it . what i would like your lordships to reflect on is it's essentially providing an intra court appeal without an appeal without an appeal it's going from five to seven without there being an appeal without there being a process without there being a procedure . so it's something to reflect on . i'm not saying no . i'm sorry ?
+
+spk_1001:
+an appeal would arise if we were to reverse the view insofar as your client is concerned . we have . the purpose of this . .
+
+spk_1008:
+no even on law even on law you see i was just anyway i will now go on the stamp act but i want your lordships to very seriously consider because if you had in the future if you have in the future some judgment comes which xyz doesn't like . can the chief . the question i ask myself is can the chief justice of india constitute a larger bench then just put it before that bench without having a live list or decide whether there's a live list and then do it ? i don't believe it can be done . but anyway that's for your lordships to reflect on . sorry . i'm sorry ?
+
+spk_0107:
+all i want there is .
+
+spk_0074:
+there is a second matter which is listed before my lords .
+
+spk_1001:
+the section eleven ?
+
+spk_0074:
+the section eleven is listed before my lord . and that was placed before five . certainly my lord the chief justice of india in dawoodi bohra can constitute a bench of the relevant strength . right ? seka dobrik is listed before my lord . all this my lord may be there in the first matter there is a second live matter which your lordships have listed .
+
+spk_1008:
+there is no live matter at least that i am aware of . there is some live matter then that's the appropriate case . then i completely agree with the amicus . in that case an appropriate order can be passed .
+
+spk_1047:
+i'm sorry it's becoming a little excessive on this issue .
+
+spk_1008:
+it's a very serious issue my lord it's a very serious issue .
+
+spk_1022:
+you are entitled to your view i'm not saying this . it has been repeated .
+
+spk_1008:
+because it's about the institution . and if this becomes a precedence .
+
+spk_1047:
+we have already . on that .
+
+spk_1022:
+we have already said we may agree we may not agree on that .
+
+spk_1008:
+so my lords now let us go to the indian stamp act which is where i want to .
+
+spk_1085:
+all i .
+
+spk_1022:
+. both sides have argued .
+
+spk_1085:
+absolutely .
+
+spk_1022:
+what i'm personally finding in all these constitution bench matters things go here there everywhere . everybody wants to have a chance . everybody wants to sell something instead of deciding what the issue is before us . that's the problem .
+
+spk_1001:
+now we are clear there is a second matter .
+
+spk_1022:
+on a lighter side just because the chief is liberal to listen to all this doesn't mean that this goes on .
+
+spk_1085:
+i am so grateful my lord .
+
+spk_1001:
+and we have a second matter and we have a second matter which was of section eleven directly before us .
+
+spk_1040:
+. because my lord we were the main
+
+spk_1001:
+have you filed your written submission ? we will look at the written submission . no difficulty .
+
+spk_0074:
+
+
+spk_1001:
+please this will not be permitted i assure you that if you argue for another five minutes .
+
+spk_1001:
+that you argue for another five minutes . we'll be washing out .
+
+spk_0074:
+no sir . within half a minute i can complete .
+
+spk_1001:
+listen to me sir you did that in the previous matter also in sita soren the other day . if you argue for another five minutes you will be washing out the impact of the argument of the lawyers who have argued before you . so in your interest please allow the other side to argue .
+
+spk_0074:
+i have a small request since i appeared before the constitution for nn global has also given three judges led by mister raman would your lordships care to hear me for five minutes ?
+
+spk_1001:
+we will see how much time you have at the end . because we have to conclude by four o clock today .
+
+spk_0074:
+nothing more than that .
+
+spk_1039:
+mister khambata appeared for siac and i am appearing for the hyderabad centre . there are certain institutional points that we want to make .
+
+spk_1022:
+in institutional points i just wanted to clarify what you will address . are you saying that the eleven six must address the issue of limitation first . is that the institution's view ?
+
+spk_1039:
+no . and the point i want to make .
+
+spk_1022:
+that's the only issue we are deciding .
+
+spk_1039:
+that's right .
+
+spk_1022:
+what my institution will say what another institution will say is not relevant .
+
+spk_1039:
+the only point i want to make . in fact khambata sort of hinted on it . and my respectful submission is that your lordship should in fact looking at effective parity take the view that under section eleven your lordships can't take evidence . if your lordships takes that view then the entire section thirty three of the stamp act becomes inapplicable . and that's really what i want to make good . that's one point .
+
+spk_1001:
+you're really on this side mister dewan .
+
+spk_1039:
+my lords on the point of eleven if i may . mister khambata pointed out but on the .
+
+spk_1001:
+your physical situation
+
+spk_1039:
+the reason why i am here is because on the doctrine of separability my respectful submission is going to be that no they're not separable documents for the purposes of the stamp act . and to that extent the five judges are correct because you can't expand the doctrine of separability beyond section sixteen and that's the other point which i'll make good . i don't need more than ten minutes on these . that's it because mister khambata has addressed your lordship suggesting . what mister khambata suggested is that expand the doctrine of separability . my respective submission is .
+
+spk_1022:
+we are not going to that issue . it was narrowed down .
+
+spk_1039:
+correct . why are you treating .
+
+spk_1022:
+after narrowing of issues still everybody wants to address everything on this earth which is possible to be said under the earth .
+
+spk_1039:
+the entire genesis of nn global one was the doctrine of separability . suggesting that because of the doctrine of separability the document didn't have to be stamped . nn global two goes and says no it is not separable . they are all part of the same agreement . the argument made by the other side is expand the doctrine of separability . that is going to be inconsistent with our act . it's going to be inconsistent with the entire line of english law decisions which we've continued to follow which have clearly said that it is separable only for the perspective of invalidity not from the perspective of every other matter . it is still a part of the bundle .
+
+spk_1001:
+it's not necessary for us to see what are the outer limits of the doctrine of separability here at all . we have to mainly only here decide as to whether the stage of section eleven six a the court is required to examine whether they instrument has been insufficiently stamped .
+
+spk_1039:
+what my respectful submission is that the way out of this canon gate is by taking the view that your lordships cannot take the evidence under section eleven six because your lordship is not a court under to two one e . if you're not a court under two one e because the appointment goes either .
+
+spk_1001:
+alright let's hear mister divan .
+
+spk_1008:
+so very quickly may i just take you please directly to page three twenty nine of volume four a . so now i am on the stamp act . so i'll just make a few comments and a few provisions . so first your lordships may go to page three twenty nine of volume four a where you will find the definition in two twelve of executed and execution . executed and execution used with reference to instruments mean signed and signature and includes attribution of electronic records within the meaning of section eleven of the information technology act . then just please read a little further two fourteen . instrument includes every document by which any right or liability is or purports to be created transferred limited extended extinguished or recorded . b a document electronic or otherwise created for a transaction in a stock exchange or depository by which any right or liability is or purports to be created transferred limited extended extinguished or recorded . so my lords i want to just tie up these two definitions with the definition under section seven of the arbitration act . arbitration act is required to be in writing . we are writing that's common ground . please link that to the definition of the word instrument . i think i believe there is no escape from the fact that the arbitration agreement is an instrument broadly covering covered by this definition . now please move on section three your lordship knows is the charging section . so i'm not taking you to that . please go directly to section seventeen . section seventeen which you will find at page three forty eight same volume three forty eight . now this is the point which you alluded to in the morning . instruments executed in india . all instruments chargeable with ut and executed by any person in india shall be stamped before or at the time of execution . now this is the clear mandate of the law . so my lords i recall . mister datar was mentioning that he had his client in the old madras city civil court days who used to only stamp fifty percent of the documents . all right you take the run the risk . but the law mandates that you must execute at the time or before before or at the time of execution you ought to pay the stamp duty . so this is something which the court will keep in mind that's the time when you do it . but that's not all . so section eighteen is for instruments other than bills notes executed out of india . so my lords with your permission i'm going to skip that . please . now go to section thirty one . this is important for my purposes . you will find it at page three fifty five . now this is the route which we suggest to the court . this is the correct way out . what happens when a section eleven application is filed and there is some dispute with regard to it . so i am suggesting i'll read section eleven one and then i'll just make this short submission adjudication is to proper stamp . when any instrument whether executed or not and whether previously stamped or not is brought to a collector and the person bringing it applies to have the option to have the opinion of the officer as to the duty if any which may be chargeable and pays a fee such amount not exceeding rs . five or not less than so and so as the collector may in each case direct the collector shall determine the duty if any with which the judgment the instrument is chargeable with which in his judgment the instrument is chargeable . so this is in short the root we are suggesting first on or before execution . if not on or before execution surely before you make a section eleven application just as you get your pleading draft or before you issue a section eleven notice .
+
+spk_1020:
+mister divan ?
+
+spk_1008:
+i'm sorry ?
+
+spk_1020:
+you are right . this is a provision .
+
+spk_1008:
+yeah this is a provision . and this is the correct way .
+
+spk_1020:
+one minute .
+
+spk_1008:
+i'm sorry
+
+spk_1020:
+in practical terms if we apply it'll be chaotic it'll be chaotic to say the least .
+
+spk_1008:
+no . why would it be chaotic ? that's what law requires .
+
+spk_1020:
+because you don't know what happens if you apply over there how much time it takes .
+
+spk_1008:
+so to that i am making so therefore i'm making another suggestion .
+
+spk_1020:
+. orders which are passed . again .
+
+spk_1008:
+i'm just making a suggestion to the court . this is possibly your lordship's experience is right .
+
+spk_1020:
+and it's not mandatory in law . it's not mandatory in law that we have to go under thirty one .
+
+spk_1008:
+my lords may i just say this as far as this order .
+
+spk_1020:
+don't make it mandatory by a judgment of this court .
+
+spk_1008:
+no no . i am saying that first what's mandatory is what is mandatory is at the time of execution or before execution . that's the mandate of .
+
+spk_1020:
+that is
+
+spk_1008:
+stamp duty part . second it's not as if a party is hobbled and has to wait . he or she can before issuing the notice under section eleven arbitration notice or may before making an application you can follow this route . i'm not putting it any higher than that . and your lordships while moulding the relief or issuing directions may issue appropriate directions . and in a case where the matter is pending adjudication section eleven can proceed . that's all . now i go to the next point . now look at thirty three . look at thirty three please look at thirty three which your lordships will find at three fifty seven . now examination and impounding of instruments . every person having by law or consent of parties authority to receive evidence and every person in charge of public office except an officer or a police before whom an instrument chargeable in his opinion with duty is produced or comes in the performance of his functions shall if it appears to him that such instrument is not duly stamped impound the same . for that purpose every person shall examine every instrument so chargeable and so produced or coming before him in order to ascertain whether it is stamped with a stamp of the value of the description required by the law enforced in india when such instrument was executed or first executed . so here i make just two points . your lordship said that we can look at marginal notes at least to judge the drift et cetera of the section . this uses the expression examination and then the second is impounding . i believe that i have no doubt following your lordship's judgment that when in section eleven clause is applying its mind your lordships have held it's not mechanical . there is an application of judicial mind . and therefore the expression is examination . and this would cover a situation where a court is looking at it under section eleven . this is one aspect . now please go . your lordships will just move on to section thirty five . section thirty five which is on page three fifty nine . now please see this . here we have there's a slight difference at least on construction . we see this as four distinct points but mister khambata mentioned that there are two buckets . please see . instrument not duly stamped inadmissible in evidence etc . no instrument chargeable with duty shall be admitted in evidence for any purpose by which person having by law or consent of parties authority to receive evidence or shall be acted upon registered or authenticated by such person or by any public officer unless an instrument is duly stamped . so there are four . one as your lordships correctly said receiving evidence admitting an evidence . that's one . second acted upon . third registered and fourth authenticated . so there are four distinct situations which section thirty five envisages admitting in evidence is one of them . section eleven i would respectfully submit is not an admission of evidence stage it's a stage of acting upon . i don't think there can be any . i mean . that's our submission . i don't believe there's any doubt at least in our mind with regard to the fact that the section eleven court is required to act upon . now if this is the mandate of the law in terms of section thirty five i've already read the embargoes et cetera with regard to the section ten . the scheme of the statute at least to us appears to be that before a court under section eleven if this issue is raised under section eleven however narrow the jurisdiction because undoubtedly it's a narrow jurisdiction this would be within the duty and obligation of the court . now my lords there are six characterizations which your lordships have used recently in terms of this . so i'll just mention them . we have put them in our written submission . one is your lordships have said section eleven is not mechanical . that's one way . the second expression used is your lordships have said it is not ministerial but it is performing a judicial function . so that's in vidya drolia as well . the third your lordship's recent judgment is it's restricted to the eye of the needle . a fourth expression your lordships have used in vidya drolia and other judgments is to cut the deadwood . the fifth is it's a very narrow jurisdiction on existence and validity which is the magic eye judgment and of course when in doubt refer . so having regard to the conspectus of these tests which are really different ways of saying that it's a narrow jurisdiction nevertheless according to us just on a reading of the stamp act and i have made my submissions on section five of the arbitration act there doesn't appear to be to be any reason or justification to exclude the operation of the stamp act at the section eleven stage . now my lords we are fortified in this . and here i'm just requesting you to please . i'll just request you to turn to if you would to volume two page six please . so volume two is my submissions . volume two page six please just go to page six . it'll just save me a lot of time . would your lordships have para one point four ? sorry my lords i'm on page six . do you have para one point four ? now i just want to spend . i'll just address the court .
+
+spk_1001:
+section thirty five will apply because of the and shall or shall be acted upon .
+
+spk_1008:
+yes . acted upon . so .
+
+spk_1001:
+acted upon is also qualified by any such person . now any such person means who having by law or consent of parties authority to receive evidence . acted upon is also qualified by any such person . any such person means a person referred to earlier .
+
+spk_1008:
+right .
+
+spk_1001:
+so there is a word public officer . that i mean i don't know public officer .
+
+spk_1008:
+but we are a court .
+
+spk_1001:
+possibly the court is a public officer .
+
+spk_1008:
+no i mean this is astonishing .
+
+spk_1001:
+but a section eleven court may be a public officer for that .
+
+spk_1083:
+here i may just draw attention to thirty three two b . there's an act of delegation with the stamp act itself envisages . if the high court can delegate this function of examining and impounding to an officer which includes an arbitrator . he is authorized to take evidence .
+
+spk_1039:
+in fact my submissions deal with this very point saying that all of this goes to the arbitrator if you read thirty three thirty five because what parties have done is that by consent . my lords even in the terms of the arbitration act by consent parties have agreed that as far as their disputes are concerned it is the arbitrator who takes in evidence . that happens because of section nineteen of arbitration act . so when you harmonize both the provisions .
+
+spk_1008:
+may i just make my . sorry i'll just summarize it how we understand it . we believe if we are correct that if it's going to an institution of any sort this embargo under section thirty five won't apply under the scheme under which it presently applies . that's our understanding .
+
+spk_1001:
+yes .
+
+spk_1008:
+that's one . equally we have no doubt that if it is the high court or the supreme court then it would be covered and under section thirty five and it would be covered not in the sense of taking evidence because your lordship may not be at that time admitting it to evidence but certainly it is to be acted upon . that's why we sought to link acted upon with your other judicial responsibility judicial application of mind to satisfy yourself on existence . however confine that jurisdiction may be . that's the short hand submission . so we believe thirty five does apply to a section eleven court and it does apply to whatever to the high court or the supreme court as the case may be . that's where we are and the language is wide enough . otherwise it might be rendering this otiose . so that's it . so i was now on if your lordship recalls volume two page six please . page six . may i state the point ?
+
+spk_1001:
+yes .
+
+spk_1008:
+so we are on para one point four . i'm drawing attention to one point four because of the constraint of time . what i want to just mention is that look we've had not just one stray judgment in fact to one judgment justice gavai and justice surya kant are a party . that's the present judgment . we've had a series of judgments which we have encapsulated in paragraph fourteen . there's a total of about twelve of our judges who've looked at this over the years from twenty eleven onwards and the narrowest sms which is the twenty eleven . that justice i think raveendran and justice patnaik they looked at it from the stamp act point of view and they said that look this is clear to us and therefore having regard to that and they placed it on that . then after just have a look . now i'll read one point four . it is submitted that this honourable court in sms tea so that's the first one . then we've got naina thakkar versus annapurna builders because that's also two learned judges . black pearl hotels versus planet m retail limited . that is three learned judges . your lordship has that ? my lords i am on para one point four page six . so i'm just to save time just reading this . so we have sms tea . that's the leading judgment . i mean in first in point of time then we have naina thakkar versus annapurna which your lordship may note is two learned judges . then we have black pearl hotels versus planet m retail limited that i believe is three learned judges . then the judgment referred to garware wall justice nariman and justice vineet saran's judgment . garware wall is mentioned . and the present impugned judgment which was also by three learned judges . so what the suggestion which we are making is that what has come about in the five judge bench . i'm not saying that there no . there was a reference to the five judge bench judgment . there is a concern there . but when you have a long line of judgments spanning more than a decade in a situation such as this and on an issue such as this this i believe it is an eminently possible interpretation . the question before the court also is as to whether because when there is in a commercial field a long standing set of precedents and understanding of our court we don't believe it ought to be lightly upset . rather i'm suggesting that your lordship is not going to consider this very fully . but i am just suggesting to the court that please do not upset this because we've given you a way out . the way out is not to give a premium on dishonesty of some person who decides for fifty percent i am going to go to pay stamp duty for only half my cases i'll take a chance . that's hardly the situation . the law requires you to pay stamp duty pay it . if you don't pay it the law gives you another chance before you approach section eleven . and if not now i come to the if not what is to happen . now here just please go to page thirty six same written suggestions please . thirty six please . now here . now just have a look at two judgments referred to here and mister nayyar will expand on this . your lordships have para four point five ? four point five your lordships have ? so i'll just sum it up . so after our five judge bench judgment in nn global both the delhi high court as well as the bombay high court had occasion to examine how are we going to do this ? so there are two judgments splendor landbase and there is a further one called i think it's john cockerill . yes . that's been mentioned in four point six correct . and they have given a streamlined process . so i am commending that with whatever further suggestions which your lordships may feel appropriate for the purposes of how to move forward sustaining nn global . so this is another point which i thought we would make this wraps up the correct scheme . now i want to make one for the final set of submissions with regard to the contract act . now may i just make that submission very quickly ? now please just take up the contract act . yes . and your lordship will find that at page two eighty of volume four a . volume four a .
+
+spk_1022:
+which provision are you referring to mister divan ?
+
+spk_1008:
+no much was made of those definition clauses et cetera now i just want to point out what is the contract at saying and the whole thing is void et cetera that's not the case at all since we are straying i'm meeting this because much time was spent on these particular definitions and how the constitution bench has done it and how justice nariman in garware dealt with it . so i want to just explain it . the standard the original template which was used by our court was founded on sms tea which your lordship see stamp act . thereafter the bench felt in garware that there may be another perspective . now what is that perspective ? let me just place it . so your lordship has now page two eighty . so just now see the interpretation clause section two please on that page . in this act so first of all it's in an interpretation clause . then it says in this act the following words and expressions are used in the following senses unless a contrary intention appears from the context . now please go on to what was emphasized g two g . now let's see what this . first let's read it and then the context and then see whether it has any reason to deviate from the five judge bench . g an agreement non enforceable by law is said to be void is said to be void it's not it is void it is said to be void for the purposes of this act . now see the next one . an agreement enforceable by law is a contract . and then please see j . a contract which ceases to be enforceable by law becomes void when it ceases to be enforceable . so the entire ambit of the expression in section two of the contract act is enforceability and relative to enforceability whether an agreement is void or not . that is how this is to be understood . it's not to be understood oh the whole agreement is void nothing can be done . that's absolutely a wrong way of looking at it . what the court is saying in garware et cetera is that once you remove this taint or you remove the shadow as your lordship said or the cloud as your lordship said when it becomes fully enforceable . so for all intents and purposes your contract upon being appropriately stamped becomes enforceable there is no peril to commerce as is being suggested that the whole entire the country and commerce is going to come to a grinding halt if this judgment is allowed to sustain . a line of judgments which has held the field since twenty eleven . so my respectful submission is there is no justification on that . and when your lordships recall for example commonly what do we understand that if there is a fraud for example everything is void because fraud vitiates everything . but that's not how the contract act looks at it . the contract act says that if there is a fraud it is voidable at the interest of the counterparty who was induced . so for the purposes of the contract act what is void what is voidable is much more nuanced than what has been suggested by the other side . and it ought to be understood in this restricted context . my lords i'm very grateful . thank you .
+
+spk_1001:
+thank you mister divan . yes mister nayyar .
+
+spk_1042:
+very briefly my lord because most of it has been covered . my lords the aspect that really my lords what we have heard my learned friends argue nobody has to my mind contested the fact that section thirty five has to be given play . that is not in dispute . i don't think anybody has contended that section thirty five has no role whatsoever in an arbitration or in a contract . the only question is at what stage will it trigger . will it trigger at an eleven stage ? or do we my lords if i can call it that if i can call their argument the kick the can argument my lord that should we send it down to the arbitrator and then that the arbitrator or the arbitrator tribunal deal with it . now my lords the eleven six a point my lords as i primarily mister datar contended was based on three facets because six a my lords can be construed two ways . one is either what is the width of the jurisdiction that is intrinsic in six a or an efficacy argument that it is not efficacious at this stage that we are delaying arbitration that is not in the interest of adr et cetera so let us send it down back to the arbitrator because anyway sixteen has some kind of mechanism . i'll focus first my lords on the six a part . three aspects my lords that were highlighted in six a . one my lords was the use of the word confined . it says confined to the existence of . the second part was existence and some my lord's emphasis was laid my lords on the nonobstante clause . saying my lords that because of that nonobstante clause we should now construe it to mean that other statutes or earlier judgments have now kind of been diluted . now for each one my lord i'll just give few references . as far as the width of six a is concerned post six a . in fact my lords interestingly in our case i don't want to get into the merits of that curative etcetera . actually six a does not arise . mine is an eleven six case . because the notice came earlier et cetera et cetera
+
+spk_1022:
+before the other bench .
+
+spk_1042:
+yes but in six a my lord your lordships have consistently held that existence means validity as well . consistently . i'll just give those references my lords . i don't want to read them . garware which is at page thirty three of volume five a para twenty nine . in drolia my lords which is page seventy three volume five a para one fifty three and one fifty four point four and my lords ntpc versus spml that is page one eight zero six in volume five a at para twenty five my lord where my lord this eye of the needle test has been propounded and specifically held that the primary inquiry is about existence and validity . so my lords as far as that aspect of six a is concerned my submission is that validity is a legitimate exercise under six a . because mister banerji suggested reading various authorities and the uncitral model that perhaps we should . it has to be a very restricted and narrow approach to six a virtually my lords taking us back to pre sbp and konkan et cetera but no that has not been to our understanding the interpretation given by your lordships even after six a . existence includes validity . secondly my lords as far as the notwithstanding argument is concerned . the most detailed . in fact there's a reference in duro felguera that the amendment in twenty fifteen because the six a comes in twenty fifteen that it was intended only to overcome sbp and boghara polyfab . sms was known to the legislature at that point . if the intention had been to whittle down the scope of six a and take out this dispute of stamp there would have been appropriate language used . and in garware because that contains the most detailed discussion as to the legislative history of six a including referring to the law commission report et cetera lordship may just note paras twelve to fourteen nineteen and twenty two . and it is clear my lord that the legislative history was such that it only intended to take care . perhaps the legislature felt that as a result of sbp and boghara polyfab that too many issues were being gone into at the stage of eleven to restrict the scope . but in my submission that restricted scope does not take away the fact that you can get into validity and therefore consequently this issue of stamping which i will separately deal with . this one thing i want to show why the word examine will or could encompass the examination on the question of stamp ? kindly just have sms one paragraph in sms lord that is in volume five a page eight at para twenty two point one . the conclusion starts at twenty two . i just want to read twenty two point one . i'm sorry . it's page sixteen of the running page .
+
+spk_1022:
+talking of volume five a .
+
+spk_1042:
+yes volume five a . it is the second tab at page sixteen para twenty two point one . starting at twenty two . may i read ?
+
+spk_1022:
+yes .
+
+spk_1042:
+we may therefore sum up the procedure to be adopted where the arbitration clause is contained in an agreement which is not registered but compulsory registerable and which is not duly stamped . the court could before admitting any document into evidence or acting upon such documents examine please note the word my lord . examine such . examine whether the instrument document is duly stamped and whether it is an instrument which is compulsorily registerable . now the word examine your lordship will find in thirty three two of the stamp act . that is the extent of the duty my lord . thirty three subclause two . the word used there is examine . after the impounding .
+
+spk_1022:
+one also says the court should before admitting in a document in evidence .
+
+spk_1042:
+or acting upon .
+
+spk_1022:
+yes together .
+
+spk_1042:
+correct my lord .
+
+spk_1020:
+say there's difficulty . one difficulty . we accept this proposition .
+
+spk_1042:
+yes .
+
+spk_1020:
+if we accept that the arbitration agreement is severable . even if the parent contract or the underlying contract is held to be bad is to be impounded . section sixty five and seventy what restitution as quantum merit will apply . cannot then it be argued that this issue can be gone into by the arbitrator as well as civil court ?
+
+spk_1042:
+the question . severability ? mister divan has a more elaborate argument on that but .
+
+spk_1020:
+quantum merits are decided by the .
+
+spk_1042:
+they can certainly decide but the question . my lord the question is this . the question is this . the argument of severability does it extend beyond the purpose in sixteen one b . yes . because our submission is the purpose of the argument of severability is limited to that . it does not preclude my lord . yes . why not ? of course they can my lord . but the question is is the court precluded under eleven . no my lords thirty five . kindly see what is the language of thirty five . thirty five first is mandatory . it says shall . there is no option there really speaking it shall and shall not act upon both now what at that stage my lord i don't . i am sorry my lords . no . but since your lordship mentioned about no the point i was trying to make is i'm sorry . now thirty three . the point i was trying to make my lord is . my lord the word used in sms was examine . they were conscious while making the amendment the words used in para twenty two point one is examine . the language in the stamp act is examine . the language in six a is examine . it is not my lords that there is any greater degree of inquiry that is required . so examine my lords will encompass . an examination is to whether a document or an agreement is properly stamped or not . . sorry ?
+
+spk_1022:
+anything else ?
+
+spk_1042:
+sorry . not . just two three short points my lords . the second aspect on section five my lord . section five my lords is not a bar because section five only says my lords notwithstanding and under as per this part .
+
+spk_1001:
+that mister divan has made a point . the object of five was to prevent suits being filed . to delay arbitration .
+
+spk_1042:
+correct but once there is a jurisdiction once there is a jurisdiction under eleven or nine or my lords thirty four or thirty seven the width of that jurisdiction is not controlled by five . just one judgment my lord that your lordships may note it i don't have the time to read it . that's my lord it's in volume five b my lord . at page five forty seven . sorry five twenty two at my lords paras thirty eight and thirty nine at five forty seven . that five my lords will not control the actual width of the jurisdiction .
+
+spk_1001:
+i'm sure a lot of other states have this . under the revenue law in maharashtra if a certain point arose before a civil court you had to refer it to the revenue authorities for determination . what used to happen then is the moment you got the revenue authorities everything then went into a series of procedural remedies revision a statement of case an appeal . so what the experience was that the entire process before the civil courts was stalled because until a finding was reached by revenue authority and exactly that's what's going to happen here . the moment we read the stamp act provisions to the eleven six a stage or the eleven six stage the net consequence is going to be that the entire gamut of remedies under the stamp act will have to be exhaustive and that never comes to an end . it goes on for years .
+
+spk_1042:
+no my lord . there i have two submissions my lord . one is my lord there is assumption implicit in this that the arbitral tribunal will handle it better . and that the arbitral tribunal will be able to control the stamp proceedings equally well . that's an assumption i would say with respect my lord because if the court is not able to control it my lords as your lordships are observing my lord .
+
+spk_1022:
+why will the courts control it ? it is not .
+
+spk_1042:
+no it's not controlling . that i'll deal with separately .
+
+spk_1022:
+. no the intent of an arbitration act very basic summary nature of preceding eleven six . why is it detailed under threshold . whether they control it better or not control it better . the arbitrator .
+
+spk_1042:
+. if the concern is .
+
+spk_1001:
+twenty nineteen amendment though not enforced .
+
+spk_1042:
+yes .
+
+spk_1001:
+. gives us an idea about the mind of the legislature .
+
+spk_1042:
+correct .
+
+spk_1001:
+. which is to continuously constrict or constrict or confine the intervention of the court at the first look stage . by taking it away completely if the amendment were to be enforced .
+
+spk_1042:
+yes my lords therefore my lords what we had suggested was kindly just have the order of the judgment of the delhi high court in splendor because my lords it sets out a whole scheme as to how to control .
+
+spk_1001:
+that you have made a point delhi and bombay
+
+spk_1022:
+constitution bench judgement whether everything should be left in a limbo or they devised the method .
+
+spk_1042:
+actually my lord it's not a case of limbo . because they've actually devised the method to expedite it and control time frames . in fact in the bombay case they found that the difference was rs . forty four .
+
+spk_1001:
+they were implementing the constitution bench .
+
+spk_1042:
+it's a workable solution is what i'm saying . what i'm suggesting was it's a workable solution . it's not a solution that can't work my lord .
+
+spk_1001:
+thank you mister nayyar . thank you very much .
+
+spk_1042:
+only one sorry answer . one last point my lords was on this on the question of thirty five . it says for any purpose . in avinash kumar chauhan your lordships have said my lords if it is not stamped unlike forty nine of the registration act it cannot be reused even for a collateral purpose . that is avinash kumar chauhan my lords is in volume five b page one four at para twenty two to twenty five page one ten . i'm grateful .
+
+spk_1039:
+i am supposed to take not more than ten minutes . so that my learned friends also .
+
+spk_1001:
+what are your submissions mister dewan ? are you now mentally on that side you're still on this side ?
+
+spk_1039:
+i have always i am appearing for an institution . my difficulty with as far as the challenge to the nn global judgment is this . we affirm nn global the five judges on the basis that the doctrine of separability is limited and that the arbitration clause save and except for matters under section sixteen is part and parcel of the main contract . so to that extent we affirm nn global two . the little leg which stands on that side which is in fact the practical leg that under section eleven an arbitration need not be stalled if an arbitration agreement is inadequately or not stamped at all or the main contract is not stamped . now why is the doctrine of separability relevant ?
+
+spk_1022:
+that is the only point we are deciding .
+
+spk_1039:
+that's correct . in fact you're not just heard mister khambata at length on the doctrine of separability where he suggested .
+
+spk_1022:
+i've been saying repeatedly and i think on behalf of . people have gone here there in many places .
+
+spk_1039:
+that's right .
+
+spk_1022:
+we have repeatedly i think at cost of repetition the chief justice all of us have been repeating what we are deciding . if we are repeating what we are deciding what's the point of saying . he said this . so i'm saying this . so and so said this so i'm saying this .
+
+spk_1039:
+i appreciate . why is the doctrine of separability relevant ? i won't take more than a minute to explain to my lords . if your lordships holds that today the parent agreement and the arbitration agreement are fused for all purposes save and exception for section sixteen then the challenge as far as inadequacy of stamping really goes to the challenge as far as the main agreement is concerned and where there could be . where the level of stamping the quantum of stamping becomes a matter of dispute . it's a matter of .
+
+spk_1022:
+we are not dealing . submitting before us . even if . the point is if you are debating it i agree . you have a right to say but we are not dealing with it . we have said so twenty times . we are not . we are saying the only issue we're dealing with is should at this stage mister divan addressed it . he felt that no at eleven six stage itself in the first blush we should look into it . now they are saying no don't look into it . that's all .
+
+spk_1039:
+my lords i have no difficulty . my written submissions are there . in case your lordships go into the doctrine of separability . my submissions are there that it must be restricted . that's all . now i come to the second point . and the only point that i will then address my points on which is in relation to section eleven . and whether should an arbitration be stalled ? if your lordships has section thirty three of the stamp act .
+
+spk_1022:
+i thought you were on the side of the .
+
+spk_1039:
+on their side .
+
+spk_1022:
+then there is nothing to add .
+
+spk_1039:
+no . the only difference my lords is this . mister datar seemed to suggest that a section eleven court could perhaps take evidence . he said . i'm not arguing that they can't take evidence . mister khambata said perhaps they cannot take evidence . my position .
+
+spk_1001:
+why do we have to go into these ?
+
+spk_1039:
+because the section thirty three of the stamp act . and i will tell your lordships why . if your lordship has section thirty three of the stamp act what does thirty three set out . what thirty three sets out is that every person by having by law or consent of parties authority to receive evidence . my lords that's the starting point . now by my respectful submission is this . once parties have chosen arbitration as a mechanism for resolving disputes they have by consent under the arbitration act authorize the arbitral tribunal to be the body which receives evidence . and that becomes evident from section nineteen .
+
+spk_1022:
+thank you . that's exactly what i said before . you have a chosen judge you have an arbitrator the arbitrator will take a call .
+
+spk_1039:
+and the consent . so therefore as far as the second part of section thirty three is concerned it doesn't arise because by consent you've said the tribunal receives evidence . now my lords what about the first part ? every person having by law authority to receive evidence . now that is where your lordships has to consider the arbitration act and section eleven . there my respectful submission is this . under section eleven your lordships is only appointing an arbitrator . your lordships is not the court under two one e . that's the first point . apropos to what followed from the honourable the chief justice which is that all you are doing is examining the existence of an arbitration agreement . my respectful submission is that that power is constrained only to examination of the existence . now when a party comes to a court under section eleven and says please don't act on the agreement because it is not inadequately stamped . that's not a dispute which goes to existence . because the agreement exists the party accepts that it signed the agreement in writing in terms of section seven because all that section seven requires is an agreement in writing which is signed by the parties or perhaps exchange in other forms . now if the agreement exists but cannot be enforced then under section eleven the court has no power to go ahead and impound a document or even look into the stamp act . and therefore in my respectful submission really the way out . and that's really the end of my submission is this . the way out for the court is to say we are constrained because we are not a court under two one e and section eleven court has no power to receive evidence . if it doesn't receive evidence it looks to see whether there's an arbitration agreement in existence . if it is it refers the matter to arbitration because the defence is not that there is an inexistent agreement . the defence is not that i've not signed the agreement .
+
+spk_1001:
+you are therefore supporting that submission .
+
+spk_1039:
+to that extent i support that position because that's the long and short of all that i have . that all of this has been set out in my written submissions .
+
+spk_1001:
+thank you mister dewan .
+
+spk_0067:
+i am at seven seven point one .
+
+spk_1001:
+no one second mister khambata ? how do you read that one part of section thirty five ? just a couple of questions really which . one what is the object of section five ? i'll come to that in a moment . section thirty five . thirty five says in stamp act no instruments chargeable if duty shall be admitted in evidence for any purpose by any person having by law or consent of party's authority to receive evidence right ?
+
+spk_1017:
+yes my lord .
+
+spk_1001:
+the court under eleven is not that part . that's fair enough . now or shall be acted upon registered or authenticated by any such person . now any such person means the person referred to earlier
+
+spk_1017:
+the first part .
+
+spk_1001:
+who is authorized to receive evidence . but now what follows is or by any public officer . now would a court technically under eleven not be a public officer ? because now see thirty three for a moment .
+
+spk_1017:
+yes . thirty three has a slightly different language . person in charge of a public office .
+
+spk_1001:
+of public office .
+
+spk_1017:
+but i would with respect will not say a section eleven court is a public officer . it's a court under section eleven for the purpose of section eleven it's not a public officer . public officer is an officer who's of the executive discharge administrative functions et cetera . therefore section eleven court may not be covered by thirty three or thirty five
+
+spk_1021:
+thirty three and thirty five were dealt with by justice roy and this expression acted upon was dealt with by him in about seven or eight paragraphs .
+
+spk_1001:
+what did justice roy hold on acted upon ?
+
+spk_1021:
+my lord what he says is your lordship will see thirty five is a consequence of thirty three . thirty five is not a standalone .
+
+spk_1001:
+absolutely .
+
+spk_1021:
+thirty three the thirty three has two parts . thirty three one the operative part is my lord i'm not going to the first part my learned friend has addressed your lordships on that . shall if it appears to him that such instrument is not duly stamped . so that is an examination which is wider than the eleven six a examination . so the eleven six a court is constricted in its examination as compared to any assuming it's a public officer . it's a case of concentric circles my lords .
+
+spk_1001:
+so your submission really is that the scope of the inquiry in eleven six court is much more limited . or a eleven six a court .
+
+spk_1021:
+and that is why my lords just see joseph's judgment which is summarized in paragraphs one sixty one to one sixty nine . his two reasons are he has to then go to the extent of saying that it does not exist in law that's the error in the judgment . he did not need to if that leap was required to bring it within eleven six a . so my lord if thirty three one doesn't apply thirty three two doesn't apply then my lord thirty five doesn't apply . justice roy has taken a slightly different approach as well that thirty five thirty six has to be read and my lord there is a case on limitation where there is a decree . a decree is enforceable even though unstamped . so on that basis he says a decree is my lord the word acted upon it's not an absolute bar it's a curable defect . that is how he has got around it . i can mention paragraph .
+
+spk_1001:
+we will have a look at it .
+
+spk_1039:
+my lord there is one decision .
+
+spk_1021:
+so my lord there are various ways of getting around thirty three and thirty five we can put in a note on .
+
+spk_1039:
+my lord there is one decision of your lordship in fact defines public which deals with the word public officer . in the context of section thirty three read with section seventy three of the stamp act .
+
+spk_1001:
+what is the citation ? what does it say ?
+
+spk_1039:
+no the citation is twenty five one scc four ninety six it's not on record my lord we have just taken this out now . and that my lords at paragraph three looks at a public officer as one who would be somebody under section seventy three of the stamp act . which says every public officer having in his custody any registers books records papers documents or proceeding et cetera et cetera the inspection of which . so my lords there were category of public there were public officers having in their custody the registers et cetera were my lords used by your lordships in this decision to say the term public officer having in his custody as occurring in section seventy three can be defined by having regard to the expression public officer .
+
+spk_1001:
+to seventy three ?
+
+spk_1039:
+it appears to be as it says the term public officer as occurring in seventy three can be defined by having regard to the expression public office as occurring in section thirty three . and then it says that the central legislation including seventy three took care to see how the power to inspect was only confined to documents et cetera et cetera that appears my lords to be one possibility .
+
+spk_1001:
+thank you very much .
+
+spk_1008:
+just one point . at least our position we believe that the high court and the supreme court is covered by the opening part every person having by law a consent of party's authority to receive evidence .
+
+spk_1085:
+my lords just one request .
+
+spk_1008:
+we are covered by that we don't need to really go in .
+
+spk_1085:
+just one request my lord . mister datar is not here . just in a note we had made . we wanted to just hand it over . this covers our points in rejoinder on five . just i'm handing over the note . your lordship may see it .
+
+spk_1040:
+on the interpretation of hindustan steel which is in para sixty five and seventy of the constitution bench judgment because what happened there was after stamp paper then it was being stated that it should not be . so my lord that is also analysed . therefore to say that the hindustan steel judgment will actually have an impact my lord is not correct . because what actually can be acted upon can only be enforceable .
+
+spk_1001:
+alright . thank you .
+
+spk_1017:
+may i put in a short note on public officer . just a short one .
+

@@ -1,0 +1,327 @@
+SPEECH RECOVERY — all-speakers_parakeetrnnt1.1b_disablePass1Extra  (file_015 excluded)
+
+file             init_audio  recovered    rec@0.4 rec/init r04/init   segs seg@0.4
+audio_file_001      4:58:43    2:28:22    2:27:13    49.7%    49.3%   2182    2153
+audio_file_002      0:18:10    0:09:34    0:09:23    52.7%    51.7%    179     177
+audio_file_003      5:30:59    2:32:17    2:30:18    46.0%    45.4%   2468    2436
+audio_file_004      5:17:45    2:07:44    2:04:57    40.2%    39.3%   1913    1867
+audio_file_005      4:05:10    1:55:41    1:52:52    47.2%    46.0%   1653    1603
+audio_file_006      5:22:00    2:33:30    2:31:03    47.7%    46.9%   2376    2330
+audio_file_007      5:23:05    2:25:59    2:23:39    45.2%    44.5%   2337    2286
+audio_file_008      5:18:05    2:17:24    2:15:05    43.2%    42.5%   2246    2198
+audio_file_009      0:23:25    0:15:21    0:14:42    65.6%    62.8%    246     237
+audio_file_010      4:40:35    1:37:34    1:36:36    34.8%    34.4%   1640    1608
+audio_file_011      4:15:50    1:45:14    1:44:33    41.1%    40.9%   1594    1577
+audio_file_012      3:29:56    2:13:23    2:03:55    63.5%    59.0%   1863    1762
+audio_file_013      1:19:45    0:43:33    0:42:25    54.6%    53.2%    716     696
+audio_file_014      5:18:34    1:45:41    1:43:19    33.2%    32.4%   1927    1892
+audio_file_016      5:18:53    2:29:39    2:26:49    46.9%    46.0%   2591    2524
+audio_file_017      5:22:25    2:15:28    2:13:04    42.0%    41.3%   2399    2354
+audio_file_018      1:17:15    0:26:33    0:24:09    34.4%    31.3%    474     441
+audio_file_019      5:21:38    2:29:30    2:27:53    46.5%    46.0%   2255    2216
+audio_file_020      3:54:26    1:35:56    1:29:33    40.9%    38.2%   1652    1544
+audio_file_021      0:10:55    0:07:15    0:07:00    66.5%    64.1%    122     119
+audio_file_022      5:34:42    2:31:40    2:30:00    45.3%    44.8%   2244    2209
+audio_file_023      0:33:30    0:11:18    0:11:08    33.7%    33.2%    179     172
+audio_file_024      5:45:45    2:35:59    2:25:18    45.1%    42.0%   1906    1749
+TOTAL              89:01:32   39:34:31   38:34:55    44.5%    43.3%  37162   36150
+
+Total initial audio (23 files, excl 015) : 89:01:32  (89.03 h)
+Total speech recovered (all segments)    : 39:34:31  (39.58 h = 44.5% of audio)
+Total speech recovered @ avg_score>=0.4  : 38:34:55  (38.58 h = 43.3% of audio)
+
+PER-SPEAKER recovered duration @ avg_score>=0.4  (file | speaker, desc):
+file|speaker                      rec@0.4   segs
+audio_file_022|spk_1006           2:01:05   1678
+audio_file_017|spk_1003           1:55:31   2006
+audio_file_019|spk_1004           1:51:37   1560
+audio_file_008|spk_1002           1:42:53   1594
+audio_file_014|spk_1007           1:32:00   1699
+audio_file_016|spk_1009           1:28:26   1658
+audio_file_011|spk_1002           1:24:08   1188
+audio_file_010|spk_1002           1:18:24   1262
+audio_file_003|spk_1004           1:04:48    925
+audio_file_020|spk_1003           0:57:12   1045
+audio_file_007|spk_1005           0:53:55    820
+audio_file_004|spk_1011           0:53:29    858
+audio_file_006|spk_1010           0:49:10    882
+audio_file_012|spk_1008           0:47:15    580
+audio_file_006|spk_1013           0:45:47    638
+audio_file_001|spk_1008           0:43:49    664
+audio_file_024|spk_1014           0:43:44    308
+audio_file_012|spk_1017           0:38:50    575
+audio_file_024|spk_1018           0:34:32    499
+audio_file_004|spk_1021           0:33:31    419
+audio_file_006|spk_1005           0:31:37    378
+audio_file_005|spk_1005           0:28:21    323
+audio_file_024|spk_1019           0:26:01    328
+audio_file_016|spk_1016           0:25:08    305
+audio_file_016|spk_1001           0:24:28    394
+audio_file_022|spk_1001           0:22:39    403
+audio_file_003|spk_1012           0:21:35    505
+audio_file_013|spk_1003           0:21:06    355
+audio_file_005|spk_1012           0:20:44    380
+audio_file_024|spk_1001           0:19:24    317
+audio_file_008|spk_1001           0:18:15    320
+audio_file_001|spk_1004           0:18:06    192
+audio_file_007|spk_1001           0:17:22    293
+audio_file_003|spk_1001           0:16:09    267
+audio_file_007|spk_1023           0:16:00    237
+audio_file_006|spk_1001           0:15:50    246
+audio_file_001|spk_1015           0:15:19    188
+audio_file_005|spk_1015           0:14:42    149
+audio_file_019|spk_1001           0:14:36    251
+audio_file_007|spk_1029           0:14:03    277
+audio_file_018|spk_1001           0:13:50    288
+audio_file_003|spk_1030           0:13:46    206
+audio_file_005|spk_1004           0:13:37    232
+audio_file_001|spk_1001           0:12:57    228
+audio_file_011|spk_1001           0:12:14    207
+audio_file_001|spk_1027           0:11:58    151
+audio_file_004|spk_1031           0:11:27    160
+audio_file_019|spk_1028           0:10:47    202
+audio_file_010|spk_1001           0:10:46    188
+audio_file_007|spk_1036           0:10:04    110
+audio_file_007|spk_1032           0:10:02    189
+audio_file_001|spk_1034           0:09:51    184
+audio_file_004|spk_1037           0:09:04    130
+audio_file_001|spk_1040           0:08:58     97
+audio_file_004|spk_1001           0:08:56    146
+audio_file_024|spk_1004           0:08:47     95
+audio_file_005|spk_1001           0:08:40    146
+audio_file_012|spk_1022           0:08:28    156
+audio_file_018|spk_1025           0:08:22    113
+audio_file_017|spk_1001           0:08:19    153
+audio_file_020|spk_1033           0:08:12    111
+audio_file_005|spk_1010           0:08:11    174
+audio_file_012|spk_1001           0:07:57    122
+audio_file_013|spk_1004           0:07:47    126
+audio_file_003|spk_1020           0:07:40    139
+audio_file_020|spk_1038           0:07:36     90
+audio_file_012|spk_1042           0:07:18    131
+audio_file_005|spk_1043           0:07:16     63
+audio_file_008|spk_1020           0:07:15    139
+audio_file_009|spk_1001           0:07:12    125
+audio_file_001|spk_1045           0:07:11    172
+audio_file_012|spk_1039           0:07:10    100
+audio_file_024|spk_1048           0:07:08     98
+audio_file_014|spk_1001           0:07:05    116
+audio_file_007|spk_1049           0:06:57     85
+audio_file_003|spk_1046           0:06:37    107
+audio_file_003|spk_1016           0:06:26     83
+audio_file_020|spk_1001           0:06:08    124
+audio_file_001|spk_1050           0:06:02     65
+audio_file_020|spk_1015           0:06:01     87
+audio_file_013|spk_1001           0:05:49     98
+audio_file_003|spk_1002           0:05:15    100
+audio_file_002|spk_1012           0:04:58     97
+audio_file_001|spk_1016           0:04:49     45
+audio_file_006|spk_1024           0:04:34    108
+audio_file_010|spk_1024           0:04:29     96
+audio_file_023|spk_1001           0:04:27     77
+audio_file_004|spk_1017           0:03:57     66
+audio_file_007|spk_1055           0:03:55     69
+audio_file_011|spk_1024           0:03:54    100
+audio_file_021|spk_1001           0:03:47     66
+audio_file_002|spk_1001           0:03:45     67
+audio_file_016|spk_1047           0:03:41     77
+audio_file_004|spk_1020           0:03:15     66
+audio_file_013|spk_1015           0:03:10     39
+audio_file_019|spk_1035           0:03:06     69
+audio_file_003|spk_1015           0:02:58     24
+audio_file_012|spk_1020           0:02:56     43
+audio_file_007|spk_1059           0:02:55     41
+audio_file_005|spk_0057           0:02:45     23
+audio_file_003|spk_1056           0:02:42     40
+audio_file_017|spk_1025           0:02:42     49
+audio_file_008|spk_1022           0:02:35     60
+audio_file_022|spk_1035           0:02:35     53
+audio_file_007|spk_1022           0:02:31     58
+audio_file_009|spk_1004           0:02:30     41
+audio_file_019|spk_1041           0:02:24     40
+audio_file_019|spk_1051           0:02:19     47
+audio_file_005|spk_1063           0:02:18     22
+audio_file_006|spk_1004           0:02:09     38
+audio_file_003|spk_1061           0:02:06     33
+audio_file_023|spk_1012           0:02:03     31
+audio_file_013|spk_1065           0:02:02     24
+audio_file_007|spk_1004           0:02:01     40
+audio_file_005|spk_1053           0:01:57     35
+audio_file_013|spk_1066           0:01:55     42
+audio_file_014|spk_1020           0:01:55     29
+audio_file_023|spk_1060           0:01:52     26
+audio_file_005|spk_1024           0:01:45     24
+audio_file_007|spk_1020           0:01:44     34
+audio_file_024|spk_1041           0:01:44     35
+audio_file_001|spk_1068           0:01:41     40
+audio_file_017|spk_1035           0:01:39     43
+audio_file_005|spk_1058           0:01:37     13
+audio_file_024|spk_1035           0:01:36     27
+audio_file_012|spk_1021           0:01:33     21
+audio_file_011|spk_1062           0:01:26     33
+audio_file_001|spk_1070           0:01:24     34
+audio_file_019|spk_1054           0:01:24     26
+audio_file_017|spk_1041           0:01:19     26
+audio_file_016|spk_1069           0:01:16     25
+audio_file_006|spk_1053           0:01:15     25
+audio_file_001|spk_1071           0:01:14     20
+audio_file_009|spk_1022           0:01:11     19
+audio_file_014|spk_1002           0:01:09     26
+audio_file_011|spk_1064           0:01:09     25
+audio_file_018|spk_1020           0:01:08     24
+audio_file_016|spk_0067           0:01:07     14
+audio_file_020|spk_1025           0:01:05     19
+audio_file_021|spk_1002           0:01:01     17
+audio_file_001|spk_1058           0:00:59     11
+audio_file_011|spk_1073           0:00:57     14
+audio_file_021|spk_1004           0:00:57     20
+audio_file_010|spk_1080           0:00:54     19
+audio_file_019|spk_1011           0:00:54     11
+audio_file_020|spk_1035           0:00:54     21
+audio_file_016|spk_1078           0:00:53     15
+audio_file_017|spk_1006           0:00:53     20
+audio_file_022|spk_1041           0:00:53     20
+audio_file_001|spk_1012           0:00:52     16
+audio_file_009|spk_1077           0:00:52      7
+audio_file_020|spk_1054           0:00:49     14
+audio_file_008|spk_1027           0:00:47     14
+audio_file_022|spk_1054           0:00:47     20
+audio_file_010|spk_1064           0:00:43     15
+audio_file_023|spk_1041           0:00:43      7
+audio_file_009|spk_0076           0:00:43     14
+audio_file_009|spk_1010           0:00:41     11
+audio_file_024|spk_1003           0:00:40      9
+audio_file_008|spk_1047           0:00:40     18
+audio_file_001|spk_1091           0:00:39     18
+audio_file_024|spk_1090           0:00:37     13
+audio_file_007|spk_1027           0:00:36      6
+audio_file_004|spk_1022           0:00:36     13
+audio_file_017|spk_1051           0:00:36     17
+audio_file_018|spk_1047           0:00:35     12
+audio_file_017|spk_1054           0:00:35     11
+audio_file_007|spk_1012           0:00:35     10
+audio_file_005|spk_1082           0:00:34     11
+audio_file_023|spk_1026           0:00:33      7
+audio_file_014|spk_1004           0:00:33     13
+audio_file_012|spk_0074           0:00:33      6
+audio_file_009|spk_1072           0:00:33      8
+audio_file_011|spk_1084           0:00:32      8
+audio_file_012|spk_1083           0:00:31      6
+audio_file_020|spk_1041           0:00:30     10
+audio_file_016|spk_1002           0:00:29      7
+audio_file_007|spk_1047           0:00:29      7
+audio_file_014|spk_1026           0:00:29      6
+audio_file_023|spk_1086           0:00:29      5
+audio_file_010|spk_1062           0:00:28     10
+audio_file_010|spk_1101           0:00:28      9
+audio_file_002|spk_1041           0:00:28     10
+audio_file_008|spk_1072           0:00:28     12
+audio_file_022|spk_1093           0:00:28      7
+audio_file_012|spk_1085           0:00:27      5
+audio_file_001|spk_1053           0:00:27      8
+audio_file_012|spk_1040           0:00:27      3
+audio_file_022|spk_1012           0:00:26      8
+audio_file_006|spk_1012           0:00:26      9
+audio_file_021|spk_1046           0:00:25      3
+audio_file_008|spk_1005           0:00:25      9
+audio_file_001|spk_1002           0:00:25      8
+audio_file_022|spk_1051           0:00:24     12
+audio_file_021|spk_1030           0:00:24      6
+audio_file_008|spk_1088           0:00:23      7
+audio_file_021|spk_1104           0:00:22      6
+audio_file_009|spk_1094           0:00:22      7
+audio_file_009|spk_1096           0:00:22      3
+audio_file_017|spk_1075           0:00:21      9
+audio_file_017|spk_1092           0:00:21      7
+audio_file_016|spk_1097           0:00:20      8
+audio_file_023|spk_1095           0:00:19      6
+audio_file_008|spk_1006           0:00:19      8
+audio_file_013|spk_1051           0:00:19      7
+audio_file_020|spk_1075           0:00:18      4
+audio_file_005|spk_1013           0:00:18      5
+audio_file_019|spk_0067           0:00:18      3
+audio_file_008|spk_1004           0:00:18      4
+audio_file_010|spk_1087           0:00:17      7
+audio_file_012|spk_1047           0:00:16      9
+audio_file_008|spk_1081           0:00:16      5
+audio_file_019|spk_1003           0:00:15      4
+audio_file_022|spk_1011           0:00:15      2
+audio_file_017|spk_1011           0:00:15      3
+audio_file_004|spk_1054           0:00:15      4
+audio_file_017|spk_1015           0:00:15      4
+audio_file_013|spk_1098           0:00:14      4
+audio_file_016|spk_1012           0:00:14      5
+audio_file_016|spk_1105           0:00:14      6
+audio_file_016|spk_1004           0:00:14      5
+audio_file_024|spk_1103           0:00:14      4
+audio_file_001|spk_1081           0:00:13      7
+audio_file_020|spk_1051           0:00:13      6
+audio_file_002|spk_1060           0:00:12      3
+audio_file_024|spk_1099           0:00:12      3
+audio_file_011|spk_1087           0:00:12      1
+audio_file_020|spk_1044           0:00:12      5
+audio_file_024|spk_1012           0:00:12      4
+audio_file_022|spk_1108           0:00:12      3
+audio_file_017|spk_0074           0:00:11      2
+audio_file_023|spk_1102           0:00:11      3
+audio_file_003|spk_1047           0:00:11      5
+audio_file_007|spk_1088           0:00:11      3
+audio_file_023|spk_1021           0:00:11      4
+audio_file_004|spk_1008           0:00:11      2
+audio_file_008|spk_0067           0:00:11      2
+audio_file_009|spk_1029           0:00:10      1
+audio_file_024|spk_1005           0:00:10      3
+audio_file_020|spk_0052           0:00:10      2
+audio_file_004|spk_1039           0:00:10      2
+audio_file_008|spk_1111           0:00:10      3
+audio_file_007|spk_0067           0:00:10      4
+audio_file_008|spk_1007           0:00:09      2
+audio_file_016|spk_0057           0:00:09      2
+audio_file_019|spk_1025           0:00:08      2
+audio_file_006|spk_1058           0:00:08      2
+audio_file_024|spk_0057           0:00:08      2
+audio_file_022|spk_0100           0:00:08      1
+audio_file_022|spk_1118           0:00:08      2
+audio_file_005|spk_0115           0:00:08      3
+audio_file_018|spk_1004           0:00:08      3
+audio_file_007|spk_1113           0:00:07      2
+audio_file_023|spk_1087           0:00:07      3
+audio_file_020|spk_1028           0:00:07      3
+audio_file_001|spk_0109           0:00:07      1
+audio_file_001|spk_0100           0:00:07      2
+audio_file_016|spk_1114           0:00:07      1
+audio_file_018|spk_0107           0:00:06      1
+audio_file_010|spk_1117           0:00:06      2
+audio_file_004|spk_1058           0:00:06      1
+audio_file_012|spk_0057           0:00:06      1
+audio_file_023|spk_0112           0:00:06      1
+audio_file_009|spk_1005           0:00:05      1
+audio_file_020|spk_1004           0:00:05      2
+audio_file_017|spk_1004           0:00:05      3
+audio_file_019|spk_1017           0:00:05      1
+audio_file_001|spk_0116           0:00:05      2
+audio_file_006|spk_1054           0:00:05      2
+audio_file_008|spk_0074           0:00:04      1
+audio_file_021|spk_1015           0:00:04      1
+audio_file_023|spk_1004           0:00:04      1
+audio_file_024|spk_0107           0:00:03      2
+audio_file_014|spk_1006           0:00:03      1
+audio_file_012|spk_1054           0:00:03      2
+audio_file_006|spk_0074           0:00:03      1
+audio_file_013|spk_1054           0:00:03      1
+audio_file_023|spk_1039           0:00:03      1
+audio_file_012|spk_0107           0:00:03      1
+audio_file_014|spk_1119           0:00:03      1
+audio_file_024|spk_1088           0:00:03      1
+audio_file_003|spk_1054           0:00:03      1
+audio_file_007|spk_1006           0:00:03      1
+audio_file_017|spk_1033           0:00:02      1
+audio_file_014|spk_0121           0:00:02      1
+audio_file_016|spk_1005           0:00:02      1
+audio_file_012|spk_0067           0:00:02      1
+audio_file_024|spk_1054           0:00:02      1
+audio_file_011|spk_1122           0:00:02      1
+audio_file_006|spk_1056           0:00:01      1
+audio_file_016|spk_0123           0:00:01      1
+audio_file_020|spk_0120           0:00:01      1
+audio_file_003|spk_0121           0:00:01      1

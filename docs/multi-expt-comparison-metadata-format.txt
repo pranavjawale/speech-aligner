@@ -1,0 +1,67 @@
+This format is used when we are comparing the already finished evaluations
+of different model / data / eval system runs
+
+This step should be done only after all the single model-data-exptTag experiment
+are finished and rtheir results are avaialble under /workspace/code2/docs/experiment-logs
+
+1. Compare the models of all experiments being asked to compare
+
+2. Compare the test data of all experiments being asked to compare
+
+3. Compare the evaluation hyper parameters of all experiments being asked to compare
+
+4. Compare the WER calculation methodology (whether same or different)
+of all experiments being asked to compare.
+   -> This is a GATE, not just a display: if the normalizer / WER definition
+      differs across experiments, the WER numbers are NOT comparable. The tool
+      must detect this and mark the comparison "NOT COMPARABLE" (with the reason)
+      rather than present a misleading delta.
+
+5. Compare the time taken to evaluate of all experiments being asked to compare
+   -> Time is only comparable on the SAME hardware. Pull the compute specs (GPU)
+      of each experiment; if they differ, annotate the time comparison as "run on
+      different GPUs — not directly comparable". Also compare RTFx (more portable
+      than raw seconds).
+
+6. Prepare a table format for Model, Test data , WER combination -
+table should be directly portable in excel workbook
+(dont use text format which jumbles text when we paste in notepad or excel)
+   -> Emit a real .csv written with a proper CSV writer (quoted fields), NOT
+      whitespace-aligned text. Keep WER as a numeric FRACTION (0.3432), not
+      "34.32%" (percent strings become text cells and break sorting/formulas).
+      Report BOTH corpus_wer and mean_utt_wer, plus a delta-vs-baseline column
+      and a rank, so the table answers "which is best and by how much".
+
+7. COMPARABILITY CHECK (run before any delta is shown). Verify and report, as an
+   explicit comparable=true/false verdict with reasons:
+     - same test data  : compare data.manifest_md5 across experiments
+     - same WER method  : compare eval.normalizer + WER definition (see rule 4)
+     - same filtering   : compare data.conf_filter_threshold
+     - same padding     : compare data.padded / pad_seconds
+     - same scored set  : compare summary.empty_ref / empty_hyp (denominator)
+   A corpus-WER delta is only valid when test data + WER method are identical.
+
+8. PAIRED / PER-SPEAKER DELTA (only when the test data is identical). Beyond the
+   corpus number, emit a per-speaker WER table (each experiment's WER per
+   "file|speaker" + delta vs baseline) so it is clear where a fine-tune helped or
+   hurt. Where per-utterance CSVs exist (code2/results/<exp>.csv), also report
+   segment-level win / loss / tie counts vs the baseline.
+
+9. INPUTS. The comparison takes a list of experiment names (dataTag_modelTag_exptTag)
+   and one optional baseline name. Each is resolved to its
+   docs/experiment-logs/<name>.metadata.json (the expt-track-list.txt from the
+   single-experiment rule #11 is the registry of what is available). Fail clearly
+   if a named experiment is not finished / its metadata is missing. Support N
+   experiments, not just a pair.
+
+10. COMPARISON IDENTITY + PROVENANCE. The comparison is itself a reproducible
+    artifact:
+      - give it a comparison-name; write outputs under
+        docs/experiment-logs/comparisons/<comparison-name>.{csv,metadata.json,summary.txt}
+      - record which experiments were compared (names + their metadata-file md5),
+        the comparison's git commit + finish datetime, and a single reproduce
+        command (analog of the single-experiment rule #10).
+      - append an entry (comparison-name, csv path, finished-at) to
+        docs/experiment-logs/comparison-track-list.txt (analog of rule #11).
+
+Dont declare a comparison complete until all 10 instructions are followed.

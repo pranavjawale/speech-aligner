@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "asrpipe"
+version = "0.1.0"
+description = "Court-audio ASR pipeline: VAD split -> LM-assisted alignment -> speaker segments -> fine-tune (clean reorg of speaker-segment-and-train)"
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+# Runtime deps are pinned in requirements.txt (main env) and requirements-nemo.txt
+# (NeMo eval/train env). whisperX is a pinned git dependency there (Q4).

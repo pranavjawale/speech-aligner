@@ -1,0 +1,30 @@
+comparison : finaltestpadded_ctc0.6b_base_ft_ftLM
+baseline   : finaltestpadded_parakeetctc0.6b_ft
+experiments: finaltestpadded_parakeetctc0.6b_base, finaltestpadded_parakeetctc0.6b_ft, finaltestpadded_parakeetctc0.6b_FT1_plus3gramLM
+WER comparable : False
+time comparable: True
+caveats:
+  - same_test_data differs: {'finaltestpadded_parakeetctc0.6b_base': '74e739d177ed6a0bf4c650c08cc0b1b5', 'finaltestpadded_parakeetctc0.6b_ft': '939a4d05903f49f99fe6f6388368f729', 'finaltestpadded_parakeetctc0.6b_FT1_plus3gramLM': '939a4d05903f49f99fe6f6388368f729'}
+
+rank  corpus_wer   mean_utt   Δvsbase  experiment
+   1      18.27%     24.28%     +0.00  finaltestpadded_parakeetctc0.6b_ft
+   2      20.09%     26.05%     +1.82  finaltestpadded_parakeetctc0.6b_FT1_plus3gramLM
+   3      23.39%     32.41%     +5.12  finaltestpadded_parakeetctc0.6b_base
+
+md5 note   : "WER comparable: False" is driven ONLY by finaltestpadded_parakeetctc0.6b_base,
+             whose manifest md5 differs because its segment dir was renamed
+             (speaker-segments-werstrat-padded -> ...-legal2023_38hrs-padded) — content is
+             byte-identical (2258/2258 basenames, 0 ref diffs; verified earlier). The two
+             experiments that matter here, _ft and _FT1_plus3gramLM, share the SAME manifest
+             md5 (939a4d...) and are FULLY comparable. All three eval the same 2258 refs with
+             the same normalizer, so the deltas below are valid.
+
+finding    : the 3-gram KenLM (shallow fusion, alpha=0.5/beta=1.0/beam=128) HURT the fine-tuned
+             model: 18.27% -> 20.09% (+1.82). Still better than base greedy (23.39%). The FT
+             acoustic model already internalized the train-domain, and the LM (built from the
+             SAME pseudo-label train text) adds no new signal while alpha=0.5 (a weight tuned
+             for the weaker BASE model's pass-1 localization) over-biases decoding. A dev-set
+             alpha sweep (try 0.1-0.3) or a larger/cleaner external LM would be the next step.
+
+reproduce  :
+  python -m asrpipe.reports.compare_experiments --name finaltestpadded_ctc0.6b_base_ft_ftLM --exps finaltestpadded_parakeetctc0.6b_base finaltestpadded_parakeetctc0.6b_ft finaltestpadded_parakeetctc0.6b_FT1_plus3gramLM --baseline finaltestpadded_parakeetctc0.6b_ft

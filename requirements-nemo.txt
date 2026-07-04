@@ -1,0 +1,111 @@
+# code2 NeMo eval/train env — Q5 (recreated under code2, NOT reused from /code).
+# Build recipe (reproduces the frozen-number env):
+#   python3 -m venv --system-site-packages .venv-nemo
+#   .venv-nemo/bin/python -m pip install -U pip
+#   .venv-nemo/bin/python -m pip install 'nemo_toolkit[asr]==2.7.3' 'python-docx==1.2.0'
+#   # S3 LM pre-pass decode deps (align/lm_prepass.py):
+#   .venv-nemo/bin/python -m pip install kenlm pygtrie          # numpy-2 safe
+#   .venv-nemo/bin/python -m pip install --no-deps pyctcdecode  # --no-deps: its numpy<2 pin must NOT downgrade numpy 2.4.x
+# torch/torchaudio 2.8.0+cu128 come from system site-packages (--system-site-packages).
+# Verified: nemo 2.7.3, torch 2.8.0+cu128, numpy 2.4.6, python-docx 1.2.0,
+#           kenlm 0.3.0, pyctcdecode 0.5.0, pygtrie 2.5.0.
+#
+# --- exact resolved (pip freeze --local) ---
+absl-py==2.4.0
+accelerate==1.14.0
+annotated-types==0.7.0
+audioread==3.1.0
+braceexpand==0.1.7
+cloudpickle==3.1.2
+colorama==0.4.6
+cuda-bindings==13.3.1
+cuda-pathfinder==1.5.6
+cytoolz==1.1.0
+datasets==5.0.0
+dill==0.4.1
+editdistance==0.8.1
+fiddle==0.3.0
+fsspec==2024.12.0
+gitdb==4.0.12
+GitPython==3.1.50
+graphviz==0.21
+huggingface_hub==0.36.2
+hydra-core==1.3.2
+indic_numtowords==1.1.0
+inflect==7.5.0
+intervaltree==3.2.1
+jiwer==3.1.0
+kaldi-python-io==1.2.2
+kaldialign==0.9.1
+lazy-loader==0.5
+lhotse==1.33.0
+libcst==1.8.6
+librosa==0.11.0
+lightning==2.4.0
+llvmlite==0.47.0
+lxml==6.1.1
+Markdown==3.10.2
+marshmallow==4.3.0
+mediapy==1.1.6
+ml_dtypes==0.5.4
+more-itertools==11.1.0
+msgpack==1.2.1
+multiprocess==0.70.19
+nemo-toolkit==2.7.3
+numba==0.65.1
+numexpr==2.13.1
+numpy==2.4.6
+nv-one-logger-core==2.3.1
+nv-one-logger-pytorch-lightning-integration==2.3.1
+nv-one-logger-training-telemetry==2.3.1
+omegaconf==2.3.0
+onnx==1.22.0
+overrides==7.7.0
+packaging==24.2
+peft==0.19.1
+pooch==1.9.0
+portalocker==3.2.0
+protobuf==5.29.6
+pyarrow==24.0.0
+pydantic==2.13.4
+pydantic_core==2.46.4
+pydub==0.25.1
+pyloudnorm==0.2.0
+python-docx==1.2.0
+resampy==0.4.3
+ruamel.yaml==0.19.1
+sacrebleu==2.6.0
+sacremoses==0.1.1
+sentencepiece==0.2.1
+sentry-sdk==2.64.0
+smmap==5.0.3
+sox==1.5.0
+soxr==1.1.0
+StrEnum==0.4.15
+tabulate==0.10.0
+tensorboard==2.20.0
+tensorboard-data-server==0.7.2
+text-unidecode==1.3
+toml==0.10.2
+toolz==1.1.0
+transformers==4.57.6
+typeguard==4.5.2
+typing-inspection==0.4.2
+wandb==0.28.0
+webdataset==1.0.2
+Werkzeug==3.1.8
+wget==3.2
+whisper_normalizer==0.1.12
+wrapt==2.2.2
+xxhash==3.8.0
+
+# --- S3 LM pre-pass (align/lm_prepass.py) decode deps — added 2026-07-02 ---
+# NOT part of the pip-freeze snapshot above. These feed pyctcdecode's KenLM(6g) beam
+# decode in S3 (the only stage that imports kenlm/pyctcdecode). Only S3 runs here, so
+# they live in the NeMo venv. `code2/setup_env.sh` auto-(re)installs them if missing.
+# IMPORTANT: install pyctcdecode with --no-deps — its stale numpy<2 pin would otherwise
+# downgrade numpy 2.4.x (which torch/NeMo/numba need). So it is left commented here to
+# keep it out of any `pip install -r` resolver pass; install it via the recipe header.
+kenlm==0.3.0
+pygtrie==2.5.0
+# pyctcdecode==0.5.0   # install with:  pip install --no-deps pyctcdecode   (see note above)

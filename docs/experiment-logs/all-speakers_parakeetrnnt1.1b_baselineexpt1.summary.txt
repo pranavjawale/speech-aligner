@@ -1,0 +1,21 @@
+experiment : all-speakers_parakeetrnnt1.1b_baselineexpt1
+model      : nvidia/parakeet-rnnt-1.1b  (base)
+             base pretrained (NGC/HF)
+             revision=eb4243f55e927ce6b33c7d5da3286053545bf25d
+data       : data/asr/manifests/segments/segments_all.jsonl
+             All 36,801 6c speaker segments (all speakers; train+dev+test), unpadded, unfiltered (no avg_score threshold)
+             utterances=36801  duration=2531.84 min  md5=0ee4911a7439105f178babbedb7fd69f
+             padded=False (pad_s=0.0)  conf_filter_threshold=None  observed_avg_score=[0.0,0.9732]
+mode       : streaming=False  vad_applied=False
+hyperparams: decoding=greedy_batch  batch_size=32  workers=8  normalizer=asrpipe.common.wer.normalize (lowercase, strip to [a-z0-9 ], collapse ws; word-level Levenshtein)
+scoring    : utterances=36801  scored=36801  empty_ref=0  empty_hyp=268
+compute    : NVIDIA RTX A4500 (19.7GB)  cuda=12.8  torch=2.8.0+cu128  nemo=2.7.3  driver=550.127.05
+code       : git 6a4727b69c8bdddb6a09a4e6d0bba8c00bfbbd57 (dirty=False)
+             script=/workspace/code2/src/asrpipe/asr/eval.py
+timing     : load=24.9s  decode=3971.0s  total=3996.0s  rtfx=38.3
+
+CORPUS WER : 43.17%
+mean utt   : 41.94%
+
+reproduce  :
+  .venv-nemo/bin/python -m asrpipe.asr.eval --manifest data/asr/manifests/segments/segments_all.jsonl --model nvidia/parakeet-rnnt-1.1b --exp-name all-speakers_parakeetrnnt1.1b_baselineexpt1 --batch-size 32 --data-description 'All 36,801 6c speaker segments (all speakers; train+dev+test), unpadded, unfiltered (no avg_score threshold)'

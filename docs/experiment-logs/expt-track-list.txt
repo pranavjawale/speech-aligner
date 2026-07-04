@@ -1,0 +1,11 @@
+expt-name	expt-log-file	finished-at
+all-speakers_parakeetrnnt1.1b_baselineexpt1	logs/experiments/all-speakers_parakeetrnnt1.1b_baselineexpt1.log	2026-07-02 06:07:43 UTC
+file016-postresync_parakeetrnnt1.1b_resyncexpt	/workspace/code2/docs/experiment-logs/file016-postresync_parakeetrnnt1.1b_resyncexpt.summary.txt	2026-07-02 15:59:37 UTC
+7driftfiles-postresync_parakeetrnnt1.1b_resyncexpt	/workspace/code2/docs/experiment-logs/7driftfiles-postresync_parakeetrnnt1.1b_resyncexpt.summary.txt	2026-07-02 16:28:58 UTC
+all-speakers_parakeetrnnt1.1b_disablePass1Extra	/workspace/code2/docs/experiment-logs/all-speakers_parakeetrnnt1.1b_disablePass1Extra.summary.txt	2026-07-03 04:12:27 UTC
+finaltestpadded_parakeetctc0.6b_base	/workspace/code2/docs/experiment-logs/finaltestpadded_parakeetctc0.6b_base.summary.txt	2026-07-03 07:05:09 UTC
+finaltestpadded_parakeetctc1.1b_base	/workspace/code2/docs/experiment-logs/finaltestpadded_parakeetctc1.1b_base.summary.txt	2026-07-03 07:10:24 UTC
+finaltestpadded_parakeetrnnt0.6b_base	/workspace/code2/docs/experiment-logs/finaltestpadded_parakeetrnnt0.6b_base.summary.txt	2026-07-03 07:14:53 UTC
+finaltestpadded_parakeetrnnt1.1b_base	/workspace/code2/docs/experiment-logs/finaltestpadded_parakeetrnnt1.1b_base.summary.txt	2026-07-03 07:20:01 UTC
+finaltestpadded_parakeetctc0.6b_ft	/workspace/code2/docs/experiment-logs/finaltestpadded_parakeetctc0.6b_ft.summary.txt	2026-07-03 14:47:17 UTC
+finaltestpadded_parakeetctc0.6b_FT1_plus3gramLM	logs/eval_FT1_plus3gramLM.log	2026-07-03 15:41:02 UTC

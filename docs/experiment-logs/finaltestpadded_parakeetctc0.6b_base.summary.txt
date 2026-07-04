@@ -1,0 +1,21 @@
+experiment : finaltestpadded_parakeetctc0.6b_base
+model      : nvidia/parakeet-ctc-0.6b  (base)
+             base pretrained (NGC/HF)
+             revision=ad09ba1cc62743fbc9814de5d2016fca9096485a
+data       : data/asr/splits-legal2023_38hrs-padded/test.jsonl
+             WER-stratified disablePass1Extra test split (26 speakers, @avg_score>=0.4, 2258 segs), silence-padded +0.5s both sides
+             utterances=2258  duration=178.35 min  md5=74e739d177ed6a0bf4c650c08cc0b1b5
+             padded=True (pad_s=0.5)  conf_filter_threshold=None  observed_avg_score=[0.4014,0.9515]
+mode       : streaming=False  vad_applied=False
+hyperparams: decoding=greedy_batch  batch_size=32  workers=8  normalizer=asrpipe.common.wer.normalize (lowercase, strip to [a-z0-9 ], collapse ws; word-level Levenshtein)
+scoring    : utterances=2258  scored=2258  empty_ref=0  empty_hyp=2
+compute    : NVIDIA RTX A4500 (19.7GB)  cuda=12.8  torch=2.8.0+cu128  nemo=2.7.3  driver=550.127.05
+code       : git 00a49a4d768ad212ff54f364aece5b15e5299bb2 (dirty=True)
+             script=/workspace/code2/src/asrpipe/asr/eval.py
+timing     : load=12.7s  decode=84.4s  total=97.1s  rtfx=126.7
+
+CORPUS WER : 23.39%
+mean utt   : 32.41%
+
+reproduce  :
+  .venv-nemo/bin/python -m asrpipe.asr.eval --manifest data/asr/splits-legal2023_38hrs-padded/test.jsonl --model nvidia/parakeet-ctc-0.6b --exp-name finaltestpadded_parakeetctc0.6b_base --batch-size 32 --padded --data-description 'WER-stratified disablePass1Extra test split (26 speakers, @avg_score>=0.4, 2258 segs), silence-padded +0.5s both sides'

@@ -1,0 +1,154 @@
+{
+  "experiment_name": "file016-postresync_parakeetrnnt1.1b_resyncexpt",
+  "finished_at": "2026-07-02 15:59:37 UTC",
+  "data": {
+    "manifest": "/tmp/claude-0/-workspace/855025c7-378b-489b-b30f-ff48094d8bbb/scratchpad/file016_postresync.jsonl",
+    "description": "file_016 post-resync speaker segments (2551, all speakers; unpadded, unfiltered) vs all-speakers baselineexpt1",
+    "utterances": 2551,
+    "manifest_md5": "31a778239d885f3ff1cc97c505912f55",
+    "padded": false,
+    "pad_seconds": 0.0,
+    "conf_filter_threshold": null,
+    "observed_avg_score_min": 0.1573,
+    "observed_avg_score_max": 0.9633
+  },
+  "model": {
+    "name": "nvidia/parakeet-rnnt-1.1b",
+    "path": "nvidia/parakeet-rnnt-1.1b",
+    "is_finetuned": false,
+    "description": "base pretrained (NGC/HF)",
+    "revision": "eb4243f55e927ce6b33c7d5da3286053545bf25d"
+  },
+  "compute": {
+    "python": "3.12.3",
+    "cpu_count": 48,
+    "platform": "Linux-6.8.0-45-generic-x86_64-with-glibc2.39",
+    "ram_gb": 251.6,
+    "torch": "2.8.0+cu128",
+    "cuda": "12.8",
+    "cudnn": 91002,
+    "gpu": "NVIDIA RTX A4500",
+    "gpu_mem_gb": 19.7,
+    "gpu_driver": "550.127.05",
+    "nemo": "2.7.3"
+  },
+  "timing": {
+    "load_s": 21.7,
+    "decode_s": 135.0,
+    "total_s": 156.7
+  },
+  "code": {
+    "eval_script": "/workspace/code2/src/asrpipe/asr/eval.py",
+    "git": {
+      "commit": "3f2f06bbec7444829e36937a3a2675a66af0c040",
+      "dirty": true
+    }
+  },
+  "eval": {
+    "decoding": "greedy_batch",
+    "batch_size": 32,
+    "workers": 8,
+    "limit": 0,
+    "streaming": false,
+    "vad_applied": false,
+    "normalizer": "asrpipe.common.wer.normalize (lowercase, strip to [a-z0-9 ], collapse ws; word-level Levenshtein)"
+  },
+  "reproduce_command": ".venv-nemo/bin/python -m asrpipe.asr.eval --manifest /tmp/claude-0/-workspace/855025c7-378b-489b-b30f-ff48094d8bbb/scratchpad/file016_postresync.jsonl --model nvidia/parakeet-rnnt-1.1b --exp-name file016-postresync_parakeetrnnt1.1b_resyncexpt --batch-size 32 --data-description 'file_016 post-resync speaker segments (2551, all speakers; unpadded, unfiltered) vs all-speakers baselineexpt1'",
+  "summary": {
+    "model": "nvidia/parakeet-rnnt-1.1b",
+    "manifest": "/tmp/claude-0/-workspace/855025c7-378b-489b-b30f-ff48094d8bbb/scratchpad/file016_postresync.jsonl",
+    "utterances": 2551,
+    "scored": 2551,
+    "empty_ref": 0,
+    "empty_hyp": 16,
+    "audio_min": 148.38,
+    "decode_s": 135.0,
+    "rtfx": 65.9,
+    "corpus_wer": 0.1889454052221092,
+    "mean_utt_wer": 0.229811665091063,
+    "per_speaker": {
+      "audio_file_016|spk_1001": {
+        "segs": 408,
+        "ref_words": 5095,
+        "wer": 0.2575073601570167
+      },
+      "audio_file_016|spk_1004": {
+        "segs": 7,
+        "ref_words": 67,
+        "wer": 0.4626865671641791
+      },
+      "audio_file_016|spk_1012": {
+        "segs": 5,
+        "ref_words": 55,
+        "wer": 0.45454545454545453
+      },
+      "audio_file_016|spk_1009": {
+        "segs": 1651,
+        "ref_words": 17453,
+        "wer": 0.15962871712599552
+      },
+      "audio_file_016|spk_1105": {
+        "segs": 6,
+        "ref_words": 44,
+        "wer": 0.36363636363636365
+      },
+      "audio_file_016|spk_1114": {
+        "segs": 1,
+        "ref_words": 25,
+        "wer": 0.6
+      },
+      "audio_file_016|spk_0057": {
+        "segs": 3,
+        "ref_words": 37,
+        "wer": 0.5405405405405406
+      },
+      "audio_file_016|spk_0123": {
+        "segs": 1,
+        "ref_words": 3,
+        "wer": 2.3333333333333335
+      },
+      "audio_file_016|spk_1069": {
+        "segs": 28,
+        "ref_words": 216,
+        "wer": 0.46296296296296297
+      },
+      "audio_file_016|spk_1047": {
+        "segs": 87,
+        "ref_words": 775,
+        "wer": 0.5225806451612903
+      },
+      "audio_file_016|spk_1097": {
+        "segs": 9,
+        "ref_words": 79,
+        "wer": 0.5189873417721519
+      },
+      "audio_file_016|spk_1005": {
+        "segs": 1,
+        "ref_words": 10,
+        "wer": 0.0
+      },
+      "audio_file_016|spk_1078": {
+        "segs": 16,
+        "ref_words": 150,
+        "wer": 0.38666666666666666
+      },
+      "audio_file_016|spk_0067": {
+        "segs": 15,
+        "ref_words": 252,
+        "wer": 0.3055555555555556
+      },
+      "audio_file_016|spk_1016": {
+        "segs": 306,
+        "ref_words": 5151,
+        "wer": 0.1285187342263638
+      },
+      "audio_file_016|spk_1002": {
+        "segs": 7,
+        "ref_words": 78,
+        "wer": 0.21794871794871795
+      }
+    }
+  },
+  "raw_results_csv": "/workspace/code2/results/file016-postresync_parakeetrnnt1.1b_resyncexpt.csv",
+  "log_file": null
+}

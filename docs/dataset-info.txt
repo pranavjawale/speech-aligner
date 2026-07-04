@@ -1,0 +1,108 @@
+================================================================================
+DATASET: legal2023_38hrs  —  train / dev / test  (location + duration info)
+================================================================================
+Dataset name : legal2023_38hrs   (38.58 h of @0.4-recovered court audio; 120 speakers)
+Created 2026-07-03 (IST). The final speaker-disjoint, WER-stratified split used for
+Phase-15 fine-tuning + the 4-model baseline eval.
+(On-disk dirs renamed to match: data/asr/splits-legal2023_38hrs[-padded]/ and
+ data/speaker-segments-legal2023_38hrs-padded/.)
+
+--------------------------------------------------------------------------------
+1. WHAT THIS IS / PROVENANCE
+--------------------------------------------------------------------------------
+- Corpus     : disablePass1Extra (main pipeline with the 3 pass-1 matcher penalties
+               DISABLED — anchor_bonus + overlap_penalty + boundary_penalty = 0; S4.5
+               resync ON; file_015 quarantined/excluded). All 23 remaining audio files.
+- Segments   : per-speaker segments, filtered to avg_score >= 0.4 (CONF_THRESHOLD).
+               Source manifest: data/asr/manifests/segments/segments_all.jsonl (37,162 segs).
+- Split      : SPEAKER-DISJOINT (assignment on GLOBAL speaker ids, so every segment of a
+               speaker lands in one set). Speakers are stratified by their per-speaker
+               rnnt-1.1b WER bucket (see split_bucket_x_set.csv):
+                 dev + test drawn ONLY from the 10-20% and 20-40% WER buckets (reliable
+                 labels), >=5 min per-speaker floor, medium speakers;
+                 40%+ bucket: all TRAIN except a bounded test tail (12 sub-minute speakers
+                 + spk_1025 as a ~12 min anchor); 5-10% bucket -> train.
+- WER used for bucketing: all-speakers rnnt-1.1b, unpadded, unfiltered (see
+  docs/experiment-logs/all-speakers_parakeetrnnt1.1b_disablePass1Extra.speaker_wise_wer_with_recovery.csv).
+
+--------------------------------------------------------------------------------
+2. LOCATIONS
+--------------------------------------------------------------------------------
+Manifests (NeMo jsonl: audio_filepath, duration, text, speaker, avg_score, ...):
+  UNPADDED : data/asr/splits-legal2023_38hrs/{train,dev,test}.jsonl
+  PADDED   : data/asr/splits-legal2023_38hrs-padded/{train,dev,test}.jsonl   (+0.5 s silence
+             PREPENDED AND APPENDED per segment => +1.0 s/seg; new field pad_s=0.5,
+             orig_audio_filepath kept)
+Speaker assignment (the split definition; {train,dev,test}: [speaker ids]):
+             data/asr/splits-legal2023_38hrs/speaker_assignment.json
+Segment WAVs:
+  unpadded : data/speaker-segments/audio_file_NNN/*.wav        (disablePass1Extra segments)
+  padded   : data/speaker-segments-legal2023_38hrs-padded/audio_file_NNN/*.wav
+Split table + per-bucket x per-set counts/durations + per-set corpus_wer:
+             docs/experiment-logs/all-speakers_parakeetrnnt1.1b_disablePass1Extra.split_bucket_x_set.csv
+
+--------------------------------------------------------------------------------
+3. DURATION / SIZE   (durations are @ avg_score >= 0.4)
+--------------------------------------------------------------------------------
+  set     segments  speakers   unpadded dur          padded dur (+1.0s/seg)
+  train     33,403     88 *     35.66 h (35:39:45)    44.94 h (44:56:28)
+  dev          489      5        0.57 h ( 0:34:26)     0.71 h ( 0:42:35)
+  test       2,258     26        2.35 h ( 2:20:42)     2.97 h ( 2:58:20)
+  ------------------------------------------------------------------------
+  TOTAL     36,150    119 *     38.58 h (38:34:53)    48.62 h (48:37:23)
+
+  * train shows 88 speakers with @0.4 data (89 assigned; 1 assigned speaker has 0
+    segments >= 0.4). The 3 sets together cover all 120 global speakers / the full
+    38.58 h of @0.4-recovered audio (train + dev + test are exhaustive + disjoint).
+
+--------------------------------------------------------------------------------
+4. LABEL-QUALITY (per-set corpus WER over the @0.4 segments; rnnt-1.1b)
+--------------------------------------------------------------------------------
+  train 17.68%   dev 19.19%   test 21.99%
+  (test highest by design — it deliberately spans the 40%+ hard tail. Corpus-wide @0
+   unfiltered all-speakers WER was 20.34%.)
+
+--------------------------------------------------------------------------------
+5. REGENERATE
+--------------------------------------------------------------------------------
+The split is deterministic from the per-speaker WER+duration table. To rebuild the
+manifests: filter segments_all.jsonl to avg_score>=0.4 and assign each segment to the set
+of its speaker (per speaker_assignment.json). To (re)pad:
+  python3 -m asrpipe.asr.pad --splits data/asr/splits-legal2023_38hrs \
+      --out-splits data/asr/splits-legal2023_38hrs-padded \
+      --wav-root data/speaker-segments-legal2023_38hrs-padded --only train,dev,test
+NOTE: data/ (manifests, wavs) is gitignored; speaker_assignment.json + the split table CSV
+(under docs/experiment-logs/, tracked) are the committed definition of this split.
+
+--------------------------------------------------------------------------------
+6. HUGGINGFACE EXPORT / SHARING
+--------------------------------------------------------------------------------
+Exporter : src/asrpipe/export/hf_dataset.py  — reads the NeMo manifests, builds a HF
+`datasets` DatasetDict (Parquet + embedded Audio feature) + an auto-generated dataset card,
+then save_to_disk (dry-run) or push_to_hub. Standard `datasets` + push_to_hub — no custom
+format. Export the UNPADDED split (padding is eval-only). dev -> "validation".
+Dependency: pip install datasets huggingface_hub   (export-only; installed in the main env).
+
+Built DatasetDict:
+  train 33403 / validation 489 / test 2258
+  columns: audio (16 kHz), text, speaker, avg_score, min_score, duration, source_file
+
+Dry-run (build + card + save_to_disk locally; NO upload; verified round-trip + audio decode):
+  python3 -m asrpipe.export.hf_dataset --splits data/asr/splits-legal2023_38hrs \
+      --name legal2023_38hrs --out /tmp/hf_legal2023_38hrs
+  (add "--limit 40" to save only a small sample fast; the card still reflects the FULL set.)
+
+Push (PRIVATE by default; requires `huggingface-cli login` with a write token):
+  python3 -m asrpipe.export.hf_dataset --splits data/asr/splits-legal2023_38hrs \
+      --repo <your-org>/legal2023_38hrs --name legal2023_38hrs --push --private
+  Load back : from datasets import load_dataset
+              ds = load_dataset("<your-org>/legal2023_38hrs")   # train / validation / test
+  A real push embeds all ~36k segment WAVs (~4 GB) -> takes several minutes.
+
+BEFORE ANY *PUBLIC* PUSH (both are in the auto-generated card and MUST be honored):
+  - PSEUDO-LABELS: text = ASR + forced-alignment output (~20% corpus WER vs rnnt-1.1b judge;
+    avg_score >= 0.4 filter) — NOT human-verified. Keep avg_score so users can filter tighter.
+  - COURT AUDIO / PRIVACY: real speakers + legal proceedings. Confirm you have redistribution
+    rights and there are no PII/privacy constraints. Keep it private/gated until confirmed —
+    a public push is effectively irreversible (can be mirrored/cached).
+================================================================================

@@ -1,0 +1,9 @@
+duration_bucket,n_speakers,cumulative_duration_hhmmss,pct_of_total_duration_at_0.4
+>2h,5,18:15:10,47.3
+1-2h,4,6:26:24,16.7
+30-60min,10,7:26:21,19.3
+10-30min,13,3:14:25,8.4
+5-10min,16,2:04:10,5.4
+1-5min,22,0:50:42,2.2
+0-1min,50,0:17:44,0.8
+TOTAL,120,38:34:55,100.0

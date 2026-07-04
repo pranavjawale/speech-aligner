@@ -1,0 +1,74 @@
+# Phase-15 fine-tune config: nvidia/parakeet-ctc-0.6b on legal2023_38hrs.
+# NeMo FastConformer-CTC (BPE). Consumed by asrpipe.finetune.train_ctc (OmegaConf).
+# Tokenizer is KEPT from the pretrained model (do NOT rebuild vocab). SpecAugment/dropout
+# are inherited from the pretrained cfg.
+name: parakeet-ctc-0.6b_legal2023_38hrs_ft
+init_from_pretrained_model: nvidia/parakeet-ctc-0.6b
+freeze_encoder_epochs: 2          # freeze FastConformer encoder (train CTC head only), then unfreeze
+
+model:
+  train_ds:
+    # UNPADDED train by default (natural segments). To train on the +0.5s-padded variant
+    # (matches the padded-test eval), swap to data/asr/splits-legal2023_38hrs-padded/train.jsonl.
+    manifest_filepath: data/asr/splits-legal2023_38hrs/train.jsonl
+    sample_rate: 16000
+    batch_size: 8                 # 20GB A4500: encoder-unfrozen backprop is memory-heavy -> 8 (was 16)
+    shuffle: true
+    num_workers: 8
+    pin_memory: true
+    min_duration: 1.0
+    max_duration: 16.0            # cap long segments (attention mem O(T^2)); drops ~1.5% of train
+    is_tarred: false
+
+  validation_ds:
+    manifest_filepath: data/asr/splits-legal2023_38hrs/dev.jsonl
+    sample_rate: 16000
+    batch_size: 8
+    shuffle: false
+    num_workers: 8
+    pin_memory: true
+
+  optim:
+    name: adamw
+    lr: 1e-4                      # fine-tune LR (10-50x below from-scratch); peak
+    betas: [0.9, 0.98]
+    weight_decay: 1e-3
+    sched:
+      name: CosineAnnealing
+      warmup_steps: 1000
+      min_lr: 1e-6
+
+trainer:
+  devices: 1
+  accelerator: gpu
+  max_epochs: 40
+  precision: bf16-mixed
+  accumulate_grad_batches: 8      # effective batch ~64 (batch 8 x 8)
+  gradient_clip_val: 1.0
+  log_every_n_steps: 50
+  val_check_interval: 1.0         # validate each epoch
+  num_sanity_val_steps: 0
+  enable_checkpointing: false     # exp_manager owns checkpointing
+  logger: false                   # exp_manager owns the (TensorBoard) logger — PL must not add its own
+
+exp_manager:
+  exp_dir: exp/finetune
+  name: parakeet-ctc-0.6b_legal2023_38hrs_ft
+  create_tensorboard_logger: true             # logs train_loss/val_loss/val_wer/lr
+  create_checkpoint_callback: true
+  checkpoint_callback_params:
+    monitor: val_wer
+    mode: min
+    save_top_k: 1                             # keep only the single best .ckpt (disk-quota friendly; ~2.4GB)
+    save_last: false
+    always_save_nemo: false                   # do NOT write a .nemo every checkpoint
+    save_best_model: true                     # export the BEST model as ONE .nemo at train end
+    save_nemo_on_train_end: false             # (best is exported by save_best_model; skip the last-model .nemo)
+  create_early_stopping_callback: true
+  early_stopping_callback_params:
+    monitor: val_wer
+    mode: min
+    patience: 8
+    min_delta: 0.001
+  resume_if_exists: true
+  resume_ignore_no_checkpoint: true

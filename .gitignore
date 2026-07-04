@@ -1,0 +1,68 @@
+# ---- data: never commit (regenerated or symlinked; Q2/Q3) ----
+# EXCEPTION: data/transcripts-v3/ IS tracked (input reference text, ~5MB).
+data/wav-files
+data/chunks/
+data/alignments/
+data/manifests/
+data/speaker-segments/
+data/speaker-segments-padded/
+data/asr/manifests/
+data/asr/splits/
+data/asr/splits-padded/
+data/asr/splits-*/
+data/asr/results/
+data/tokenizer/
+data/mp3-downloads/*
+data/lm/*.bin
+# LM by-products (regenerable from the train manifest; source split itself is untracked)
+data/lm/*.arpa
+data/lm/legal2023_train_text.txt
+data/lm/legal2023_train_unigrams.txt
+# reversibility backups + frozen split snapshots (regenerable; never commit)
+data/_*backup*/
+data/asr/splits-*-frozen/
+# ablation / experiment isolated output trees + RNNT hyp caches (regenerable)
+data/ablation/
+# keep small text LM asset (unigrams) tracked? decide at RP6; default: ignore binaries only
+
+# ---- audio / binaries (the /code .git-bloat mistake we are NOT repeating) ----
+*.wav
+*.mp3
+*.flac
+*.m4a
+*.bin
+*.pt
+*.pth
+*.onnx
+*.nemo
+
+# ---- envs / caches ----
+.venv/
+**/.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+logs/
+
+# ---- editor / OS ----
+.DS_Store
+*.swp
+.idea/
+.vscode/
+
+# NeMo eval/train venv (Q5: recreated under code2, never committed)
+.venv-nemo/
+data/review/
+
+# fine-tune checkpoints / TensorBoard (huge; .ckpt is NOT covered by *.nemo above) — model lives on the volume
+exp/
+*.ckpt
+
+# scratchpad one-offs (may be cleared; not part of the tracked pipeline)
+scratchpad/
+
+# Claude Code local state
+.claude/
+
+# raw per-utterance experiment CSVs (large, regenerable; spec #8 output)
+results/

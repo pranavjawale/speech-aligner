@@ -1,0 +1,34 @@
+Each experiment name should have the format 
+
+dataTag_modelTag_exptTag
+
+for example, all-speakers_parakeetrnnt1.1b_baselineexpt1
+
+1. Test data file paths, duration and count of test data, description of test data
+
+2. Model path and model description , if it is base model or finetuned
+
+3. Compute specs 
+
+4. Time taken to run each model's evaluation 
+
+5. Path to evaluation script
+
+6. Hyperparameters of evaluation 
+
+7. Whether evaluation is in streaming mode or non-streaming. VAD is applied or not?
+
+8. Raw Results csv should be stored under code2/results/  
+using the "experiment-name" format given above 
+
+9. Experiment metadata json and summary file should be 
+stored under  /workspace/code2/docs/experiment-logs
+using the "experiment-name" format given above 
+
+10. Give a single command which launches evaluation experiment with arguments 
+related to data path . This i will need to reroduce the results in future.
+
+11. Prepare a expt-track-list.txt under /workspace/code2/docs/experiment-logs/
+which mentions two things expt-name, expt-log file path, date and time of expt finish
+
+Dont declare evaluation is complete until all 11 instructions are followed.

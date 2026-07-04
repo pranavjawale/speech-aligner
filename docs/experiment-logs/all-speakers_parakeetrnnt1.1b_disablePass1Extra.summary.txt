@@ -1,0 +1,21 @@
+experiment : all-speakers_parakeetrnnt1.1b_disablePass1Extra
+model      : nvidia/parakeet-rnnt-1.1b  (base)
+             base pretrained (NGC/HF)
+             revision=eb4243f55e927ce6b33c7d5da3286053545bf25d
+data       : data/asr/manifests/segments/segments_all.jsonl
+             All disablePass1Extra speaker segments (all speakers; train+dev+test), file_015 excluded/quarantined, unpadded, unfiltered (no avg_score threshold)
+             utterances=37162  duration=2374.52 min  md5=e385b1bdcf465068a791d5c6b947f980
+             padded=False (pad_s=0.0)  conf_filter_threshold=None  observed_avg_score=[0.0077,0.9885]
+mode       : streaming=False  vad_applied=False
+hyperparams: decoding=greedy_batch  batch_size=32  workers=8  normalizer=asrpipe.common.wer.normalize (lowercase, strip to [a-z0-9 ], collapse ws; word-level Levenshtein)
+scoring    : utterances=37162  scored=37162  empty_ref=0  empty_hyp=271
+compute    : NVIDIA RTX A4500 (19.7GB)  cuda=12.8  torch=2.8.0+cu128  nemo=2.7.3  driver=550.127.05
+code       : git 0181931eff6f1022c07b5f88f9f11d1626dad8aa (dirty=True)
+             script=/workspace/code2/src/asrpipe/asr/eval.py
+timing     : load=22.6s  decode=2010.2s  total=2032.8s  rtfx=70.9
+
+CORPUS WER : 20.34%
+mean utt   : 26.23%
+
+reproduce  :
+  .venv-nemo/bin/python -m asrpipe.asr.eval --manifest data/asr/manifests/segments/segments_all.jsonl --model nvidia/parakeet-rnnt-1.1b --exp-name all-speakers_parakeetrnnt1.1b_disablePass1Extra --batch-size 32 --data-description 'All disablePass1Extra speaker segments (all speakers; train+dev+test), file_015 excluded/quarantined, unpadded, unfiltered (no avg_score threshold)'

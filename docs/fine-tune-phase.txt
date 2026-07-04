@@ -1,0 +1,225 @@
+================================================================================
+PHASE 15 — FINE-TUNING parakeet-ctc-0.6b ON legal2023_38hrs (train 35.66 h)
+================================================================================
+Status: COMPLETED (2026-07-03). Ran to natural early-stop: 23 epochs, ~5.1 h on one RTX
+        A4500. Best DEV val_wer 13.59% (epoch 14). PADDED-TEST corpus WER 18.27% vs 23.39%
+        base (-5.12 pts / -21.9% rel); also beats the rnnt-1.1b judge (20.03%). 25/26 test
+        speakers improved. Full telemetry, test results, and a DEVELOPER RUNBOOK below.
+
+Model: nvidia/parakeet-ctc-0.6b — NeMo FastConformer-CTC, English, BPE tokenizer,
+outputs lowercase / no punctuation (matches our reference format).
+Training stack: NeMo 2.7.3 + PyTorch-Lightning (run under .venv-nemo). exp_manager gives
+TensorBoard (create_tensorboard_logger=True): train_loss (per step), val_loss, val_wer, lr.
+  tensorboard --logdir exp/finetune --port 6006
+
+--------------------------------------------------------------------------------
+DATA — dataset legal2023_38hrs   (see docs/dataset-info.txt for full details)
+--------------------------------------------------------------------------------
+Corpus : disablePass1Extra (pass-1 anchor/overlap/boundary penalties OFF, S4.5 resync ON,
+         file_015 excluded), per-speaker segments @ avg_score >= 0.4. Speaker-disjoint,
+         WER-stratified split (dev/test from the 10-20% + 20-40% WER buckets; 40%+ mostly
+         train + a bounded test tail).
+  set     segments  speakers   unpadded dur   padded dur (+0.5s both sides)   corpus_wer@0.4
+  train     33,403     88       35.66 h        44.94 h                        17.68%
+  dev          489      5        0.57 h         0.71 h                        19.19%
+  test       2,258     26        2.35 h         2.97 h                        21.99%
+Manifests:
+  unpadded : data/asr/splits-legal2023_38hrs/{train,dev,test}.jsonl
+  padded   : data/asr/splits-legal2023_38hrs-padded/{train,dev,test}.jsonl
+Train segment durations: median 2.8s, p90 7.4s, p99 17.1s, max 71.5s; only 0.5% (1.3h)
+exceed 20s -> max_duration=20 is nearly free.
+
+--------------------------------------------------------------------------------
+BASELINE (before fine-tune) — ESTABLISHED on the legal2023_38hrs PADDED test
+--------------------------------------------------------------------------------
+4 Parakeet models, greedy_batch, batch 32, RTX A4500 (docs/experiment-logs/
+comparisons/legal2023_38hrs_test_padded_4models.csv):
+  parakeet-ctc-0.6b   corpus 23.39%  mean-utt 32.41%  rtfx 126.7   <- FINE-TUNE CANDIDATE / target to beat
+  parakeet-ctc-1.1b   corpus 23.54%  mean-utt 32.59%  rtfx  87.2
+  parakeet-rnnt-0.6b  corpus 21.03%  mean-utt 28.45%  rtfx 119.1
+  parakeet-rnnt-1.1b  corpus 20.03%  mean-utt 27.99%  rtfx  83.7   <- independent (non-circular) judge
+=> Fine-tune goal: push ctc-0.6b below 23.39% on the SAME padded test (report OVERALL +
+   per-test-speaker WER, and vs the rnnt judge to stay non-circular).
+
+--------------------------------------------------------------------------------
+IMPLEMENTATION (done)
+--------------------------------------------------------------------------------
+  src/asrpipe/finetune/train_ctc.py            NeMo fine-tune script (freeze schedule,
+                                               exp_manager, val_wer checkpointing + early stop)
+  src/asrpipe/finetune/conf/ctc_finetune.yaml  config (data, optim, trainer, exp_manager)
+  scripts/run_finetune.sh                      wrapper (NeMo venv; logs/finetune/ + exp/finetune/)
+Run:
+  bash scripts/run_finetune.sh --fast-dev-run     # 1-batch smoke test (validate wiring)
+  bash scripts/run_finetune.sh                    # full fine-tune
+  bash scripts/run_finetune.sh --max-epochs 3     # short run
+Then evaluate the best checkpoint on the padded test and compare to the 23.39% baseline:
+  .venv-nemo/bin/python -m asrpipe.asr.eval --manifest data/asr/splits-legal2023_38hrs-padded/test.jsonl \
+      --model exp/finetune/parakeet-ctc-0.6b_legal2023_38hrs_ft/<best>.nemo \
+      --exp-name finaltestpadded_parakeetctc0.6b_ft --finetuned --padded --batch-size 32 ...
+  then compare_experiments.py vs finaltestpadded_parakeetctc0.6b_base.
+
+--------------------------------------------------------------------------------
+HYPERPARAMETERS (encoded in ctc_finetune.yaml; the plan's recommended starting points)
+--------------------------------------------------------------------------------
+1. LR / schedule: AdamW lr 1e-4 (peak; 10-50x below from-scratch), betas [0.9,0.98],
+   weight_decay 1e-3, grad-clip 1.0, CosineAnnealing warmup 1000 -> min_lr 1e-6.
+2. "Slow"/freezing: freeze the FastConformer encoder for the first 2 epochs (train the CTC
+   head only), then gradual-unfreeze (freeze_encoder_epochs: 2). Main anti-forgetting lever.
+3. Epochs / early stop: max_epochs 40, early-stop on val_wer (patience 8), save_top_k 1 by
+   val_wer (was 3; each .ckpt is ~7.3GB incl. optimizer state -> disk-quota), validate each epoch.
+4. Data / batching (ACTUAL, after CUDA-OOM tuning on the 20GB GPU): min_duration 1.0,
+   max_duration 16 (was 20), batch 8 + accumulate_grad_batches 8 (effective ~64), bf16-mixed,
+   PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True. Plan started batch16/accum4/maxdur20 but
+   OOM'd when the encoder unfroze at epoch 2 -> see DEBUGGING in the DEVELOPER RUNBOOK.
+5. Regularization: SpecAugment + dropout inherited from the pretrained cfg.
+6. Tokenizer: KEEP the pretrained BPE (do NOT rebuild vocab).
+Knobs to sweep if needed: lr (5e-5..2e-4), freeze_encoder_epochs (1..3), max_duration (20/72),
+train on unpadded (default) vs padded manifest (matches the padded-test eval; ~0.2pp).
+
+--------------------------------------------------------------------------------
+TRAINING RUN (ACTUAL) — 2026-07-03
+--------------------------------------------------------------------------------
+Command   : bash scripts/run_finetune.sh   (log: logs/finetune/train_20260703_*.log)
+Wall time : ~5.1 h, 23 epochs (0-22); early-stopped (val_wer did not improve for patience=8).
+Schedule  : epochs 0-1 encoder FROZEN (CTC head only, ~4.6 min/epoch); epochs 2-22 encoder
+            UNFROZEN (full backprop, ~14 min/epoch). Effective batch 64 (8 x accum 8), bf16.
+Best      : DEV val_wer 13.59% at epoch 14 (global step 7739).
+  ckpt : exp/finetune/parakeet-ctc-0.6b_legal2023_38hrs_ft/checkpoints/parakeet-ctc-0.6b_legal2023_38hrs_ft--val_wer=0.1359-epoch=14.ckpt
+  nemo : exp/finetune/parakeet-ctc-0.6b_legal2023_38hrs_ft/checkpoints/best_val_wer0.1359_ep14.nemo  (see CONVERT, runbook step 4)
+
+Per-epoch metrics (full curve: results/finetune_ctc0.6b_legal2023_38hrs_per_epoch.csv):
+  ep  step   val_wer  val_loss  train_loss    lr        min   encoder
+   0   515    19.77%   0.958     0.913       5.0e-05    ~5*    frozen
+   1  1031    18.80%   0.880     0.967       1.0e-04    4.6    frozen
+   2  1547    16.78%   0.724     1.772       9.98e-05   14.0   UNFROZEN
+   3  2063    15.76%   0.669     1.241       9.93e-05   14.4
+   4  2579    15.44%   0.652     0.747       9.85e-05   14.4
+   5  3095    14.78%   0.634     1.047       9.74e-05   14.5
+   6  3611    14.66%   0.608     0.637       9.58e-05   14.3
+   7  4127    15.15%   0.602     1.071       9.40e-05   14.4
+   8  4643    14.37%   0.590     0.522       9.20e-05   13.8
+   9  5159    14.17%   0.602     1.225       8.95e-05   14.4
+  10  5675    14.43%   0.596     0.543       8.69e-05   14.4
+  11  6191    14.11%   0.601     0.433       8.41e-05   13.7
+  12  6707    14.43%   0.613     2.443       8.08e-05   14.3
+  13  7223    14.34%   0.608     0.460       7.76e-05   13.8
+  14  7739    13.59%   0.611     0.449       7.42e-05   13.8   <- BEST
+  15  8255    14.13%   0.648     0.590       7.03e-05   14.3
+  16  8771    13.82%   0.611     0.991       6.66e-05   13.8
+  17  9287    13.66%   0.630     0.792       6.28e-05   13.8
+  18  9803    13.98%   0.615     0.463       5.86e-05   14.0
+  19 10319    14.17%   0.628     0.552       5.46e-05   13.8
+  20 10835    14.07%   0.636     1.104       5.07e-05   13.7
+  21 11351    14.16%   0.636     0.378       4.63e-05   13.7
+  22 11867    14.36%   0.635     0.412       4.24e-05   13.9   (early-stop: no improve since ep14)
+  (* epoch 0 wall-time not recorded; frozen head-only epochs run ~4-5 min.)
+LR      : linear warmup 0 -> 1e-4 over 1000 steps (~2 epochs), then CosineAnnealing decaying
+          toward min_lr 1e-6; reached 4.24e-05 by early-stop (step 11867, before the cosine floor).
+train_loss: per-batch value at each epoch's last log (noisy; logged every 50 steps, 237 pts total).
+Overfitting note: val_loss bottomed ~epoch 8 (0.590) then drifted up, yet val_wer kept improving
+          to epoch 14 -> early-stopping on val_wer (not val_loss) picked the right checkpoint.
+
+--------------------------------------------------------------------------------
+TEST RESULTS — legal2023_38hrs PADDED test (2258 segs, 26 speakers), greedy_batch
+--------------------------------------------------------------------------------
+                            corpus WER   mean-utt   vs base
+  base  parakeet-ctc-0.6b      23.39%     32.41%    --
+  FT    parakeet-ctc-0.6b      18.27%     24.28%    -5.12 pts  (-21.9% relative)   <- this run
+  (ref) rnnt-1.1b judge        20.03%     27.99%    non-circular ref -> FT beats it by 1.76 pts
+Validity: compared on byte-identical audio+refs (verified 2258/2258 segment basenames, 0 ref &
+  0 duration diffs). The base run's manifest md5 differs ONLY because the segment dir was renamed
+  data/speaker-segments-werstrat-padded -> ...-legal2023_38hrs-padded (paths, not content).
+Outputs: results/finaltestpadded_parakeetctc0.6b_ft.csv ,
+  docs/experiment-logs/finaltestpadded_parakeetctc0.6b_ft.summary.txt ,
+  docs/experiment-logs/comparisons/finaltestpadded_ctc0.6b_ft_vs_base.*
+
+Per-test-speaker (base% -> ft%): 25/26 improved (only spk_1036 11.0->12.1, +1.0).
+  larger : spk_1027 17.3->11.5(-5.8)  spk_1028 23.1->17.2(-5.9)  spk_1035 22.1->15.2(-6.8)
+           spk_1037 23.5->14.9(-8.6)  spk_1025 35.1->29.4(-5.6)  spk_1032 34.5->30.8(-3.7)
+  hardest: spk_1093 52.9->29.4(-23.5) spk_1081 45.9->30.6(-15.3) spk_1069 48.0->34.3(-13.6)
+           spk_1062 50.0->37.8(-12.2) spk_0067 47.9->36.2(-11.7) spk_1075 49.6->39.1(-10.5)
+Circularity caveat: labels are whisper+parakeet-CTC-derived, so a CTC fine-tune partly learns the
+  label style. The rnnt-1.1b judge (20.03%, independent) is the honest yardstick; FT beating it
+  (18.27%) is a genuinely good sign, but read the absolute gain with this in mind.
+
+--------------------------------------------------------------------------------
+DEVELOPER RUNBOOK — run your own fine-tuning experiment
+--------------------------------------------------------------------------------
+All paths relative to /workspace/code2. Use the NeMo venv; `source setup_env.sh` first.
+
+1) FILES YOU EDIT
+   src/asrpipe/finetune/conf/ctc_finetune.yaml   <- the ONE file for most experiments:
+       init_from_pretrained_model                 base model (e.g. nvidia/parakeet-ctc-1.1b)
+       model.train_ds/validation_ds.manifest_filepath   your NeMo manifests
+       model.train_ds.batch_size / max_duration / min_duration    memory + length filter
+       model.optim.lr / sched.{warmup_steps,min_lr}     LR schedule
+       freeze_encoder_epochs                      encoder freeze length (0 = never freeze)
+       trainer.{max_epochs,accumulate_grad_batches,precision}
+       exp_manager.name                           CHANGE per experiment -> new exp/finetune/<name>/
+       exp_manager.early_stopping_callback_params.patience
+   src/asrpipe/finetune/train_ctc.py    only to change TRAINING LOGIC (freeze/unfreeze =
+       UnfreezeEncoder callback; optimizer wiring). For a variant, copy the yaml to
+       ctc_finetune_<expt>.yaml and pass --config <path> (keeps the default intact).
+
+2) LAUNCH TRAINING
+   bash scripts/run_finetune.sh --fast-dev-run          # 1-batch smoke test FIRST (wiring/OOM)
+   bash scripts/run_finetune.sh                          # full run (default yaml)
+   bash scripts/run_finetune.sh --config <path> --max-epochs 3   # custom cfg / short run
+   -> log: logs/finetune/train_<stamp>.log ; ckpts+TB: exp/finetune/<exp_manager.name>/
+   resume_if_exists=true: re-launching the SAME name resumes from the last checkpoint.
+
+3) SEE RESULTS (during or after)
+   bash scripts/tb_metrics.sh          # browser-free: per-epoch val_wer/val_loss + latest train_loss/lr
+   bash scripts/run_tensorboard.sh 6006  # full TB web UI (remote: SSH tunnel or expose the port)
+   best ckpt: exp/finetune/<name>/checkpoints/...--val_wer=<best>-epoch=<e>.ckpt
+
+4) CONVERT best .ckpt -> deployable .nemo   (exp_manager may NOT emit one — expected)
+   .venv-nemo/bin/python -m asrpipe.finetune.ckpt_to_nemo \
+       --ckpt exp/finetune/<name>/checkpoints/<...>.ckpt \
+       --base <same init_from_pretrained_model> \
+       --out  exp/finetune/<name>/checkpoints/best.nemo
+   (loads base arch+tokenizer, copies the ckpt weights, save_to, then verifies restore_from.)
+
+5) EVALUATE   (eval.py loads a local .nemo via restore_from; a raw .ckpt is NOT accepted)
+   .venv-nemo/bin/python -m asrpipe.asr.eval \
+       --manifest data/asr/splits-<dataset>-padded/test.jsonl \
+       --model exp/finetune/<name>/checkpoints/best.nemo \
+       --exp-name <myexp>_ft --finetuned --padded --batch-size 32 --data-description '...'
+   -> results/<myexp>_ft.csv ; docs/experiment-logs/<myexp>_ft.summary.txt
+   Compare vs a baseline experiment:
+     python3 -m asrpipe.reports.compare_experiments --name <cmp> \
+         --exps <myexp>_ft <baseline_exp> --baseline <baseline_exp>
+   Deeper WER analysis:
+     .venv-nemo/bin/python -m asrpipe.reports.wer_segment_report --exp-name <myexp>_ft
+     .venv-nemo/bin/python -m asrpipe.reports.wer_error_analysis  --exp-name <myexp>_ft
+
+6) DEBUG — common training issues
+   CUDA OOM (esp. when the encoder unfreezes at freeze_encoder_epochs -> memory jumps ~2.5x):
+     - lower model.train_ds.batch_size (16->8->4) AND raise accumulate_grad_batches to keep
+       effective batch (batch x accum) ~constant (~64).
+     - lower model.train_ds.max_duration (attention memory is O(T^2); 20->16->12 helps most).
+     - export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True (already in run_finetune.sh).
+     - keep precision: bf16-mixed. Watch live: nvidia-smi (frozen ~8GB, unfrozen ~16GB / 20GB).
+   DISK-QUOTA (OSError EDQUOT / "Disk quota exceeded") on checkpoint save:
+     - each .ckpt is ~7.3GB (weights+optimizer). Keep save_top_k:1, save_last:false,
+       always_save_nemo:false; delete stale exp/finetune/<old-run> dirs. (Free space != quota.)
+   LoggerMisconfigurationError (PTL and exp_manager both add a logger):
+     - keep trainer.logger:false (exp_manager owns the TensorBoard logger).
+   No .nemo at train end: expected -> convert with ckpt_to_nemo.py (step 4).
+   Always run --fast-dev-run before a long run; it exercises data + exp_manager end-to-end.
+
+--------------------------------------------------------------------------------
+CAVEATS
+--------------------------------------------------------------------------------
+- PSEUDO-LABELS: train refs are pipeline-derived, not gold (train corpus WER vs rnnt-1.1b =
+  17.68% @0.4). The model can only get as good as the labels; avg_score>=0.4 already applied,
+  raise the threshold or drop worst-WER train speakers to trade quantity for label quality.
+- BAD-AUDIO / worst speakers are ALREADY handled by construction: file_015 excluded; the
+  WER-stratified split keeps dev/test on 10-20%+20-40% speakers and pushes the 40%+ tail to
+  train (only a bounded 40%+ slice sits in test) — so dev early-stopping uses reliable labels.
+- NON-CIRCULAR EVAL: the label-gen ASR is whisper+parakeet-ctc, so evaluate the fine-tuned
+  ctc with the rnnt-1.1b judge too (20.03% base) — a ctc-only improvement could be partly
+  circular against ctc-derived labels.
+- Edge errors: the padded test (+0.5s both sides) is the primary eval set (baseline 23.39%);
+  the fine-tune config trains on UNPADDED by default (swap the manifest to train on padded).
+================================================================================
