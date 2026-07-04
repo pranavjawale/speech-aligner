@@ -143,8 +143,7 @@ speaker id), so files are self-describing and joinable without a database.
 - **What:** Whisper (faster-whisper) greedy ASR → **best-of-two** reference
   localization (Parakeet+KenLM hyp vs Whisper hyp, sliding-window matcher) →
   silence-masked wav2vec2 forced alignment → per-word timestamps + confidence.
-- **Key config:** `ASR_MODEL_SIZE`, `SEARCH_BUFFER_BACK/FWD`, the `ANCHOR_*` and
-  `COMMIT_*`/`BOUNDARY_*` matcher knobs, `SILENCE_MASK_THRESHOLD_S`.
+- **Key config:** `ASR_MODEL_SIZE`, `SEARCH_BUFFER_BACK/FWD`, the `COMMIT_*` matcher knobs, `SILENCE_MASK_THRESHOLD_S`.
 - **Writes only JSON** — the per-chunk `.json`, `{stem}_hyp_winner_stats.json`, and
   the `{stem}_asr.jsonl` hyp cache. **S4 does NOT create any `labels/` files** — the
   pass-1 alignment lives only in the JSON `words` array at this point.
