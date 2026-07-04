@@ -4,11 +4,6 @@ This guide walks you, step by step, through running the **alignment pipeline** o
 timings**.
 
 
-> If you also want to build a train/dev/test dataset and measure ASR accuracy (WER),
-> that is a downstream extension covered by `docs/pipeline-guide.md` (stages S10–S13).
-> This document stops at the point where you have speaker segments + transcripts,
-> which is the goal here.
-
 ---
 
 ## 0. The big picture (read this once)
@@ -255,14 +250,14 @@ A JSON document with:
   expect alignment mistakes.
 
 ### 5.3 In one sentence
-> For each speaker turn you get a **WAV clip** in `data/speaker-segments/…` and its
-> **word-by-word transcript with timings and confidence** in the matching
+For each speaker turn you get a **WAV clip** in `data/speaker-segments/…` and its
+**word-by-word transcript with timings and confidence** in the matching
 > `data/manifests/audio_file_NNN_speaker_manifest.json` (or, after §4, as a flat
 > `{audio_filepath, text}` row in `data/asr/manifests/segments/segments_NNN.jsonl`).
 
 ---
 
-## 6. Good to know (gotchas)
+## 6. Good to know 
 
 - **End-exclusive ranges.** `START END` = `[START, END)`. `1 25` = files 001–024;
   `2 3` = only file_002.
@@ -274,8 +269,6 @@ A JSON document with:
 - **Quarantine.** `config.QUARANTINE_FILES` (currently `{15}`) marks known bad-audio
   files to exclude from the downstream dataset. It does not stop S2–S9 from processing
   them; it drops them later. Inspect per-segment `avg_score` to spot bad audio yourself.
-- **Confidence is your quality signal.** If a file's segments are mostly low
-  `avg_score`, suspect bad audio or a transcript that doesn't match the recording.
 
 ## 7. Quick reference — the whole thing
 
